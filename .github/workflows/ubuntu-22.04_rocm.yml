@@ -28,7 +28,9 @@ jobs:
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
+          echo "sudo dpkg -l | grep linux-headers"
           sudo dpkg -l | grep linux-headers
+          echo "sudo dpkg -l | grep linux-modules-extra"
           sudo dpkg -l | grep linux-modules-extra
 
           #      - name: Set Environment Variables
