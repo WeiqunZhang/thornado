@@ -39,8 +39,6 @@ jobs:
           sudo apt-get -qq update
           echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
-          echo "sudo reboot"
-          sudo reboot
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ jammy main' \
           | sudo tee /etc/apt/sources.list.d/rocm.list
           echo "sudo apt-get -qq update"
