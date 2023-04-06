@@ -23,38 +23,55 @@ jobs:
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
+          echo ""
           echo "sudo apt-get -qq update"
           sudo apt-get -qq update
+          echo ""
           echo "sudo apt install linux-headers-`uname -r`"
           sudo apt install linux-headers-`uname -r`
+          echo ""
           echo "sudo apt install linux-modules-extra-`uname -r`"
           sudo apt install linux-modules-extra-`uname -r`
 
       - name: Download and Install ROCm Suite (2)
         run: |
+          echo ""
           echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key"
           echo "| sudo apt-key add -"
           wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key \
           | sudo apt-key add -
           echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu jammy main' \
           | sudo tee /etc/apt/sources.list.d/amdgpu.list
+          echo ""
           echo "sudo apt-get -qq update"
           sudo apt-get -qq update
+          echo ""
           echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
+          echo ""
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ jammy main' \
           | sudo tee /etc/apt/sources.list.d/rocm.list
-          echo "sudo apt-get -qq update"
 
       - name: Download and Install ROCm Suite (3)
         run: |
+          echo ""
+          echo "sudo apt-get -qq update"
           sudo apt-get -qq update
+          echo ""
+          echo "sudo apt install rocm-hip-libraries"
+          sudo apt install rocm-hip-libraries
+          echo ""
+          echo "sudo apt install rccl-dev"
+          sudo apt install rccl-dev
+          echo ""
           echo "sudo apt install rocm-hip-sdk"
           sudo apt install rocm-hip-sdk
           echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/rocm-5.3/lib:/opt/rocm-5.3/lib64" >> ${GITHUB_ENV}
           echo "PATH=${PATH}:/opt/rocm-5.3/bin" >> ${GITHUB_PATH}
+          echo ""
           echo "sudo dkms status"
           sudo dkms status
+          echo ""
           echo "sudo apt list --installed"
           sudo apt list --installed
 
