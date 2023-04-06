@@ -9,8 +9,6 @@ jobs:
     env:
       THORNADO_MACHINE: gh-runner_ubuntu-22.04_rocm
       UBUNTU_VERSION: 2004
-      AMDGPU_BASE: https://repo.radeon.com/amdgpu/latest/ubuntu
-      ROCM_BASE: https://repo.radeon.com/rocm/apt/debian/
     steps:
       - name: Checkout thornado
         uses: actions/checkout@v3
@@ -43,6 +41,10 @@ jobs:
           | sudo tee /etc/apt/sources.list.d/rocm.list
           sudo apt-get -qq update
           sudo apt install rocm-hip-sdk
+          echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/rocm-5.3/lib:/opt/rocm-5.3/lib64" >> ${GITHUB_ENV}
+          echo "PATH=${PATH}:/opt/rocm-5.3/bin" >> ${GITHUB_PATH}
+          sudo dkms status
+          sudo apt list --installed
 
 
           #      - name: Set Environment Variables
