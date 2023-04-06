@@ -28,11 +28,9 @@ jobs:
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
-          sudo dpkg -l | grep linux-headers || \
           sudo apt install linux-headers-`uname -r` \
           echo "sudo dpkg -l | grep linux-headers"
           sudo dpkg -l | grep linux-headers
-          sudo dpkg -l | grep linux-modules-extra || \
           sudo apt install linux-modules-extra-`uname -r`
           echo "sudo dpkg -l | grep linux-modules-extra"
           sudo dpkg -l | grep linux-modules-extra
