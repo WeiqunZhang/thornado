@@ -19,31 +19,39 @@ jobs:
           #          repository: starkiller-astro/weaklib
           #          path: weaklib
 
-      - name: Update Ubuntu
-        run: |
-          git branch
-          sudo apt-get -qq update
-
       # https://docs.amd.com/bundle/ROCm-Installation-Guide-v5.3/
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
+          echo "sudo apt-get -qq update"
+          sudo apt-get -qq update
+          echo "sudo apt install linux-headers-`uname -r`"
           sudo apt install linux-headers-`uname -r`
+          echo "sudo apt install linux-modules-extra-`uname -r`"
           sudo apt install linux-modules-extra-`uname -r`
+          echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key" \
+          echo "| sudo apt-key add -"
           wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key \
           | sudo apt-key add -
           echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu jammy main' \
           | sudo tee /etc/apt/sources.list.d/amdgpu.list
+          echo "sudo apt-get -qq update"
           sudo apt-get -qq update
+          echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
+          echo "sudo reboot"
           sudo reboot
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ jammy main' \
           | sudo tee /etc/apt/sources.list.d/rocm.list
+          echo "sudo apt-get -qq update"
           sudo apt-get -qq update
+          echo "sudo apt install rocm-hip-sdk"
           sudo apt install rocm-hip-sdk
           echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/rocm-5.3/lib:/opt/rocm-5.3/lib64" >> ${GITHUB_ENV}
           echo "PATH=${PATH}:/opt/rocm-5.3/bin" >> ${GITHUB_PATH}
+          echo "sudo dkms status"
           sudo dkms status
+          echo "sudo apt list --installed"
           sudo apt list --installed
 
 
