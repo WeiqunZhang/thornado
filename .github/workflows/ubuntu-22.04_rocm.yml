@@ -29,7 +29,7 @@ jobs:
           sudo apt install linux-headers-`uname -r`
           echo "sudo apt install linux-modules-extra-`uname -r`"
           sudo apt install linux-modules-extra-`uname -r`
-          echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key" \
+          echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key"
           echo "| sudo apt-key add -"
           wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key \
           | sudo apt-key add -
