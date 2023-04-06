@@ -9,6 +9,8 @@ jobs:
     env:
       THORNADO_MACHINE: gh-runner_ubuntu-22.04_rocm
       UBUNTU_VERSION: 2004
+      AMDGPU_BASE: https://repo.radeon.com/amdgpu/latest/ubuntu
+      ROCM_BASE: https://repo.radeon.com/rocm/apt/debian/
     steps:
       - name: Checkout thornado
         uses: actions/checkout@v3
@@ -29,11 +31,19 @@ jobs:
       - name: Download and Install ROCm Suite
         run: |
           sudo apt install linux-headers-`uname -r`
-          echo "sudo dpkg -l | grep linux-headers"
-          sudo dpkg -l | grep linux-headers
           sudo apt install linux-modules-extra-`uname -r`
-          echo "sudo dpkg -l | grep linux-modules-extra"
-          sudo dpkg -l | grep linux-modules-extra
+          wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key \
+          | sudo apt-key add -
+          echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu jammy main' \
+          | sudo tee /etc/apt/sources.list.d/amdgpu.list
+          sudo apt-get -qq update
+          sudo apt install amdgpu-dkms
+          sudo reboot
+          echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ jammy main' \
+          | sudo tee /etc/apt/sources.list.d/rocm.list
+          sudo apt-get -qq update
+          sudo apt install rocm-hip-sdk
+
 
           #      - name: Set Environment Variables
           #        run: |
