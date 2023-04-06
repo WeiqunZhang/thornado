@@ -29,6 +29,9 @@ jobs:
           sudo apt install linux-headers-`uname -r`
           echo "sudo apt install linux-modules-extra-`uname -r`"
           sudo apt install linux-modules-extra-`uname -r`
+
+      - name: Download and Install ROCm Suite (2)
+        run: |
           echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key"
           echo "| sudo apt-key add -"
           wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key \
@@ -42,6 +45,9 @@ jobs:
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ jammy main' \
           | sudo tee /etc/apt/sources.list.d/rocm.list
           echo "sudo apt-get -qq update"
+
+      - name: Download and Install ROCm Suite (3)
+        run: |
           sudo apt-get -qq update
           echo "sudo apt install rocm-hip-sdk"
           sudo apt install rocm-hip-sdk
