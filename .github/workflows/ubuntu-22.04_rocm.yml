@@ -8,7 +8,6 @@ jobs:
     runs-on: ubuntu-20.04
     env:
       THORNADO_MACHINE: gh-runner_ubuntu-22.04_rocm
-      UBUNTU_VERSION: 2004
     steps:
       - name: Checkout thornado
         uses: actions/checkout@v3
@@ -58,8 +57,17 @@ jobs:
           echo "sudo apt-get -qq update"
           sudo apt-get -qq update
           echo ""
+          echo "sudo apt install rocm-language-runtime"
+          sudo apt install rocm-language-runtime
+          echo ""
           echo "sudo apt install rocm-hip-runtime"
           sudo apt install rocm-hip-runtime
+          echo ""
+          echo "sudo apt install rocm-opencl-runtime"
+          sudo apt install rocm-opencl-runtime
+          echo ""
+          echo "sudo apt install rocm-hip-runtime-devel"
+          sudo apt install rocm-hip-runtime-devel
           echo ""
           echo "sudo apt install rocm-opencl-sdk"
           sudo apt install rocm-opencl-sdk
@@ -69,6 +77,9 @@ jobs:
           echo ""
           echo "sudo apt install rocm-hip-sdk"
           sudo apt install rocm-hip-sdk
+          echo ""
+          echo "sudo apt install rocm-developer-tools"
+          sudo apt install rocm-developer-tools
           echo "LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/rocm-5.3/lib:/opt/rocm-5.3/lib64" >> ${GITHUB_ENV}
           echo "PATH=${PATH}:/opt/rocm-5.3/bin" >> ${GITHUB_PATH}
           echo ""
