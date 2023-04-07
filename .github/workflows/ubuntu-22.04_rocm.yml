@@ -58,6 +58,9 @@ jobs:
           echo "sudo apt-get -qq update"
           sudo apt-get -qq update
           echo ""
+          echo "sudo apt install rocm-hip-runtime"
+          sudo apt install rocm-hip-runtime
+          echo ""
           echo "sudo apt install rocm-opencl-sdk"
           sudo apt install rocm-opencl-sdk
           echo ""
