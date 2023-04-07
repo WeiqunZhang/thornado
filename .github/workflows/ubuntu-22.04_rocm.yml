@@ -58,11 +58,8 @@ jobs:
           echo "sudo apt-get -qq update"
           sudo apt-get -qq update
           echo ""
-          echo "sudo apt install rccl"
-          sudo apt install rccl
-          echo ""
-          echo "sudo apt install rccl-dev"
-          sudo apt install rccl-dev
+          echo "sudo apt install rocm-opencl-sdk"
+          sudo apt install rocm-opencl-sdk
           echo ""
           echo "sudo apt install rocm-hip-libraries"
           sudo apt install rocm-hip-libraries
