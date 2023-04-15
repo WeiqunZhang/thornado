@@ -29,7 +29,9 @@ jobs:
       - name: Update Ubuntu
         run: |
           git branch
-          sudo apt-get -qq update
+          sudo apt-get -qqq update
+          sudo apt-get install -y \
+            environment-modules
 
       - name: Set Environment Variables
         run: |
