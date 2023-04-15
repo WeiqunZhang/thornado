@@ -98,6 +98,9 @@ jobs:
           echo ""
           echo "ls /opt/rocm/llvm/lib"
                 ls /opt/rocm/llvm/lib
+          echo ""
+          echo "find . -iname *hipfort*"
+          find . -iname "*hipfort*"
 
       - name: Set Environment Variables
         run: |
@@ -105,7 +108,7 @@ jobs:
           echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
           echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-          echo "ROCM_ROOT=/opt/weaklib" >> ${GITHUB_ENV}
+          echo "ROCM_ROOT=/opt/root" >> ${GITHUB_ENV}
 
 #      - name: Check Environment and Find Libraries and Include Directories
 #        run: |
