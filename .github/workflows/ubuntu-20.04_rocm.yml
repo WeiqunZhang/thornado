@@ -56,8 +56,29 @@ jobs:
           echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
           echo ""
-          echo "sudo reboot"
-          sudo reboot
+          echo "sudo apt-get install rocm-language-runtime"
+          sudo apt-get install rocm-language-runtime
+          echo ""
+          echo "sudo apt-get install rocm-hip-runtime"
+          sudo apt-get install rocm-hip-runtime
+          echo ""
+          echo "sudo apt-get install rocm-opencl-runtime"
+          sudo apt-get install rocm-opencl-runtime
+          echo ""
+          echo "sudo apt-get install rocm-hip-runtime-devel"
+          sudo apt-get install rocm-hip-runtime-devel
+          echo ""
+          echo "sudo apt-get install rocm-opencl-sdk"
+          sudo apt-get install rocm-opencl-sdk
+          echo ""
+          echo "sudo apt-get install rocm-hip-libraries"
+          sudo apt-get install rocm-hip-libraries
+          echo ""
+          echo "sudo apt-get install rocm-hip-sdk"
+          sudo apt-get install rocm-hip-sdk
+          echo ""
+          echo "sudo apt-get install rocm-developer-tools"
+          sudo apt-get install rocm-developer-tools
 
 #      - name: Set Environment Variables
 #        run: |
