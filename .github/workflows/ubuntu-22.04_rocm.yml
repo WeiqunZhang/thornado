@@ -1,11 +1,11 @@
-name: Compile thornado on Ubuntu 20.04 with ROCm compilers
+name: Compile thornado on Ubuntu 22.04 with ROCm compilers
 
 on: [ push, pull_request ]
 
 jobs:
   compile-with-nvhpc:
-    name: Compile thornado on Ubuntu 20.04 with ROCm compilers
-    runs-on: ubuntu-20.04
+    name: Compile thornado on Ubuntu 22.04 with ROCm compilers
+    runs-on: ubuntu-22.04
     env:
       THORNADO_MACHINE: gh-runner_ubuntu-20.04_rocm
     steps:
