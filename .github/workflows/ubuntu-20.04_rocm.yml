@@ -18,14 +18,15 @@ jobs:
           repository: starkiller-astro/weaklib
           path: weaklib
 
+      # Stolen from Axel Huebl from amrex dependencies/dependencies_hip.sh
       - name: Download and Install ROCm Suite
         run: |
           echo ""
           echo "curl -O https://repo.radeon.com/rocm/rocm.gpg.key"
-          curl -O https://repo.radeon.com/rocm/rocm.gpg.key
+                curl -O https://repo.radeon.com/rocm/rocm.gpg.key
           echo ""
           echo "sudo apt-key add rocm.gpg.key"
-          sudo apt-key add rocm.gpg.key
+                sudo apt-key add rocm.gpg.key
           echo ""
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ ubuntu main' \
             | sudo tee /etc/apt/sources.list.d/rocm.list
@@ -34,7 +35,7 @@ jobs:
             | sudo tee -a /etc/profile.d/rocm.sh
           echo ""
           echo "sudo apt-get update"
-          sudo apt-get update
+                sudo apt-get update
           echo ""
           echo "sudo apt-get install -y --no-install-recommends \\"
           echo "  build-essential \\"
@@ -47,33 +48,32 @@ jobs:
           echo "  rocprofiler-dev \\"
           echo "  rocrand-dev     \\"
           echo "  rocprim-dev"
-          sudo apt-get install -y --no-install-recommends \
-            build-essential \
-            gfortran        \
-            libnuma-dev     \
-            libopenmpi-dev  \
-            openmpi-bin     \
-            rocm-dev        \
-            roctracer-dev   \
-            rocprofiler-dev \
-            rocrand-dev     \
-            rocprim-dev
+                sudo apt-get install -y --no-install-recommends \
+                  build-essential \
+                  gfortran        \
+                  libnuma-dev     \
+                  libopenmpi-dev  \
+                  openmpi-bin     \
+                  rocm-dev        \
+                  roctracer-dev   \
+                  rocprofiler-dev \
+                  rocrand-dev     \
+                  rocprim-dev
           echo ""
           echo "source /etc/profile.d/rocm.sh"
-          echo ""
-          source /etc/profile.d/rocm.sh
+                source /etc/profile.d/rocm.sh
           echo ""
           echo "hipcc --version"
-          hipcc --version
+                hipcc --version
           echo ""
           echo "which clang"
-          which clang
+                which clang
           echo ""
           echo "which clang++"
-          which clang++
+                which clang++
           echo ""
           echo "which flang"
-          which flang
+                which flang
 
 #      - name: Set Environment Variables
 #        run: |
