@@ -55,33 +55,33 @@ jobs:
           echo ""
           echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
+#          echo ""
+#          echo "sudo apt install rocm-dev"
+#          sudo apt install rocm-dev
           echo ""
-          echo "sudo apt-get install rocm-dev"
-          sudo apt-get install rocm-dev
+          echo "sudo apt install rocm-language-runtime"
+          sudo apt install rocm-language-runtime
           echo ""
-          echo "sudo apt-get install rocm-language-runtime"
-          sudo apt-get install rocm-language-runtime
+          echo "sudo apt install rocm-hip-runtime"
+          sudo apt install rocm-hip-runtime
           echo ""
-          echo "sudo apt-get install rocm-hip-runtime"
-          sudo apt-get install rocm-hip-runtime
+          echo "sudo apt install rocm-opencl-runtime"
+          sudo apt install rocm-opencl-runtime
           echo ""
-          echo "sudo apt-get install rocm-opencl-runtime"
-          sudo apt-get install rocm-opencl-runtime
+          echo "sudo apt install rocm-hip-runtime-dev"
+          sudo apt install rocm-hip-runtime-dev
           echo ""
-          echo "sudo apt-get install rocm-hip-runtime-dev"
-          sudo apt-get install rocm-hip-runtime-dev
+          echo "sudo apt install rocm-opencl-sdk"
+          sudo apt install rocm-opencl-sdk
           echo ""
-          echo "sudo apt-get install rocm-opencl-sdk"
-          sudo apt-get install rocm-opencl-sdk
+          echo "sudo apt install rocm-hip-libraries"
+          sudo apt install rocm-hip-libraries
           echo ""
-          echo "sudo apt-get install rocm-hip-libraries"
-          sudo apt-get install rocm-hip-libraries
+          echo "sudo apt install rocm-hip-sdk"
+          sudo apt install rocm-hip-sdk
           echo ""
-          echo "sudo apt-get install rocm-hip-sdk"
-          sudo apt-get install rocm-hip-sdk
-          echo ""
-          echo "sudo apt-get install rocm-developer-tools"
-          sudo apt-get install rocm-developer-tools
+          echo "sudo apt install rocm-developer-tools"
+          sudo apt install rocm-developer-tools
 
 #      - name: Set Environment Variables
 #        run: |
