@@ -60,7 +60,7 @@ jobs:
           echo ""
           echo "source /etc/profile.d/modules.sh"
                 source /etc/profile.d/modules.sh
-          nvhpc_version = `ls -v /opt/nvidia/hpc_sdk/modulefiles/nvhpc/ | tail -n 1`
+          nvhpc_version=`ls -v /opt/nvidia/hpc_sdk/modulefiles/nvhpc/ | tail -n 1`
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${nvhpc_version}
 
           which nvcc || echo "nvcc not in PATH!"
