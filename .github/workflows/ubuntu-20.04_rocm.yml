@@ -18,27 +18,32 @@ jobs:
           repository: starkiller-astro/weaklib
           path: weaklib
 
-      - name: Update Ubuntu
-        run: |
-          git branch
-          sudo apt-get -qq update
-
       # https://docs.amd.com/bundle/ROCm-Installation-Guide-v5.3/
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
+          curl -O https://repo.radeon.com/rocm/rocm.gpg.key
+          sudo apt-key add rocm.gpg.key
+          echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ ubuntu main' \
+            | sudo tee /etc/apt/sources.list.d/rocm.list
+          echo 'export PATH=/opt/rocm/llvm/bin:/opt/rocm/bin:/opt/rocm/profiler/bin:/opt/rocm/opencl/bin:$PATH' \
+            | sudo tee -a /etc/profile.d/rocm.sh
+          echo "ls /etc/apt/sources.list.d/"
+          ls /etc/apt/sources.list.d/
+          echo "cat /etc/apt/sources.list.d/*"
+          cat /etc/apt/sources.list.d/*
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-          build-essential \
-          gfortran        \
-          libnuma-dev     \
-          libopenmpi-dev  \
-          openmpi-bin     \
-          rocm-dev        \
-          roctracer-dev   \
-          rocprofiler-dev \
-          rocrand-dev     \
-          rocprim-dev
+            build-essential \
+            gfortran        \
+            libnuma-dev     \
+            libopenmpi-dev  \
+            openmpi-bin     \
+            rocm-dev        \
+            roctracer-dev   \
+            rocprofiler-dev \
+            rocrand-dev     \
+            rocprim-dev
           source /etc/profile.d/rocm.sh
           hipcc --version
           which clang
