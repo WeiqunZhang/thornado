@@ -74,14 +74,27 @@ jobs:
           echo ""
           echo "which flang"
                 which flang
+          echo ""
+          echo "ls /opt/rocm"
+                ls /opt/rocm
+          echo ""
+          echo "ls /opt/rocm/bin"
+                ls /opt/rocm/bin
+          echo ""
+          echo "ls /opt/rocm/include"
+                ls /opt/rocm/include
+          echo ""
+          echo "ls /opt/rocm/lib*"
+                ls /opt/rocm/lib*
 
-#      - name: Set Environment Variables
-#        run: |
-#          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-#          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-#          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
-#          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-#
+      - name: Set Environment Variables
+        run: |
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
+          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+          echo "ROCM_ROOT=/opt/weaklib" >> ${GITHUB_ENV}
+
 #      - name: Check Environment and Find Libraries and Include Directories
 #        run: |
 #          echo ""
