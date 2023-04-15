@@ -41,17 +41,6 @@ jobs:
           echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
           echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
 
-      # https://developer.nvidia.com/hpc-sdk-downloads
-      - name: Download and install nvhpc
-        run: |
-          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
-          | sudo gpg --dearmor -o \
-            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
-          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
-          | sudo tee /etc/apt/sources.list.d/nvhpc.list
-          sudo apt-get update -y
-          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
-
       # https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
       - name: Download and install cuda
         run: |
@@ -62,6 +51,17 @@ jobs:
           sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-*-keyring.gpg /usr/share/keyrings/
           sudo apt-get update
           sudo apt-get -y install cuda
+
+      # https://developer.nvidia.com/hpc-sdk-downloads
+      - name: Download and install nvhpc
+        run: |
+          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
+          | sudo gpg --dearmor -o \
+            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
+          | sudo tee /etc/apt/sources.list.d/nvhpc.list
+          sudo apt-get update -y
+          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
 
       - name: Check nvhpc
         run: |
