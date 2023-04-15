@@ -61,12 +61,8 @@ jobs:
           echo ""
           echo "source /etc/profile.d/modules.sh"
                 source /etc/profile.d/modules.sh
-          echo "nvhpc_version=`ls -v /opt/nvidia/hpc_sdk/modulefiles/nvhpc/ | tail -n 1`"
-                nvhpc_version=`ls -v /opt/nvidia/hpc_sdk/modulefiles/nvhpc/ | tail -n 1`
-          echo ""
-          echo ${nvhpc_version}
-          echo "module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${nvhpc_version}"
-                module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${nvhpc_version}
+          echo "module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}"
+                module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
 
           which nvcc || echo "nvcc not in PATH!"
           which nvc++ || echo "nvc++ not in PATH!"
@@ -116,6 +112,8 @@ jobs:
 
       - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
         run: |
+          source /etc/profile.d/modules.sh
+          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
           make OPT_LEVEL=DEBUG \
                HYDRO=RELATIVISTIC \
