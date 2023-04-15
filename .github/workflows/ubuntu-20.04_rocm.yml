@@ -36,9 +36,28 @@ jobs:
           echo ""
           echo "sudo apt list --installed | grep 'wget\|gnupg2'"
           sudo apt list --installed | grep 'wget\|gnupg2'
+          echo ""
+          echo "sudo dpkg -l | grep linux-headers"
           sudo dpkg -l | grep linux-headers
+          echo ""
+          echo "sudo dpkg -l | grep linux-modules-extra"
           sudo dpkg -l | grep linux-modules-extra
+          echo ""
+          echo "sudo apt install linux-headers-`uname -r` linux-modules-extra-`uname -r`"
           sudo apt install linux-headers-`uname -r` linux-modules-extra-`uname -r`
+          echo ""
+          echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -"
+          wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
+          echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu focal main' | sudo tee /etc/apt/sources.list.d/amdgpu.list
+          echo ""
+          echo "sudo apt-get update -qq"
+          sudo apt-get update -qq
+          echo ""
+          echo "sudo apt install amdgpu-dkms"
+          sudo apt install amdgpu-dkms
+          echo ""
+          echo "sudo reboot"
+          sudo reboot
 
 #      - name: Set Environment Variables
 #        run: |
