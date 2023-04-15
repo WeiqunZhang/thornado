@@ -89,6 +89,15 @@ jobs:
           echo ""
           echo "ls /opt/rocm/llvm"
                 ls /opt/rocm/llvm
+          echo ""
+          echo "ls /opt/rocm/llvm/bin"
+                ls /opt/rocm/llvm/bin
+          echo ""
+          echo "ls /opt/rocm/llvm/include"
+                ls /opt/rocm/llvm/include
+          echo ""
+          echo "ls /opt/rocm/llvm/lib"
+                ls /opt/rocm/llvm/lib
 
       - name: Set Environment Variables
         run: |
