@@ -99,8 +99,8 @@ jobs:
           echo "ls /opt/rocm/llvm/lib"
                 ls /opt/rocm/llvm/lib
           echo ""
-          echo "find . -iname *hipfort*"
-          find . -iname "*hipfort*"
+          echo "find /opt/rocm -iname *hipfort*"
+                find /opt/rocm -iname "*hipfort*"
 
       - name: Set Environment Variables
         run: |
