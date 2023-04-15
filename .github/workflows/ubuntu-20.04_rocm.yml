@@ -26,24 +26,26 @@ jobs:
           echo ""
           echo "sudo apt-key add rocm.gpg.key"
           sudo apt-key add rocm.gpg.key
+          echo ""
           echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ ubuntu main' \
             | sudo tee /etc/apt/sources.list.d/rocm.list
+          echo ""
           echo 'export PATH=/opt/rocm/llvm/bin:/opt/rocm/bin:/opt/rocm/profiler/bin:/opt/rocm/opencl/bin:$PATH' \
             | sudo tee -a /etc/profile.d/rocm.sh
           echo ""
           echo "sudo apt-get update"
           sudo apt-get update
           echo ""
-          echo "sudo apt-get install -y --no-install-recommends "
-          echo "  build-essential "
-          echo "  gfortran        "
-          echo "  libnuma-dev     "
-          echo "  libopenmpi-dev  "
-          echo "  openmpi-bin     "
-          echo "  rocm-dev        "
-          echo "  roctracer-dev   "
-          echo "  rocprofiler-dev "
-          echo "  rocrand-dev     "
+          echo "sudo apt-get install -y --no-install-recommends \\"
+          echo "  build-essential \\"
+          echo "  gfortran        \\"
+          echo "  libnuma-dev     \\"
+          echo "  libopenmpi-dev  \\"
+          echo "  openmpi-bin     \\"
+          echo "  rocm-dev        \\"
+          echo "  roctracer-dev   \\"
+          echo "  rocprofiler-dev \\"
+          echo "  rocrand-dev     \\"
           echo "  rocprim-dev"
           sudo apt-get install -y --no-install-recommends \
             build-essential \
