@@ -31,24 +31,7 @@ jobs:
           echo "ls /etc/apt/sources.list.d/"
           ls /etc/apt/sources.list.d/
           echo "cat /etc/apt/sources.list.d/*"
-          cat /etc/apt/sources.list.d/*
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            build-essential \
-            gfortran        \
-            libnuma-dev     \
-            libopenmpi-dev  \
-            openmpi-bin     \
-            rocm-dev        \
-            roctracer-dev   \
-            rocprofiler-dev \
-            rocrand-dev     \
-            rocprim-dev
-          source /etc/profile.d/rocm.sh
-          hipcc --version
-          which clang
-          which clang++
-          which flang
+          cat /etc/apt/sources.list.d/*list
 
 #      - name: Set Environment Variables
 #        run: |
