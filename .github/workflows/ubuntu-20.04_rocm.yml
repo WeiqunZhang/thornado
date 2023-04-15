@@ -27,55 +27,29 @@ jobs:
       # page/Introduction_to_ROCm_Installation_Guide_for_Linux.html
       - name: Download and Install ROCm Suite
         run: |
-          echo ""
-          echo "uname -m && cat /etc/*release"
-          uname -m && cat /etc/*release
-          echo ""
-          echo "uname -srmv"
-          uname -srmv
-          echo ""
-          echo "sudo apt list --installed | grep 'wget\|gnupg2'"
-          sudo apt list --installed | grep 'wget\|gnupg2'
-          echo ""
-          echo "sudo apt install linux-headers-`uname -r` linux-modules-extra-`uname -r`"
-          sudo apt install linux-headers-`uname -r` linux-modules-extra-`uname -r`
-          echo ""
-          echo "sudo dpkg -l | grep linux-headers"
-          sudo dpkg -l | grep linux-headers
-          echo ""
-          echo "sudo dpkg -l | grep linux-modules-extra"
-          sudo dpkg -l | grep linux-modules-extra
-          echo ""
-          echo "wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -"
-          wget -q -O - https://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add -
-          echo 'deb [arch=amd64] https://repo.radeon.com/amdgpu/latest/ubuntu focal main' | sudo tee /etc/apt/sources.list.d/amdgpu.list
-          echo ""
-          echo "sudo apt-get update -qq"
-          sudo apt-get update -qq
-          echo ""
-          echo "sudo apt install amdgpu-dkms"
-          sudo apt install amdgpu-dkms
-          echo ""
-          echo "sudo apt install rocm-hip-runtime"
-          sudo apt install rocm-hip-runtime
-          echo ""
-          echo "sudo apt install rocm-opencl-runtime"
-          sudo apt install rocm-opencl-runtime
-          echo ""
-          echo "sudo apt install rocm-hip-runtime-devel"
-          sudo apt install rocm-hip-runtime-devel
-          echo ""
-          echo "sudo apt install rocm-opencl-sdk"
-          sudo apt install rocm-opencl-sdk
-          echo ""
-          echo "sudo apt install rocm-hip-libraries"
-          sudo apt install rocm-hip-libraries
-          echo ""
-          echo "sudo apt install rocm-hip-sdk"
-          sudo apt install rocm-hip-sdk
-          echo ""
-          echo "sudo apt install rocm-developer-tools"
-          sudo apt install rocm-developer-tools
+          curl -O https://repo.radeon.com/rocm/rocm.gpg.key
+          sudo apt-key add rocm.gpg.key
+          echo 'deb [arch=amd64] https://repo.radeon.com/rocm/apt/debian/ ubuntu main' \
+            | sudo tee /etc/apt/sources.list.d/rocm.list
+          echo 'export PATH=/opt/rocm/llvm/bin:/opt/rocm/bin:/opt/rocm/profiler/bin:/opt/rocm/opencl/bin:$PATH' \
+            | sudo tee -a /etc/profile.d/rocm.sh
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+          build-essential \
+          gfortran        \
+          libnuma-dev     \
+          libopenmpi-dev  \
+          openmpi-bin     \
+          rocm-dev        \
+          roctracer-dev   \
+          rocprofiler-dev \
+          rocrand-dev     \
+          rocprim-dev
+          source /etc/profile.d/rocm.sh
+          hipcc --version
+          which clang
+          which clang++
+          which flang
 
 #      - name: Set Environment Variables
 #        run: |
