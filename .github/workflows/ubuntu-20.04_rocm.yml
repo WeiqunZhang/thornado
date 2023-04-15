@@ -40,6 +40,8 @@ jobs:
           echo ""
           echo "groups"
           groups
+          echo ""
+          echo "sudo usermod -a -G render $LOGNAME"
           sudo usermod -a -G render $LOGNAME
           echo ""
           echo "groups"
