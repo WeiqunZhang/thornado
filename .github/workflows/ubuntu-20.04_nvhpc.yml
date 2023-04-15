@@ -14,8 +14,9 @@ jobs:
       NVHPC_SILENT: true
       NVHPC_MAJOR: 23
       NVHPC_MINOR: 3
-      CUDA_MAJOR: 11
-      CUDA_MINOR: 7
+      CUDA_MAJOR: 12
+      CUDA_MINOR: 1
+      UBUNTU_VERSION: 2004
     steps:
       - name: Checkout thornado
         uses: actions/checkout@v3
@@ -51,13 +52,14 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
 
+      # https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
       - name: Download and install cuda
         run: |
-          wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-          sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-          wget https://developer.download.nvidia.com/compute/cuda/12.1.0/local_installers/cuda-repo-ubuntu2004-12-1-local_12.1.0-530.30.02-1_amd64.deb
-          sudo dpkg -i cuda-repo-ubuntu2004-12-1-local_12.1.0-530.30.02-1_amd64.deb
-          sudo cp /var/cuda-repo-ubuntu2004-12-1-local/cuda-*-keyring.gpg /usr/share/keyrings/
+          wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin
+          sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600
+          wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
+          sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
+          sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-*-keyring.gpg /usr/share/keyrings/
           sudo apt-get update
           sudo apt-get -y install cuda
 
