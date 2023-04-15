@@ -65,8 +65,8 @@ jobs:
           echo "sudo apt install rocm-opencl-runtime"
           sudo apt install rocm-opencl-runtime
           echo ""
-          echo "sudo apt install rocm-hip-runtime-dev"
-          sudo apt install rocm-hip-runtime-dev
+          echo "sudo apt install rocm-hip-runtime-devel"
+          sudo apt install rocm-hip-runtime-devel
           echo ""
           echo "sudo apt install rocm-opencl-sdk"
           sudo apt install rocm-opencl-sdk
