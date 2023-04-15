@@ -56,6 +56,9 @@ jobs:
           echo "sudo apt install amdgpu-dkms"
           sudo apt install amdgpu-dkms
           echo ""
+          echo "sudo apt-get install rocm-dev"
+          sudo apt-get install rocm-dev
+          echo ""
           echo "sudo apt-get install rocm-language-runtime"
           sudo apt-get install rocm-language-runtime
           echo ""
