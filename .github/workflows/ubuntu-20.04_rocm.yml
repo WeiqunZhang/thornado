@@ -36,18 +36,9 @@ jobs:
           echo ""
           echo "sudo apt list --installed | grep 'wget\|gnupg2'"
           sudo apt list --installed | grep 'wget\|gnupg2'
-          #sudo apt-get install wget gnupg2
-          echo ""
-          echo "groups"
-          groups
-          echo ""
-          echo "sudo usermod -a -G render $LOGNAME"
-          sudo usermod -a -G render $LOGNAME
-          echo ""
-          echo "groups"
-          groups
-          #sudo dpkg -l | grep linux-headers
-          #sudo dpkg -l | grep linux-modules-extra
+          sudo dpkg -l | grep linux-headers
+          sudo dpkg -l | grep linux-modules-extra
+          sudo apt install linux-headers-`uname -r` linux-modules-extra-`uname -r`
 
 #      - name: Set Environment Variables
 #        run: |
