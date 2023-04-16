@@ -80,17 +80,17 @@ jobs:
           echo "find /usr -iname \"*curand*\""
                 find /usr -iname "*curand*"
           echo ""
-          echo "apt search cuda"
-                apt search cuda
+          echo "sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
           echo "apt search libcuda"
                 apt search libcuda
-          echo ""
-          echo "apt search cublas"
-                apt search cublas
-          echo ""
-          echo "apt search cusolver"
-                apt search cusolver
 
                #      # https://developer.nvidia.com/hpc-sdk-downloads
                #      - name: Download and install nvhpc
