@@ -88,6 +88,18 @@ jobs:
           echo ""
           echo "find /usr -iname \"*cuda.h\""
                 find /usr -iname "*cuda.h"
+          echo ""
+          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}"
+                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}
+          echo ""
+          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux"
+                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux
+          echo ""
+          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include"
+                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include
+          echo ""
+          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib"
+                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib
 
 #      - name: Download and Install openmpi
 #        run: |
