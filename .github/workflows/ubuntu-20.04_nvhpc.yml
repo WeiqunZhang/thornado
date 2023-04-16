@@ -41,26 +41,26 @@ jobs:
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
           echo ""
-          echo sudo apt-get install -y cuda-command-line-tools-12-0
-               sudo apt-get install -y cuda-command-line-tools-12-0
+          echo "sudo apt-get install -y cuda-command-line-tools-12-0"
+                sudo apt-get install -y cuda-command-line-tools-12-0
           echo ""
-          echo sudo apt-get install -y cuda-compiler-12-0
-               sudo apt-get install -y cuda-compiler-12-0
+          echo "sudo apt-get install -y cuda-compiler-12-0"
+                sudo apt-get install -y cuda-compiler-12-0
           echo ""
-          echo sudo apt-get install -y cuda-cupti-dev-12-0
-               sudo apt-get install -y cuda-cupti-dev-12-0
+          echo "sudo apt-get install -y cuda-cupti-dev-12-0"
+                sudo apt-get install -y cuda-cupti-dev-12-0
           echo ""
-          echo sudo apt-get install -y cuda-minimal-build-12-0
-               sudo apt-get install -y cuda-minimal-build-12-0
+          echo "sudo apt-get install -y cuda-minimal-build-12-0"
+                sudo apt-get install -y cuda-minimal-build-12-0
           echo ""
-          echo sudo apt-get install -y cuda-nvml-dev-12-0
-               sudo apt-get install -y cuda-nvml-dev-12-0
+          echo "sudo apt-get install -y cuda-nvml-dev-12-0"
+                sudo apt-get install -y cuda-nvml-dev-12-0
           echo ""
-          echo sudo apt-get install -y cuda-nvtx-12-0
-               sudo apt-get install -y cuda-nvtx-12-0
+          echo "sudo apt-get install -y cuda-nvtx-12-0"
+                sudo apt-get install -y cuda-nvtx-12-0
           echo ""
-          echo sudo apt-get install -y libcurand-dev-12-0
-               sudo apt-get install -y libcurand-dev-12-0
+          echo "sudo apt-get install -y libcurand-dev-12-0"
+                sudo apt-get install -y libcurand-dev-12-0
           echo ""
           echo find /opt -iname "*libcuda*"
                find /opt -iname "*libcuda*"
