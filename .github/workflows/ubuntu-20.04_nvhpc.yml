@@ -37,4 +37,123 @@ jobs:
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
         run: |
-          find /usr -iname "*mpi.mod"
+          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
+            | sudo gpg --dearmor -o \
+            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
+            | sudo tee /etc/apt/sources.list.d/nvhpc.list
+          sudo apt-get update -y
+          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+
+      - name: Download and Install cuda
+        run: |
+          echo ""
+          echo "curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb"
+                curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
+          echo ""
+          echo "sudo dpkg -i cuda-keyring_1.0-1_all.deb"
+                sudo dpkg -i cuda-keyring_1.0-1_all.deb
+          echo ""
+          echo "sudo apt-get update"
+                sudo apt-get update
+          echo ""
+          echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "find /usr -iname \"*cublas*\""
+                find /usr -iname "*cublas*"
+          echo ""
+          echo "find /usr -iname \"*cusparse*\""
+                find /usr -iname "*cusparse*"
+          echo ""
+          echo "find /usr -iname \"*cusolver*\""
+                find /usr -iname "*cusolver*"
+          echo ""
+          echo "find /usr -iname \"*cudart*\""
+                find /usr -iname "*cudart*"
+          echo ""
+          echo "find /usr -iname \"*libcuda*\""
+                find /usr -iname "*libcuda*"
+          echo ""
+          echo "ls"
+                ls
+          echo "sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda"
+                sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda
+
+      - name: Set Environment Variables
+        run: |
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+          echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
+          echo "OMPI_ROOT=/usr/lib/${ARCH}-linux-gnu/openmpi" >> ${GITHUB_ENV}
+          echo "OMPI_ROOT2=/usr/lib/${ARCH}-linux-gnu/fortran/gfortran-mod-15/openmpi" >> ${GITHUB_ENV}
+
+          #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+          #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+
+#      # Compilation flags for nvhpc from
+#      # https://forums.developer.nvidia.com/t/
+#      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
+#      - name: Download, Compile, and Install hdf5 with nvhpc
+#        run: |
+#          mkdir ${HDF5_DIR}
+#          cd ${HDF5_DIR}
+#          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
+#          tar zxf hdf5-1.14.0.tar.gz
+#          mkdir built_fortran
+#          cd built_fortran
+#          ../hdf5-1.14.0/configure --prefix=${HDF5_DIR} \
+#          --enable-shared --enable-static \
+#          --enable-fortran --enable-hl --enable-parallel \
+#          CC=mpicc FC=mpifort F77=mpifort CPP=cpp \
+#          CFLAGS="-fPIC -O1 -tp px -nomp" \
+#          FCFLAGS="-fPIC -O1 -tp px -nomp" \
+#          FFLAGS="-fPIC -O1 -tp px -nomp"
+#          make -j -l6
+#          make install
+
+      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+        run: |
+          source /etc/profile.d/modules.sh
+          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+          make OPT_LEVEL=DEBUG \
+               HYDRO=RELATIVISTIC \
+               USE_GPU=TRUE \
+               USE_OACC=TRUE \
+               USE_CUBLAS=TRUE \
+               ApplicationDriver
+          make clobber
+
+#
+#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+#        run: |
+#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+#          make OPT_LEVEL=DEBUG \
+#               USE_GPU=TRUE \
+#               USE_OACC=TRUE \
+#               USE_CUBLAS=TRUE \
+#               ApplicationDriver
+#          make clobber
+#
+#      - name: Compile SandBox/TwoMoment_OrderV/Executables
+#        run: |
+#          cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables
+#          make OPT_LEVEL=DEBUG \
+#               USE_GPU=TRUE \
+#               USE_OACC=TRUE \
+#               USE_CUBLAS=TRUE \
+#               ApplicationDriver
+#          make clobber
