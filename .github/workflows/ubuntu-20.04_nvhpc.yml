@@ -109,15 +109,20 @@ jobs:
 
       - name: Download and Install openmpi
         run: |
-          sudo apt-get libevent-dev
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
           gunzip -c openmpi-4.1.5.tar.gz | tar xf -
           cd openmpi-4.1.5
-          ./configure CC=nvcc CXX=nvc++ F77=nvfortran FC=nvfortran \
-                      CFLAGS="-m64 -fPIC" CXXFLAGS="-m64 -fPIC" FFLAGS="-m64 -fPIC" FCFLAGS="-m64 -fPIC" \
-                      --prefix=/usr/local/openmpi-4.1.5_nvhpc
+          ./configure --prefix=/usr/local/openmpi-4.1.5_nvhpc \
+                      --with-cuda=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux \
+                      --enable-mpi-fortran \
+                      --enable-mpi-ext=cuda \
+                      --with-hwloc=inteernal \
+                      --with-pmix=internal \
+                      CC=`which nvcc` CXX=`which nvc++` \
+                      F77=`which nvfortran` FC=`which nvfortran` \
+                      CFLAGS="-m64 -fPIC" CXXFLAGS="-m64 -fPIC" FFLAGS="-m64 -fPIC" FCFLAGS="-m64 -fPIC"
           make all install
           echo ""
           echo "find /usr -iname \"*mpi.mod\""
