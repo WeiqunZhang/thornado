@@ -37,36 +37,17 @@ jobs:
       # target_type=deb_local
       - name: Download and install cuda
         run: |
-          echo ""
-          echo "wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin"
-                wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin
-          echo ""
-          echo "sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600"
-                sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600
-          echo ""
-          echo "wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
-                wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
-          echo ""
-          echo "sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
-                sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
-          echo "sudo apt-get update"
-                sudo apt-get update
-          echo "sudo apt-get install -y \\"
-          echo "  cuda-command-line-tools-12-0 \\"
-          echo "  cuda-compiler-12-0           \\"
-          echo "  cuda-cupti-dev-12-0          \\"
-          echo "  cuda-minimal-build-12-0      \\"
-          echo "  cuda-nvml-dev-12-0           \\"
-          echo "  cuda-nvtx-12-0               \\"
-          echo "  libcurand-dev-12-0"
+          curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
+          sudo dpkg -i cuda-keyring_1.0-1_all.deb
+          sudo apt-get update
           sudo apt-get install -y \
-            cuda-command-line-tools-12-0 \
-            cuda-compiler-12-0           \
-            cuda-cupti-dev-12-0          \
-            cuda-minimal-build-12-0      \
-            cuda-nvml-dev-12-0           \
-            cuda-nvtx-12-0               \
-            libcurand-dev-12-0
+              cuda-command-line-tools-12-0 \
+              cuda-compiler-12-0           \
+              cuda-cupti-dev-12-0          \
+              cuda-minimal-build-12-0      \
+              cuda-nvml-dev-12-0           \
+              cuda-nvtx-12-0               \
+              libcurand-dev-12-0
           echo find /opt/ -iname "*libcuda*"
                find /opt/ -iname "*libcuda*"
           echo find /opt/ -iname "*cudart*"
