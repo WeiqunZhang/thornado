@@ -31,19 +31,18 @@ jobs:
         run: |
           sudo apt-get -qqq update
           sudo apt-get install -y \
-            environment-modules \
-            libopenmpi-dev
+            environment-modules
 
-      # https://developer.nvidia.com/hpc-sdk-downloads
-      - name: Download and install nvhpc
-        run: |
-          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
-            | sudo gpg --dearmor -o \
-            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
-          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
-            | sudo tee /etc/apt/sources.list.d/nvhpc.list
-          sudo apt-get update -y
-          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+#      # https://developer.nvidia.com/hpc-sdk-downloads
+#      - name: Download and install nvhpc
+#        run: |
+#          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
+#            | sudo gpg --dearmor -o \
+#            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+#          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
+#            | sudo tee /etc/apt/sources.list.d/nvhpc.list
+#          sudo apt-get update -y
+#          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
 
       - name: Download and Install cuda
         run: |
@@ -86,7 +85,16 @@ jobs:
           echo ""
           echo "find /usr -iname \"*libcuda*\""
                 find /usr -iname "*libcuda*"
+          echo ""
+          echo "find /usr -iname \"*cuda.h\""
+                find /usr -iname "*cuda.h"
 
+#      - name: Download and Install openmpi
+#        run: |
+#          ./configure CC=nvcc CXX=nvc++ F77=nvfortran FC=nvfortran \
+#                      CFLAGS=-m64 CXXFLAGS=-m64 FFLAGS=-m64 FCFLAGS=-m64 \
+#      --with-cuda=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/ \
+#      --with-cuda-libdir=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib
       - name: Set Environment Variables
         run: |
           echo ""
