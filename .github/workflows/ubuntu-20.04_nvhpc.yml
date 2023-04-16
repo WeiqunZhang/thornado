@@ -121,11 +121,7 @@ jobs:
             CC=`which nvcc` \
             CXX=`which nvc++` \
             F77=`which nvfortran` \
-            FC=`which nvfortran` \
-            CFLAGS="-m64 -fPIC" \
-            CXXFLAGS="-m64 -fPIC" \
-            FFLAGS="-m64 -fPIC" \
-            FCFLAGS="-m64 -fPIC"
+            FC=`which nvfortran`
           make all install
           echo ""
           echo "find /usr -iname \"*mpi.mod\""
