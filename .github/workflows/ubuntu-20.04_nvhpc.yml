@@ -32,6 +32,9 @@ jobs:
           sudo apt-get -qqq update
           sudo apt-get install -y environment-modules
 
+      # https://developer.nvidia.com/cuda-downloads?target_os=Linux&
+      # target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&
+      # target_type=deb_local
       - name: Download and install cuda
         run: |
           echo ""
@@ -43,9 +46,6 @@ jobs:
           echo ""
           echo "wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
                 wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
-#          echo ""
-#          echo "sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-D8BCD751-keyring.gpg /usr/share/keyrings/"
-#                sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-D8BCD751-keyring.gpg /usr/share/keyrings/
           echo ""
           echo "sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
                 sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
@@ -96,6 +96,15 @@ jobs:
           nvc++ --version
           nvc --version
           nvfortran --version
+
+#      - name: Set Environment Variables
+#        run: |
+#          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
+#          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+#          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+#          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+#          echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
+#          echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
 
 #      # https://docs.nvidia.com/hpc-sdk/hpc-sdk-install-guide/index.html
 #      - name: Download and Install nvhpc; Set nvhpc Environment Variables
