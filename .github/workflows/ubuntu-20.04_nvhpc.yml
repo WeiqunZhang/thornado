@@ -116,9 +116,7 @@ jobs:
           cd openmpi-4.1.5
           ./configure CC=nvcc CXX=nvc++ F77=nvfortran FC=nvfortran \
                       CFLAGS=-m64 CXXFLAGS=-m64 FFLAGS=-m64 FCFLAGS=-m64 \
-                      --prefix=/usr/local/openmpi-4.1.5_nvhpc \
-                      --with-cuda=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/ \
-                      --with-cuda-libdir=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib
+                      --prefix=/usr/local/openmpi-4.1.5_nvhpc
           make all install
           echo ""
           echo "find /usr -iname \"*mpi.mod\""
@@ -134,9 +132,8 @@ jobs:
           echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
           echo "OMPI_ROOT=/usr/lib/${ARCH}-linux-gnu/openmpi" >> ${GITHUB_ENV}
           echo "OMPI_ROOT2=/usr/lib/${ARCH}-linux-gnu/fortran/gfortran-mod-15/openmpi" >> ${GITHUB_ENV}
-
-          #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-          #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+#          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+#          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
 
 #      # Compilation flags for nvhpc from
 #      # https://forums.developer.nvidia.com/t/
@@ -172,7 +169,6 @@ jobs:
                ApplicationDriver
           make clobber
 
-#
 #      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
 #        run: |
 #          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
