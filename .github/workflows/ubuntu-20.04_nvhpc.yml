@@ -43,9 +43,6 @@ jobs:
             | sudo tee /etc/apt/sources.list.d/nvhpc.list
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
-          source /etc/profile.d/modules.sh
-          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-          nvcc --version
 
       - name: Download and Install cuda
         run: |
@@ -123,7 +120,6 @@ jobs:
                       --enable-mpi-fortran \
                       --enable-mpi-ext=cuda \
                       --with-hwloc=internal \
-                      --with-pmix=internal \
                       CC=`which nvcc` \
                       CXX=`which nvc++` \
                       F77=`which nvfortran` \
