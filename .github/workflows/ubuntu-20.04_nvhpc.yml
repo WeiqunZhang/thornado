@@ -62,14 +62,14 @@ jobs:
           echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
                 sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo "sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo "sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo "sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
           echo "find /usr -iname \"*cublas*\""
                 find /usr -iname "*cublas*"
@@ -89,11 +89,8 @@ jobs:
           echo "find /usr -iname \"*curand*\""
                 find /usr -iname "*curand*"
           echo ""
-          echo "sudo apt search libcurand"
-                sudo apt search libcurand
-          echo ""
-          echo "sudo apt search libcublas"
-                sudo apt search libcublas
+          echo "sudo apt search libcuda"
+                sudo apt search libcuda
 
                #      # https://developer.nvidia.com/hpc-sdk-downloads
                #      - name: Download and install nvhpc
