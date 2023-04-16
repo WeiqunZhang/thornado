@@ -33,9 +33,6 @@ jobs:
           sudo apt-get install -y \
             environment-modules \
             libopenmpi-dev
-          echo ""
-          echo "find /usr -iname \"*mpi.mod*\""
-                find /usr -iname "*mpi.mod*"
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
@@ -92,6 +89,9 @@ jobs:
 
       - name: Set Environment Variables
         run: |
+          echo ""
+          echo "find /usr -iname \"*mpi.mod*\""
+                find /usr -iname "*mpi.mod*"
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
