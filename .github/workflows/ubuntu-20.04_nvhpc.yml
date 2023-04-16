@@ -32,6 +32,18 @@ jobs:
           sudo apt-get -qqq update
           sudo apt-get install -y environment-modules
 
+
+      # https://developer.nvidia.com/hpc-sdk-downloads
+      - name: Download and install nvhpc
+        run: |
+          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
+            | sudo gpg --dearmor -o \
+            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
+            | sudo tee /etc/apt/sources.list.d/nvhpc.list
+          sudo apt-get update -y
+          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+
       # https://developer.nvidia.com/cuda-downloads?target_os=Linux&
       # target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&
       # target_type=deb_local
@@ -41,23 +53,8 @@ jobs:
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
           echo ""
-          echo "sudo apt-get install -y cuda-command-line-tools-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-command-line-tools-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
           echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
                 sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y cuda-cupti-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-cupti-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y cuda-minimal-build-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-minimal-build-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y cuda-nvml-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-nvml-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y cuda-nvtx-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-nvtx-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
           echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
                 sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
@@ -85,17 +82,6 @@ jobs:
           echo ""
           echo "find /usr -iname \"*libcuda*\""
                 find /usr -iname "*libcuda*"
-
-      # https://developer.nvidia.com/hpc-sdk-downloads
-      - name: Download and install nvhpc
-        run: |
-          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
-            | sudo gpg --dearmor -o \
-            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
-          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
-            | sudo tee /etc/apt/sources.list.d/nvhpc.list
-          sudo apt-get update -y
-          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
 
       - name: Set Environment Variables
         run: |
