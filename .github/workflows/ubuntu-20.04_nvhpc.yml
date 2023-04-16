@@ -32,15 +32,6 @@ jobs:
           sudo apt-get -qqq update
           sudo apt-get install -y environment-modules
 
-      - name: Set Environment Variables
-        run: |
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-          echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
-          echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
-
       - name: Download and install cuda
         run: |
           echo ""
