@@ -82,6 +82,8 @@ jobs:
           echo ""
           echo "find /usr -iname \"*libcuda*\""
                 find /usr -iname "*libcuda*"
+          echo "sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda"
+                sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda
 
       - name: Set Environment Variables
         run: |
