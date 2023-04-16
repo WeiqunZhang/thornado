@@ -43,6 +43,9 @@ jobs:
             | sudo tee /etc/apt/sources.list.d/nvhpc.list
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+          source /etc/profile.d/modules.sh
+          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+          nvcc --version
 
       - name: Download and Install cuda
         run: |
@@ -111,6 +114,7 @@ jobs:
         run: |
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+          nvcc --version
           wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
           gunzip -c openmpi-4.1.5.tar.gz | tar xf -
           cd openmpi-4.1.5
