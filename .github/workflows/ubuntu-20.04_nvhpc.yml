@@ -119,7 +119,6 @@ jobs:
                       --with-cuda=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux \
                       --enable-mpi-fortran \
                       --enable-mpi-ext=cuda \
-                      --with-hwloc=internal \
                       CC=`which nvcc` \
                       CXX=`which nvc++` \
                       F77=`which nvfortran` \
