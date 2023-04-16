@@ -37,7 +37,7 @@ jobs:
       # target_type=deb_local
       - name: Download and install cuda
         run: |
-          curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
+          curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
           echo ""
@@ -62,41 +62,35 @@ jobs:
           echo "sudo apt-get install -y libcurand-dev-12-0"
                 sudo apt-get install -y libcurand-dev-12-0
           echo ""
-          echo find /opt -iname "*libcuda*"
-               find /opt -iname "*libcuda*"
+          echo "find /usr -iname \"*cublas*\""
+                find /usr -iname "*cublas*"
           echo ""
-          echo find /opt -iname "*cudart*"
-               find /opt -iname "*cudart*"
+          echo "find /usr -iname \"*libcuda*\""
+                find /usr -iname "*libcuda*"
           echo ""
-          echo find /opt -iname "*cusolver*"
-               find /opt -iname "*cusolver*"
+          echo "find /usr -iname \"*cudart*\""
+                find /usr -iname "*cudart*"
           echo ""
-          echo find /opt -iname "*cusparse*"
-               find /opt -iname "*cusparse*"
+          echo "find /usr -iname \"*cusolver*\""
+                find /usr -iname "*cusolver*"
           echo ""
-          echo find /opt -iname "*curand*"
-               find /opt -iname "*curand*"
+          echo "find /usr -iname \"*cusparse*\""
+                find /usr -iname "*cusparse*"
           echo ""
-          echo find /usr -iname "*libcuda*"
-               find /usr -iname "*libcuda*"
-          echo ""
-          echo find /usr -iname "*cudart*"
-               find /usr -iname "*cudart*"
-          echo ""
-          echo find /usr -iname "*cusolver*"
-               find /usr -iname "*cusolver*"
-          echo ""
-          echo find /usr -iname "*cusparse*"
-               find /usr -iname "*cusparse*"
-          echo ""
-          echo find /usr -iname "*curand*"
-               find /usr -iname "*curand*"
+          echo "find /usr -iname \"*curand*\""
+                find /usr -iname "*curand*"
           echo ""
           echo "apt search cuda"
                 apt search cuda
           echo ""
-          echo "apt show cuda"
-                apt show cuda
+          echo "apt search libcuda"
+                apt search libcuda
+          echo ""
+          echo "apt search cublas"
+                apt search cublas
+          echo ""
+          echo "apt search cusolver"
+                apt search cusolver
 
                #      # https://developer.nvidia.com/hpc-sdk-downloads
                #      - name: Download and install nvhpc
