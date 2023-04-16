@@ -33,6 +33,9 @@ jobs:
           sudo apt-get install -y \
             environment-modules \
             libopenmpi-dev
+          echo ""
+          echo "find /usr -iname \"*mpi.mod*\""
+                find /usr -iname "*mpi.mod*"
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
@@ -86,11 +89,6 @@ jobs:
           echo ""
           echo "find /usr -iname \"*libcuda*\""
                 find /usr -iname "*libcuda*"
-          echo ""
-          echo "ls"
-                ls
-          echo "sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda"
-                sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda
 
       - name: Set Environment Variables
         run: |
