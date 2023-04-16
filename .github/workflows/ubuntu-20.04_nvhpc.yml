@@ -92,8 +92,11 @@ jobs:
           echo find /usr -iname "*curand*"
                find /usr -iname "*curand*"
           echo ""
-          echo "apt-cache search cuda"
-                apt-cache search cuda
+          echo "apt search cuda"
+                apt search cuda
+          echo ""
+          echo "apt show cuda"
+                apt show cuda
 
                #      # https://developer.nvidia.com/hpc-sdk-downloads
                #      - name: Download and install nvhpc
