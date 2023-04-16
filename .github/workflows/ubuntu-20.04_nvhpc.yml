@@ -40,137 +40,149 @@ jobs:
           curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
+          echo ""
           echo sudo apt-get install -y cuda-command-line-tools-12-0
                sudo apt-get install -y cuda-command-line-tools-12-0
+          echo ""
           echo sudo apt-get install -y cuda-compiler-12-0
                sudo apt-get install -y cuda-compiler-12-0
+          echo ""
           echo sudo apt-get install -y cuda-cupti-dev-12-0
                sudo apt-get install -y cuda-cupti-dev-12-0
+          echo ""
           echo sudo apt-get install -y cuda-minimal-build-12-0
                sudo apt-get install -y cuda-minimal-build-12-0
+          echo ""
           echo sudo apt-get install -y cuda-nvml-dev-12-0
                sudo apt-get install -y cuda-nvml-dev-12-0
+          echo ""
           echo sudo apt-get install -y cuda-nvtx-12-0
                sudo apt-get install -y cuda-nvtx-12-0
+          echo ""
           echo sudo apt-get install -y libcurand-dev-12-0
                sudo apt-get install -y libcurand-dev-12-0
+          echo ""
           echo find / -iname "*libcuda*"
                find / -iname "*libcuda*"
+          echo ""
           echo find / -iname "*cudart*"
                find / -iname "*cudart*"
+          echo ""
           echo find / -iname "*cusolver*"
                find / -iname "*cusolver*"
+          echo ""
           echo find / -iname "*cusparse*"
                find / -iname "*cusparse*"
+          echo ""
           echo find / -iname "*curand*"
                find / -iname "*curand*"
 
-      # https://developer.nvidia.com/hpc-sdk-downloads
-      - name: Download and install nvhpc
-        run: |
-          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
-            | sudo gpg --dearmor -o \
-            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
-          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
-            | sudo tee /etc/apt/sources.list.d/nvhpc.list
-          sudo apt-get update -y
-          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
-
-      - name: Check nvhpc
-        run: |
-          echo ""
-          echo "cat /etc/profile.d/modules.sh"
-                cat /etc/profile.d/modules.sh
-          echo ""
-          echo "source /etc/profile.d/modules.sh"
-                source /etc/profile.d/modules.sh
-          echo "module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}"
-                module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-
-          which nvcc || echo "nvcc not in PATH!"
-          which nvc++ || echo "nvc++ not in PATH!"
-          which nvc || echo "nvc not in PATH!"
-          which nvfortran || echo "nvfortran not in PATH!"
-          nvcc --version
-          nvc++ --version
-          nvc --version
-          nvfortran --version
-
-#      - name: Set Environment Variables
-#        run: |
-#          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-#          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-#          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
-#          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-#          echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
-#          echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
-
-#      # https://docs.nvidia.com/hpc-sdk/hpc-sdk-install-guide/index.html
-#      - name: Download and Install nvhpc; Set nvhpc Environment Variables
-#        run: |
-#          mkdir ${NVHPC_DIR}
-#          cd ${NVHPC_DIR}
-#          wget https://developer.download.nvidia.com/hpc-sdk/${NVHPC_MAJOR}.${NVHPC_MINOR}/nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}.tar.gz
-#          tar xpzf nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}.tar.gz
-#          sudo nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}/install
-#          echo ${NVHPC_ROOT}/compilers/bin >> ${GITHUB_PATH}
-#          echo "CUDA_ROOT=${NVHPC_ROOT}/math_libs"    >> ${GITHUB_ENV}
-#          echo "CUDART_ROOT=${NVHPC_ROOT}/cuda"       >> ${GITHUB_ENV}
-#          echo "LAPACK_ROOT=${NVHPC_ROOT}/compilers"  >> ${GITHUB_ENV}
-#          echo "BLAS_ROOT=${NVHPC_ROOT}/compilers"    >> ${GITHUB_ENV}
-#          echo "MPI_ROOT=${NVHPC_ROOT}/comm_libs/mpi" >> ${GITHUB_ENV}
-#          echo ${NVHPC_ROOT}/comm_libs/mpi/bin >> ${GITHUB_PATH} # only needed for HDF5
-#
-      # Compilation flags for nvhpc from
-      # https://forums.developer.nvidia.com/t/
-#      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
-#      - name: Download, Compile, and Install hdf5 with nvhpc
-#        run: |
-#          mkdir ${HDF5_DIR}
-#          cd ${HDF5_DIR}
-#          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
-#          tar zxf hdf5-1.14.0.tar.gz
-#          mkdir built_fortran
-#          cd built_fortran
-#          ../hdf5-1.14.0/configure --prefix=${HDF5_DIR} \
-#          --enable-shared --enable-static \
-#          --enable-fortran --enable-hl --enable-parallel \
-#          CC=mpicc FC=mpifort F77=mpifort CPP=cpp \
-#          CFLAGS="-fPIC -O1 -tp px -nomp" \
-#          FCFLAGS="-fPIC -O1 -tp px -nomp" \
-#          FFLAGS="-fPIC -O1 -tp px -nomp"
-#          make -j -l6
-#          make install
-
-      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-        run: |
-          source /etc/profile.d/modules.sh
-          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-          make OPT_LEVEL=DEBUG \
-               HYDRO=RELATIVISTIC \
-               USE_GPU=TRUE \
-               USE_OACC=TRUE \
-               USE_CUBLAS=TRUE \
-               ApplicationDriver
-          make clobber
-#
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#          make OPT_LEVEL=DEBUG \
-#               USE_GPU=TRUE \
-#               USE_OACC=TRUE \
-#               USE_CUBLAS=TRUE \
-#               ApplicationDriver
-#          make clobber
-#
-#      - name: Compile SandBox/TwoMoment_OrderV/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables
-#          make OPT_LEVEL=DEBUG \
-#               USE_GPU=TRUE \
-#               USE_OACC=TRUE \
-#               USE_CUBLAS=TRUE \
-#               ApplicationDriver
-#          make clobber
+               #      # https://developer.nvidia.com/hpc-sdk-downloads
+               #      - name: Download and install nvhpc
+               #        run: |
+               #          curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
+               #            | sudo gpg --dearmor -o \
+               #            /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
+               #          echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
+               #            | sudo tee /etc/apt/sources.list.d/nvhpc.list
+               #          sudo apt-get update -y
+               #          sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+               #
+               #      - name: Check nvhpc
+               #        run: |
+               #          echo ""
+               #          echo "cat /etc/profile.d/modules.sh"
+               #                cat /etc/profile.d/modules.sh
+               #          echo ""
+               #          echo "source /etc/profile.d/modules.sh"
+               #                source /etc/profile.d/modules.sh
+               #          echo "module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}"
+               #                module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+               #
+               #          which nvcc || echo "nvcc not in PATH!"
+               #          which nvc++ || echo "nvc++ not in PATH!"
+               #          which nvc || echo "nvc not in PATH!"
+               #          which nvfortran || echo "nvfortran not in PATH!"
+               #          nvcc --version
+               #          nvc++ --version
+               #          nvc --version
+               #          nvfortran --version
+               #
+               ##      - name: Set Environment Variables
+               ##        run: |
+               ##          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
+               ##          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+               ##          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+               ##          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+               ##          echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
+               ##          echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
+               #
+               ##      # https://docs.nvidia.com/hpc-sdk/hpc-sdk-install-guide/index.html
+               ##      - name: Download and Install nvhpc; Set nvhpc Environment Variables
+               ##        run: |
+               ##          mkdir ${NVHPC_DIR}
+               ##          cd ${NVHPC_DIR}
+               ##          wget https://developer.download.nvidia.com/hpc-sdk/${NVHPC_MAJOR}.${NVHPC_MINOR}/nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}.tar.gz
+               ##          tar xpzf nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}.tar.gz
+               ##          sudo nvhpc_20${NVHPC_MAJOR}_${NVHPC_MAJOR}${NVHPC_MINOR}_${NVARCH}_cuda_${CUDA_MAJOR}.${CUDA_MINOR}/install
+               ##          echo ${NVHPC_ROOT}/compilers/bin >> ${GITHUB_PATH}
+               ##          echo "CUDA_ROOT=${NVHPC_ROOT}/math_libs"    >> ${GITHUB_ENV}
+               ##          echo "CUDART_ROOT=${NVHPC_ROOT}/cuda"       >> ${GITHUB_ENV}
+               ##          echo "LAPACK_ROOT=${NVHPC_ROOT}/compilers"  >> ${GITHUB_ENV}
+               ##          echo "BLAS_ROOT=${NVHPC_ROOT}/compilers"    >> ${GITHUB_ENV}
+               ##          echo "MPI_ROOT=${NVHPC_ROOT}/comm_libs/mpi" >> ${GITHUB_ENV}
+               ##          echo ${NVHPC_ROOT}/comm_libs/mpi/bin >> ${GITHUB_PATH} # only needed for HDF5
+               ##
+               #      # Compilation flags for nvhpc from
+               #      # https://forums.developer.nvidia.com/t/
+               ##      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
+               ##      - name: Download, Compile, and Install hdf5 with nvhpc
+               ##        run: |
+               ##          mkdir ${HDF5_DIR}
+               ##          cd ${HDF5_DIR}
+               ##          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
+               ##          tar zxf hdf5-1.14.0.tar.gz
+               ##          mkdir built_fortran
+               ##          cd built_fortran
+               ##          ../hdf5-1.14.0/configure --prefix=${HDF5_DIR} \
+               ##          --enable-shared --enable-static \
+               ##          --enable-fortran --enable-hl --enable-parallel \
+               ##          CC=mpicc FC=mpifort F77=mpifort CPP=cpp \
+               ##          CFLAGS="-fPIC -O1 -tp px -nomp" \
+               ##          FCFLAGS="-fPIC -O1 -tp px -nomp" \
+               ##          FFLAGS="-fPIC -O1 -tp px -nomp"
+               ##          make -j -l6
+               ##          make install
+               #
+               #      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+               #        run: |
+               #          source /etc/profile.d/modules.sh
+               #          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+               #          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+               #          make OPT_LEVEL=DEBUG \
+               #               HYDRO=RELATIVISTIC \
+               #               USE_GPU=TRUE \
+               #               USE_OACC=TRUE \
+               #               USE_CUBLAS=TRUE \
+               #               ApplicationDriver
+               #          make clobber
+               ##
+               ##      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+               ##        run: |
+               ##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+               ##          make OPT_LEVEL=DEBUG \
+               ##               USE_GPU=TRUE \
+               ##               USE_OACC=TRUE \
+               ##               USE_CUBLAS=TRUE \
+               ##               ApplicationDriver
+               ##          make clobber
+               ##
+               ##      - name: Compile SandBox/TwoMoment_OrderV/Executables
+               ##        run: |
+               ##          cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables
+               ##          make OPT_LEVEL=DEBUG \
+               ##               USE_GPU=TRUE \
+               ##               USE_OACC=TRUE \
+               ##               USE_CUBLAS=TRUE \
+               ##               ApplicationDriver
+               ##          make clobber
