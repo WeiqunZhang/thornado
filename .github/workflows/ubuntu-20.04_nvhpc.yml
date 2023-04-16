@@ -125,7 +125,7 @@ jobs:
               CFLAGS="-m64 -fPIC" \
             CXXFLAGS="-m64 -fPIC" \
              FCFLAGS="-m64 -fPIC"
-          make all install
+          sudo make all install
           echo ""
           echo "find /usr -iname \"*mpi.mod\""
                 find /usr -iname "*mpi.mod"
