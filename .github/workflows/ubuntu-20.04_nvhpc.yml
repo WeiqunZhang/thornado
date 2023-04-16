@@ -41,7 +41,9 @@ jobs:
           echo "NVHPC_DIR=${GITHUB_WORKSPACE}/nvhpc"     >> ${GITHUB_ENV}
           echo "NVHPC_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
 
-      # https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+      # https://developer.nvidia.com/cuda-downloads?target_os=Linux&\
+      # target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&\
+      # target_type=deb_local
       - name: Download and install cuda
         run: |
           echo ""
