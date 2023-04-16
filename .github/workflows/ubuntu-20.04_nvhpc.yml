@@ -15,7 +15,7 @@ jobs:
       NVHPC_MAJOR: 23
       NVHPC_MINOR: 3
       CUDA_MAJOR: 12
-      CUDA_MINOR: 1
+      CUDA_MINOR: 0
       UBUNTU_VERSION: 2004
     steps:
       - name: Checkout thornado
