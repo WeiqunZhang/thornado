@@ -41,26 +41,35 @@ jobs:
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
           echo ""
-          echo "sudo apt-get install -y cuda-command-line-tools-12-0"
-                sudo apt-get install -y cuda-command-line-tools-12-0
+          echo "sudo apt-get install -y cuda-command-line-tools-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-command-line-tools-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y cuda-compiler-12-0"
-                sudo apt-get install -y cuda-compiler-12-0
+          echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y cuda-cupti-dev-12-0"
-                sudo apt-get install -y cuda-cupti-dev-12-0
+          echo "sudo apt-get install -y cuda-cupti-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-cupti-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y cuda-minimal-build-12-0"
-                sudo apt-get install -y cuda-minimal-build-12-0
+          echo "sudo apt-get install -y cuda-minimal-build-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-minimal-build-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y cuda-nvml-dev-12-0"
-                sudo apt-get install -y cuda-nvml-dev-12-0
+          echo "sudo apt-get install -y cuda-nvml-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-nvml-dev-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y cuda-nvtx-12-0"
-                sudo apt-get install -y cuda-nvtx-12-0
+          echo "sudo apt-get install -y cuda-nvtx-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y cuda-nvtx-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
-          echo "sudo apt-get install -y libcurand-dev-12-0"
-                sudo apt-get install -y libcurand-dev-12-0
+          echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo ""
+          echo "sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}"
+                sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}
           echo ""
           echo "find /usr -iname \"*cublas*\""
                 find /usr -iname "*cublas*"
@@ -80,17 +89,11 @@ jobs:
           echo "find /usr -iname \"*curand*\""
                 find /usr -iname "*curand*"
           echo ""
-          echo "sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcublas-${CUDA_MAJOR}-${CUDA_MINOR}
+          echo "sudo apt search libcurand"
+                sudo apt search libcurand
           echo ""
-          echo "sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusolver-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusparse-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "apt search libcuda"
-                apt search libcuda
+          echo "sudo apt search libcublas"
+                sudo apt search libcublas
 
                #      # https://developer.nvidia.com/hpc-sdk-downloads
                #      - name: Download and install nvhpc
