@@ -32,7 +32,6 @@ jobs:
           sudo apt-get -qqq update
           sudo apt-get install -y environment-modules
 
-
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
         run: |
@@ -49,9 +48,15 @@ jobs:
       # target_type=deb_local
       - name: Download and install cuda
         run: |
-          curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
-          sudo dpkg -i cuda-keyring_1.0-1_all.deb
-          sudo apt-get update
+          echo ""
+          echo "curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb"
+                curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
+          echo ""
+          echo "sudo dpkg -i cuda-keyring_1.0-1_all.deb"
+                sudo dpkg -i cuda-keyring_1.0-1_all.deb
+          echo ""
+          echo "sudo apt-get update"
+                sudo apt-get update
           echo ""
           echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
                 sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
@@ -82,6 +87,9 @@ jobs:
           echo ""
           echo "find /usr -iname \"*libcuda*\""
                 find /usr -iname "*libcuda*"
+          echo ""
+          echo "ls"
+                ls
           echo "sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda"
                 sudo ln -s cuda-${CUDA_MAJOR}.${CUDA_MINOR} /usr/local/cuda
 
