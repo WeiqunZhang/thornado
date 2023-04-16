@@ -44,22 +44,46 @@ jobs:
       # https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
       - name: Download and install cuda
         run: |
-          wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin
-          sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600
-          wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
-          sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
-          sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-*-keyring.gpg /usr/share/keyrings/
-          sudo apt-get update
-          sudo apt-get -y install cuda
+          echo ""
+          echo "wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin"
+                wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/x86_64/cuda-ubuntu${UBUNTU_VERSION}.pin
+          echo ""
+          echo "sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600"
+                sudo mv cuda-ubuntu${UBUNTU_VERSION}.pin /etc/apt/preferences.d/cuda-repository-pin-600
+          echo ""
+          echo "wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
+                wget https://developer.download.nvidia.com/compute/cuda/${CUDA_MAJOR}.${CUDA_MINOR}.0/local_installers/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
+          echo ""
+          echo "sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-D8BCD751-keyring.gpg /usr/share/keyrings/"
+                sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-D8BCD751-keyring.gpg /usr/share/keyrings/
+          echo ""
+          echo "sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb"
+                sudo dpkg -i cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local_${CUDA_MAJOR}.${CUDA_MINOR}.0-530.30.02-1_amd64.deb
+          echo "sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-*-keyring.gpg /usr/share/keyrings/"
+                sudo cp /var/cuda-repo-ubuntu${UBUNTU_VERSION}-${CUDA_MAJOR}-${CUDA_MINOR}-local/cuda-*-keyring.gpg /usr/share/keyrings/
+          echo "sudo apt-get update"
+                sudo apt-get update
+          echo "sudo apt-get -y install cuda"
+                sudo apt-get -y install cuda
+          echo find /opt/ -iname "*libcuda*"
+               find /opt/ -iname "*libcuda*"
+          echo find /opt/ -iname "*cudart*"
+               find /opt/ -iname "*cudart*"
+          echo find /opt/ -iname "*cusolver*"
+               find /opt/ -iname "*cusolver*"
+          echo find /opt/ -iname "*cusparse*"
+               find /opt/ -iname "*cusparse*"
+          echo find /opt/ -iname "*curand*"
+               find /opt/ -iname "*curand*"
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
         run: |
           curl https://developer.download.nvidia.com/hpc-sdk/ubuntu/DEB-GPG-KEY-NVIDIA-HPC-SDK \
-          | sudo gpg --dearmor -o \
+            | sudo gpg --dearmor -o \
             /usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg
           echo 'deb [signed-by=/usr/share/keyrings/nvidia-hpcsdk-archive-keyring.gpg] https://developer.download.nvidia.com/hpc-sdk/ubuntu/amd64 /' \
-          | sudo tee /etc/apt/sources.list.d/nvhpc.list
+            | sudo tee /etc/apt/sources.list.d/nvhpc.list
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
 
