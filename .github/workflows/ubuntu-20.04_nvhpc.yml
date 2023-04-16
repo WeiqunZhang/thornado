@@ -40,24 +40,30 @@ jobs:
           curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
           sudo dpkg -i cuda-keyring_1.0-1_all.deb
           sudo apt-get update
-          sudo apt-get install -y \
-              cuda-command-line-tools-12-0 \
-              cuda-compiler-12-0           \
-              cuda-cupti-dev-12-0          \
-              cuda-minimal-build-12-0      \
-              cuda-nvml-dev-12-0           \
-              cuda-nvtx-12-0               \
-              libcurand-dev-12-0
-          echo find /opt/ -iname "*libcuda*"
-               find /opt/ -iname "*libcuda*"
-          echo find /opt/ -iname "*cudart*"
-               find /opt/ -iname "*cudart*"
-          echo find /opt/ -iname "*cusolver*"
-               find /opt/ -iname "*cusolver*"
-          echo find /opt/ -iname "*cusparse*"
-               find /opt/ -iname "*cusparse*"
-          echo find /opt/ -iname "*curand*"
-               find /opt/ -iname "*curand*"
+          echo sudo apt-get install -y cuda-command-line-tools-12-0
+               sudo apt-get install -y cuda-command-line-tools-12-0
+          echo sudo apt-get install -y cuda-compiler-12-0
+               sudo apt-get install -y cuda-compiler-12-0
+          echo sudo apt-get install -y cuda-cupti-dev-12-0
+               sudo apt-get install -y cuda-cupti-dev-12-0
+          echo sudo apt-get install -y cuda-minimal-build-12-0
+               sudo apt-get install -y cuda-minimal-build-12-0
+          echo sudo apt-get install -y cuda-nvml-dev-12-0
+               sudo apt-get install -y cuda-nvml-dev-12-0
+          echo sudo apt-get install -y cuda-nvtx-12-0
+               sudo apt-get install -y cuda-nvtx-12-0
+          echo sudo apt-get install -y libcurand-dev-12-0
+               sudo apt-get install -y libcurand-dev-12-0
+          echo find / -iname "*libcuda*"
+               find / -iname "*libcuda*"
+          echo find / -iname "*cudart*"
+               find / -iname "*cudart*"
+          echo find / -iname "*cusolver*"
+               find / -iname "*cusolver*"
+          echo find / -iname "*cusparse*"
+               find / -iname "*cusparse*"
+          echo find / -iname "*curand*"
+               find / -iname "*curand*"
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
