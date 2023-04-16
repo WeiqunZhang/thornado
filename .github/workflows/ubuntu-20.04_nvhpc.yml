@@ -30,7 +30,9 @@ jobs:
       - name: Update Ubuntu
         run: |
           sudo apt-get -qqq update
-          sudo apt-get install -y environment-modules
+          sudo apt-get install -y \
+            environment-modules \
+            libopenmpi-dev
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
