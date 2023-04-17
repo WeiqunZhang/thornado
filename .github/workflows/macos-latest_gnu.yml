@@ -33,6 +33,7 @@ jobs:
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install gcc
+          brew install gfortran
           brew install open-mpi
           brew install hdf5
           brew install lapack
@@ -42,6 +43,9 @@ jobs:
           echo ""
           echo "gcc --version"
                 gcc --version
+          echo ""
+          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin/gcc --version"
+                /usr/local/Cellar/gcc/${GCC_VERSION}/bin/gcc --version
           echo ""
           echo "which gfortran"
                 which gfortran
