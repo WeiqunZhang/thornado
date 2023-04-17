@@ -149,9 +149,13 @@ jobs:
           echo ""
           echo "ls /opt/nvidia/hpc_sdk/modulefiles/*/*"
                 ls /opt/nvidia/hpc_sdk/modulefiles/*/*
-          echo "{GITHUB_ENV}=/usr/lib:${GITHUB_ENV}" >> ${GITHUB_ENV}
+          echo ""
+          echo "cat /opt/nvidia/hpc_sdk/modulefiles/nvhpc/23.3"
+                cat /opt/nvidia/hpc_sdk/modulefiles/nvhpc/23.3
+          echo "{GITHUB_ENV}=/usr/lib:${GITHUB_ENV}"     >> ${GITHUB_ENV}
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+          echo ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
 #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
 
