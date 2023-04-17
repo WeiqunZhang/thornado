@@ -106,6 +106,15 @@ jobs:
             | sudo tee /etc/apt/sources.list.d/nvhpc.list
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/"
+                ls /opt/nvidia/hpc_sdk/
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/*"
+                ls /opt/nvidia/hpc_sdk/*
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/*/*"
+                ls /opt/nvidia/hpc_sdk/*/*
 
       - name: Download and Install openmpi
         run: |
@@ -137,7 +146,6 @@ jobs:
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
           echo "OMPI_ROOT=/usr/local/openmpi-4.1.5_nvhpc" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT2=/usr/lib/${ARCH}-linux-gnu/fortran/gfortran-mod-15/openmpi" >> ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
 #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
 
