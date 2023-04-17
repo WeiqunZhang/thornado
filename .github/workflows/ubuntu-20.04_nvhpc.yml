@@ -53,20 +53,14 @@ jobs:
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cat /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           echo ""
-          echo "echo ${nvcommdir}"
-                echo ${nvcommdir}
+          echo "echo ${NVHPC_ROOT}"
+                echo ${NVHPC_ROOT}
           echo ""
-          echo "echo ${nvcommdir}/mpi"
-                echo ${nvcommdir}/mpi
+          echo "echo ${NVHPC_ROOT}/comm_libs"
+                echo ${NVHPC_ROOT}/comm_libs
           echo ""
-          echo "echo ${nvcommdir}/mpi/*"
-                echo ${nvcommdir}/mpi/*
-          echo ""
-          echo "echo ${nvcommdir}/mpi/*/*"
-                echo ${nvcommdir}/mpi/*/*
-          echo ""
-          echo "sudo ln -s ${nvcommdir}/openmpi4/openmpi-4.0.5/lib/mpi.mod ${nvcommdir}/mpi/include"
-          sudo ln -s $nvcommdir/openmpi4/openmpi-4.0.5/lib/mpi.mod $nvcommdir/mpi/include
+          echo "sudo ln -s ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod ${NVHPC_ROOT}/comm_libs/mpi/include"
+                sudo ln -s ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod ${NVHPC_ROOT}/comm_libs/mpi/include
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "OMPI_ROOT=${nvcommdir}/openmpi4/openmpi-4.0.5" >> ${GITHUB_ENV}
