@@ -59,8 +59,6 @@ jobs:
       # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
       - name: Download, Compile, and Install hdf5 with nvhpc
         run: |
-          source /etc/profile.d/modules.sh
-          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           mkdir ${HDF5_DIR}
           cd ${HDF5_DIR}
           wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
@@ -74,15 +72,19 @@ jobs:
           --enable-fortran \
           --enable-hl \
           --enable-parallel \
-          CC=mpic \
-          FC=mpifort \
-          F77=mpifort \
+           CC=`which mpicc` \
+           FC=`which mpifort` \
+          F77=`which mpifort` \
           CPP=cpp \
            CFLAGS="-fPIC -O1 -tp px -nomp" \
           FCFLAGS="-fPIC -O1 -tp px -nomp" \
            FFLAGS="-fPIC -O1 -tp px -nomp"
           make -j -l6
           make install
+          cat /etc/profile.d/modules.sh
+          source /etc/profile.d/modules.sh
+          module load \
+            /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           sudo ln -s \
           ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
           ${HDF5_DIR}/include/mpi.mod
