@@ -93,6 +93,7 @@ jobs:
           sudo ln -s \
           ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
           /include
+          sudo ls /include
           make OPT_LEVEL=DEBUG \
                HYDRO=RELATIVISTIC \
                USE_GPU=TRUE \
