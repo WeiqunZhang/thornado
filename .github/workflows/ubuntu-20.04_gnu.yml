@@ -38,10 +38,18 @@ jobs:
           echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                    >> ${GITHUB_ENV}
           echo "HDF5_INC=/usr/lib/x86_64-linux-gnu/hdf5/serial/include" >> ${GITHUB_ENV}
           echo "HDF5_LIB=/usr/lib/x86_64-linux-gnu/hdf5/serial/lib"     >> ${GITHUB_ENV}
-          echo "LAPACK_LIB=/usr/lib/x86_64-linux-gnu/lapack"            >> ${GITHUB_ENV}
-          echo "BLAS_LIB=/usr/lib/x86_64-linux-gnu/lapack"              >> ${GITHUB_ENV}
+          echo "LAPACK_LIB=/usr/lib/x86_64-linux-gnu"                   >> ${GITHUB_ENV}
+          echo "BLAS_LIB=/usr/lib/x86_64-linux-gnu"                     >> ${GITHUB_ENV}
+          echo ""
+          echo "find /usr -iname \"*hdf5.mod*\""
+                find /usr -iname  "*hdf5.mod*"
+          echo ""
+          echo "find /usr -iname \"*libhdf5*\""
+                find /usr -iname  "*libhdf5*"
+          echo ""
           echo "find /usr -iname \"liblapack\""
                 find /usr -iname  "*liblapack*"
+          echo ""
           echo "find /usr -iname \"*libblas*\""
                 find /usr -iname  "*libblas*"
 
