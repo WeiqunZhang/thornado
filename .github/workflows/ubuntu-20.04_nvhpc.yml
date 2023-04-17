@@ -12,6 +12,8 @@ jobs:
       NVHPC_MINOR: 3
       CUDA_MAJOR: 12
       CUDA_MINOR: 0
+      HDF_MAJOR: 1.14
+      HDF_MINOR: 0
       OMPI_VERSION: 3.1.5
     steps:
       - name: Checkout thornado
@@ -66,89 +68,89 @@ jobs:
           echo ""
           echo "find ${NVHPC_ROOT} -iname \"*mpi.mod\""
                 find ${NVHPC_ROOT} -iname  "*mpi.mod"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*cublas*\""
-#                find ${NVHPC_ROOT} -iname  "*cublas*"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*cusparse*\""
-#                find ${NVHPC_ROOT} -iname  "*cusparse*"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*cusolver*\""
-#                find ${NVHPC_ROOT} -iname  "*cusolver*"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*cudart*\""
-#                find ${NVHPC_ROOT} -iname  "*cudart*"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*liblapack*\""
-#                find ${NVHPC_ROOT} -iname  "*liblapack*"
-#          echo ""
-#          echo "find ${NVHPC_ROOT} -iname \"*libblas*\""
-#                find ${NVHPC_ROOT} -iname  "*libblas*"
-#          sudo ln -s ${OMPI_LIB}/mpi.mod ${OMPI_INC}
-#
-#      # Compilation flags for nvhpc from
-#      # https://forums.developer.nvidia.com/t/
-#      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
-#      - name: Download, Compile, and Install hdf5 with nvhpc
-#        run: |
-#          source /etc/profile.d/modules.sh
-#          module load ${NVHPC_MOD}
-#          mkdir ${HDF5_DIR}
-#          cd ${HDF5_DIR}
-#          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
-#          tar zxf hdf5-1.14.0.tar.gz
-#          mkdir built_fortran
-#          cd built_fortran
-#          ../hdf5-1.14.0/configure \
-#          --prefix=${HDF5_DIR} \
-#          --enable-shared \
-#          --enable-static \
-#          --enable-fortran \
-#          --enable-hl \
-#          --enable-parallel \
-#           CC=`which mpicc` \
-#           FC=`which mpifort` \
-#          F77=`which mpifort` \
-#          CPP=cpp \
-#           CFLAGS="-fPIC -O1 -tp px -nomp" \
-#          FCFLAGS="-fPIC -O1 -tp px -nomp" \
-#           FFLAGS="-fPIC -O1 -tp px -nomp"
-#          make -j -l6
-#          make install
-#
-#      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-#        run: |
-#          source /etc/profile.d/modules.sh
-#          module load ${NVHPC_MOD}
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-#          make OPT_LEVEL=DEBUG \
-#               HYDRO=RELATIVISTIC \
-#               USE_GPU=TRUE \
-#               USE_OACC=TRUE \
-#               USE_CUBLAS=TRUE \
-#               ApplicationDriver
-#          make clobber
-#
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#        run: |
-#          source /etc/profile.d/modules.sh
-#          module load ${NVHPC_MOD}
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#          make OPT_LEVEL=DEBUG \
-#               USE_GPU=TRUE \
-#               USE_OACC=TRUE \
-#               USE_CUBLAS=TRUE \
-#               ApplicationDriver
-#          make clobber
-#
-#      - name: Compile SandBox/TwoMoment_OrderV/Executables
-#        run: |
-#          source /etc/profile.d/modules.sh
-#          module load ${NVHPC_MOD}
-#          cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables
-#          make OPT_LEVEL=DEBUG \
-#               USE_GPU=TRUE \
-#               USE_OACC=TRUE \
-#               USE_CUBLAS=TRUE \
-#               ApplicationDriver
-#          make clobber
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*cublas*\""
+                find ${NVHPC_ROOT} -iname  "*cublas*"
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*cusparse*\""
+                find ${NVHPC_ROOT} -iname  "*cusparse*"
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*cusolver*\""
+                find ${NVHPC_ROOT} -iname  "*cusolver*"
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*cudart*\""
+                find ${NVHPC_ROOT} -iname  "*cudart*"
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*liblapack*\""
+                find ${NVHPC_ROOT} -iname  "*liblapack*"
+          echo ""
+          echo "find ${NVHPC_ROOT} -iname \"*libblas*\""
+                find ${NVHPC_ROOT} -iname  "*libblas*"
+          sudo ln -s ${OMPI_LIB}/mpi.mod ${OMPI_INC}
+
+      # Compilation flags for nvhpc from
+      # https://forums.developer.nvidia.com/t/
+      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
+      - name: Download, Compile, and Install hdf5 with nvhpc
+        run: |
+          source /etc/profile.d/modules.sh
+          module load ${NVHPC_MOD}
+          mkdir ${HDF5_DIR}
+          cd ${HDF5_DIR}
+          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${HDF5_MAJOR}/hdf5-${HDF5_MAJOR}.${HDF5_MINOR}/src/hdf5-${HDF5_MAJOR}.${HDF5_MINOR}.tar.gz
+          tar zxf hdf5-${HDF5_MAJOR}.${HDF5_MINOR}.tar.gz
+          mkdir built_fortran
+          cd built_fortran
+          ../hdf5-${HDF5_MAJOR}.${HDF5_MINOR}/configure \
+          --prefix=${HDF5_DIR} \
+          --enable-shared \
+          --enable-static \
+          --enable-fortran \
+          --enable-hl \
+          --enable-parallel \
+           CC=`which mpicc` \
+           FC=`which mpifort` \
+          F77=`which mpifort` \
+          CPP=cpp \
+           CFLAGS="-fPIC -O1 -tp px -nomp" \
+          FCFLAGS="-fPIC -O1 -tp px -nomp" \
+           FFLAGS="-fPIC -O1 -tp px -nomp"
+          make -j8
+          make install
+
+      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+        run: |
+          source /etc/profile.d/modules.sh
+          module load ${NVHPC_MOD}
+          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+          make OPT_LEVEL=DEBUG \
+               HYDRO=RELATIVISTIC \
+               USE_GPU=TRUE \
+               USE_OACC=TRUE \
+               USE_CUBLAS=TRUE \
+               ApplicationDriver
+          make clobber
+
+      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+        run: |
+          source /etc/profile.d/modules.sh
+          module load ${NVHPC_MOD}
+          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+          make OPT_LEVEL=DEBUG \
+               USE_GPU=TRUE \
+               USE_OACC=TRUE \
+               USE_CUBLAS=TRUE \
+               ApplicationDriver
+          make clobber
+
+      - name: Compile SandBox/TwoMoment_OrderV/Executables
+        run: |
+          source /etc/profile.d/modules.sh
+          module load ${NVHPC_MOD}
+          cd ${THORNADO_DIR}/SandBox/TwoMoment_OrderV/Executables
+          make OPT_LEVEL=DEBUG \
+               USE_GPU=TRUE \
+               USE_OACC=TRUE \
+               USE_CUBLAS=TRUE \
+               ApplicationDriver
+          make clobber
