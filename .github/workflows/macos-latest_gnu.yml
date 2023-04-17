@@ -44,16 +44,16 @@ jobs:
           echo "brew install lapack"
                 brew install lapack
           echo ""
-          echo "echo ${GITHUB_PATH} (before)"
-                echo ${GITHUB_PATH}
+          echo "echo ${PATH} (before)"
+                echo ${PATH}
           echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"       >> ${GITHUB_PATH}
           echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
 
       - name: Set Environment Variables
         run: |
           echo ""
-          echo "echo ${GITHUB_PATH} (after)"
-                echo ${GITHUB_PATH}
+          echo "echo ${PATH} (after)"
+                echo ${PATH}
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
           echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
