@@ -53,9 +53,6 @@ jobs:
           echo "which mpif90"
                 which mpif90
           echo ""
-          echo "mpif90 --version"
-                mpif90 --version
-          echo ""
           echo "ls /usr/local/Cellar/open-mpi"
                 ls /usr/local/Cellar/open-mpi
           echo ""
