@@ -33,68 +33,68 @@ jobs:
           sudo apt-get install -y \
             environment-modules
 
-      - name: Download and Install cuda
-        run: |
-          echo ""
-          echo "curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb"
-                curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
-          echo ""
-          echo "sudo dpkg -i cuda-keyring_1.0-1_all.deb"
-                sudo dpkg -i cuda-keyring_1.0-1_all.deb
-          echo ""
-          echo "sudo apt-get update"
-                sudo apt-get update
-          echo ""
-          echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
-                sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}
-          echo ""
-          echo "find /usr -iname \"*cublas*\""
-                find /usr -iname "*cublas*"
-          echo ""
-          echo "find /usr -iname \"*cusparse*\""
-                find /usr -iname "*cusparse*"
-          echo ""
-          echo "find /usr -iname \"*cusolver*\""
-                find /usr -iname "*cusolver*"
-          echo ""
-          echo "find /usr -iname \"*cudart*\""
-                find /usr -iname "*cudart*"
-          echo ""
-          echo "find /usr -iname \"*libcuda*\""
-                find /usr -iname "*libcuda*"
-          echo ""
-          echo "find /usr -iname \"*cuda.h\""
-                find /usr -iname "*cuda.h"
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/lib64"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/lib64
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include/cuda"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include/cuda
-          echo ""
-          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib"
-                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib
+#      - name: Download and Install cuda
+#        run: |
+#          echo ""
+#          echo "curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb"
+#                curl -O https://developer.download.nvidia.com/compute/cuda/repos/ubuntu${UBUNTU_VERSION}/${ARCH}/cuda-keyring_1.0-1_all.deb
+#          echo ""
+#          echo "sudo dpkg -i cuda-keyring_1.0-1_all.deb"
+#                sudo dpkg -i cuda-keyring_1.0-1_all.deb
+#          echo ""
+#          echo "sudo apt-get update"
+#                sudo apt-get update
+#          echo ""
+#          echo "sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}"
+#                sudo apt-get install -y cuda-compiler-${CUDA_MAJOR}-${CUDA_MINOR}
+#          echo ""
+#          echo "sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+#                sudo apt-get install -y libcurand-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+#          echo ""
+#          echo "sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+#                sudo apt-get install -y libcublas-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+#          echo ""
+#          echo "sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+#                sudo apt-get install -y libcusolver-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+#          echo ""
+#          echo "sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}"
+#                sudo apt-get install -y libcusparse-dev-${CUDA_MAJOR}-${CUDA_MINOR}
+#          echo ""
+#          echo "find /usr -iname \"*cublas*\""
+#                find /usr -iname "*cublas*"
+#          echo ""
+#          echo "find /usr -iname \"*cusparse*\""
+#                find /usr -iname "*cusparse*"
+#          echo ""
+#          echo "find /usr -iname \"*cusolver*\""
+#                find /usr -iname "*cusolver*"
+#          echo ""
+#          echo "find /usr -iname \"*cudart*\""
+#                find /usr -iname "*cudart*"
+#          echo ""
+#          echo "find /usr -iname \"*libcuda*\""
+#                find /usr -iname "*libcuda*"
+#          echo ""
+#          echo "find /usr -iname \"*cuda.h\""
+#                find /usr -iname "*cuda.h"
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/lib64"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/lib64
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include/cuda"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/include/cuda
+#          echo ""
+#          echo "ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib"
+#                ls /usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
@@ -107,48 +107,21 @@ jobs:
           sudo apt-get update -y
           sudo apt-get install -y nvhpc-${NVHPC_MAJOR}-${NVHPC_MINOR}
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/"
-                ls /opt/nvidia/hpc_sdk/
+          echo "ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}"
+                ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/*"
-                ls /opt/nvidia/hpc_sdk/*
+          echo "ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda"
+                ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/*/*"
-                ls /opt/nvidia/hpc_sdk/*/*
-          echo ""
-          echo "find /opt/nvidia/hpc_sdk -iname \"*mpi.mod\""
-                find /opt/nvidia/hpc_sdk -iname "*mpi.mod"
-
-      - name: Download and Install openmpi
-        run: |
-          source /etc/profile.d/modules.sh
-          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-          wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.5.tar.gz
-          gunzip -c openmpi-4.1.5.tar.gz | tar xf -
-          cd openmpi-4.1.5
-          sudo ./configure \
-            --prefix=/usr/local/openmpi-4.1.5_nvhpc \
-            CC=`which nvc` \
-            CXX=`which nvc++` \
-            F77=`which nvfortran` \
-            FC=`which nvfortran` \
-              CFLAGS="-m64 -fPIC" \
-            CXXFLAGS="-m64 -fPIC" \
-             FCFLAGS="-m64 -fPIC"
-          sudo make install
-          echo ""
-          echo "find /usr -iname \"*mpi.mod\""
-                find /usr -iname "*mpi.mod"
+          echo "ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda/*"
+                ls ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda/*
 
       - name: Set Environment Variables
         run: |
-          echo ""
-          echo "find /usr -iname \"*mpi.mod*\""
-                find /usr -iname "*mpi.mod*"
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT=/usr/local/openmpi-4.1.5_nvhpc" >> ${GITHUB_ENV}
+          echo "OMPI_ROOT=${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi/openmpi-3.1.5" >> ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
 #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
 
