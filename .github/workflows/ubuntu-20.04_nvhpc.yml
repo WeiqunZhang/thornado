@@ -115,6 +115,9 @@ jobs:
           echo ""
           echo "ls /opt/nvidia/hpc_sdk/*/*"
                 ls /opt/nvidia/hpc_sdk/*/*
+          echo ""
+          echo "find /opt/nvidia/hpc_sdk -iname \"*mpi.mod\""
+                find /opt/nvidia/hpc_sdk -iname "*mpi.mod"
 
       - name: Download and Install openmpi
         run: |
