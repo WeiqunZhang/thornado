@@ -12,8 +12,8 @@ jobs:
       NVHPC_MINOR: 3
       CUDA_MAJOR: 12
       CUDA_MINOR: 0
-      HDF_MAJOR: 1.14
-      HDF_MINOR: 0
+      HDF5_MAJOR: 1.14
+      HDF5_MINOR: 0
       OMPI_VERSION: 3.1.5
     steps:
       - name: Checkout thornado
@@ -93,11 +93,8 @@ jobs:
       # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
       - name: Download, Compile, and Install hdf5 with nvhpc
         run: |
-          echo "source /etc/profile.d/modules.sh"
           source /etc/profile.d/modules.sh
-          echo "module load ${NVHPC_MOD}"
           module load ${NVHPC_MOD}
-          echo "mkdir ${HDF5_DIR}"
           mkdir ${HDF5_DIR}
           cd ${HDF5_DIR}
           wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-${HDF5_MAJOR}/hdf5-${HDF5_MAJOR}.${HDF5_MINOR}/src/hdf5-${HDF5_MAJOR}.${HDF5_MINOR}.tar.gz
