@@ -140,7 +140,16 @@ jobs:
           sudo ln -s ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod /usr/lib
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-          echo ${GITHUB_ENV}
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/modulefiles/"
+                ls /opt/nvidia/hpc_sdk/modulefiles/
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/modulefiles/*"
+                ls /opt/nvidia/hpc_sdk/modulefiles/*
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/modulefiles/*/*"
+                ls /opt/nvidia/hpc_sdk/modulefiles/*/*
+          echo "{GITHUB_ENV}=/usr/lib:${GITHUB_ENV}" >> ${GITHUB_ENV}
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
