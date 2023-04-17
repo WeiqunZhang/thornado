@@ -24,7 +24,7 @@ endif
 
 #HDF5_ROOT=/home/runner/work/thornado/thornado/hdf5
 
-INCLUDE_CUDA     = -I$(CUDA_ROOT)/include -I$(OMPI_ROOT)/lib -I$(OMPI_ROOT2)
+INCLUDE_CUDA     = -I$(CUDA_ROOT)/include -I$(OMPI_ROOT)/lib
 INCLUDE_HDF5     = -I$(HDF5_ROOT)/include
 INCLUDE_LAPACK   =
 INCLUDE_MAGMA    =
