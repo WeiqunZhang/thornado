@@ -33,6 +33,13 @@ jobs:
           sudo apt-get install -y \
             environment-modules
 
+      - name: Set Environment Variables
+        run: |
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
+          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
+          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
         run: |
@@ -47,39 +54,37 @@ jobs:
           echo "find /opt/nvidia -iname \"*mpi.mod\""
                 find /opt/nvidia -iname "*mpi.mod"
 
-      - name: Set Environment Variables
+      # Compilation flags for nvhpc from
+      # https://forums.developer.nvidia.com/t/
+      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
+      - name: Download, Compile, and Install hdf5 with nvhpc
         run: |
-          source /etc/profile.d/modules.sh
-          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-          sudo mkdir /include
+          cat /etc/profile.d/modules.sh
+          mkdir ${HDF5_DIR}
+          cd ${HDF5_DIR}
+          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
+          tar zxf hdf5-1.14.0.tar.gz
+          mkdir built_fortran
+          cd built_fortran
+          ../hdf5-1.14.0/configure \
+          --prefix=${HDF5_DIR} \
+          --enable-shared \
+          --enable-static \
+          --enable-fortran \
+          --enable-hl \
+          --enable-parallel \
+          CC=mpic \
+          FC=mpifort \
+          F77=mpifort \
+          CPP=cpp \
+           CFLAGS="-fPIC -O1 -tp px -nomp" \
+          FCFLAGS="-fPIC -O1 -tp px -nomp" \
+           FFLAGS="-fPIC -O1 -tp px -nomp"
+          make -j -l6
+          make install
           sudo ln -s \
           ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
-          /include/mpi.mod
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-#          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-#          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
-
-#      # Compilation flags for nvhpc from
-#      # https://forums.developer.nvidia.com/t/
-#      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
-#      - name: Download, Compile, and Install hdf5 with nvhpc
-#        run: |
-#          mkdir ${HDF5_DIR}
-#          cd ${HDF5_DIR}
-#          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
-#          tar zxf hdf5-1.14.0.tar.gz
-#          mkdir built_fortran
-#          cd built_fortran
-#          ../hdf5-1.14.0/configure --prefix=${HDF5_DIR} \
-#          --enable-shared --enable-static \
-#          --enable-fortran --enable-hl --enable-parallel \
-#          CC=mpicc FC=mpifort F77=mpifort CPP=cpp \
-#          CFLAGS="-fPIC -O1 -tp px -nomp" \
-#          FCFLAGS="-fPIC -O1 -tp px -nomp" \
-#          FFLAGS="-fPIC -O1 -tp px -nomp"
-#          make -j -l6
-#          make install
+          ${HDF5_DIR}/include/mpi.mod
 
       - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
         run: |
