@@ -129,6 +129,15 @@ jobs:
           echo ""
           echo "find /usr -iname \"*mpi.mod\""
                 find /usr -iname "*mpi.mod"
+          echo ""
+          echo "ls /usr/local/openmpi-4.1.5_nvhpc"
+                ls /usr/local/openmpi-4.1.5_nvhpc
+          echo ""
+          echo "ls /usr/local/openmpi-4.1.5_nvhpc/include"
+                ls /usr/local/openmpi-4.1.5_nvhpc/include
+          echo ""
+          echo "ls /usr/local/openmpi-4.1.5_nvhpc/include/lib"
+                ls /usr/local/openmpi-4.1.5_nvhpc/include/lib
 
       - name: Set Environment Variables
         run: |
@@ -138,7 +147,7 @@ jobs:
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "CUDA_ROOT=/usr/local/cuda-${CUDA_MAJOR}.${CUDA_MINOR}/targets/${ARCH}-linux" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT=/usr/lib/${ARCH}-linux-gnu/openmpi" >> ${GITHUB_ENV}
+          echo "OMPI_ROOT=/usr/local/openmpi-4.1.5_nvhpc" >> ${GITHUB_ENV}
           echo "OMPI_ROOT2=/usr/lib/${ARCH}-linux-gnu/fortran/gfortran-mod-15/openmpi" >> ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
 #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
