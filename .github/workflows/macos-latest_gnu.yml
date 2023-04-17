@@ -32,11 +32,17 @@ jobs:
       - name: Download and install homebrew and dependencies
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          brew install gcc
-          brew install gfortran
-          brew install open-mpi
-          brew install hdf5
-          brew install lapack
+          echo ""
+          echo "brew install gcc"
+                brew install gcc
+          echo "brew install gfortran"
+                brew install gfortran
+          echo "brew install open-mpi"
+                brew install open-mpi
+          echo "brew install hdf5"
+                brew install hdf5
+          echo "brew install lapack"
+                brew install lapack
           echo ""
           echo "which gcc"
                 which gcc
@@ -44,8 +50,8 @@ jobs:
           echo "gcc --version"
                 gcc --version
           echo ""
-          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin/gcc --version"
-                /usr/local/Cellar/gcc/${GCC_VERSION}/bin/gcc --version
+          echo "ls /usr/local/Cellar/gcc/${GCC_VERSION}/bin"
+                ls /usr/local/Cellar/gcc/${GCC_VERSION}/bin
           echo ""
           echo "which gfortran"
                 which gfortran
