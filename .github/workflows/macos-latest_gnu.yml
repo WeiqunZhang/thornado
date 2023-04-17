@@ -43,6 +43,21 @@ jobs:
                 brew install hdf5
           echo "brew install lapack"
                 brew install lapack
+
+      - name: Set Environment Variables
+        run: |
+          echo "${GITHUB_PATH}=/usr/local/Cellar/gcc/${GCC_VERSION}/bin:${GITHUB_PATH}"       >> ${GITHUB_PATH}
+          echo "${GITHUB_PATH}=/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin:${GITHUB_PATH}" >> ${GITHUB_PATH}
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
+          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
+          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"   >> ${GITHUB_ENV}
+          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"       >> ${GITHUB_ENV}
+          echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
+          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
+
+      - name: check stuff
+        run: |
           echo ""
           echo "which mpicxx"
                 which mpicxx
@@ -79,19 +94,6 @@ jobs:
           echo ""
           echo "find /usr/local/Cellar -iname \"*mpi.mod\""
                 find /usr/local/Cellar -iname  "*mpi.mod"
-
-      - name: Set Environment Variables
-        run: |
-          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"                  >> ${GITHUB_PATH}
-          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin"            >> ${GITHUB_PATH}
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
-          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
-          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"   >> ${GITHUB_ENV}
-          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"       >> ${GITHUB_ENV}
-          echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
-          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
-
 #      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
 #        run: |
 #          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
