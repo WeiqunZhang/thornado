@@ -37,8 +37,8 @@ jobs:
                 brew install gcc
           echo "brew install gfortran"
                 brew install gfortran
-          echo "brew install open-mpi"
-                brew install open-mpi
+          echo "brew install open-mpi --cc=gcc-12 "
+                brew install open-mpi --cc=gcc-12
           echo "brew install hdf5"
                 brew install hdf5
           echo "brew install lapack"
