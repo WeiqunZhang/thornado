@@ -86,7 +86,6 @@ jobs:
           echo ""
           echo "find ${NVHPC_ROOT} -iname \"*libblas*\""
                 find ${NVHPC_ROOT} -iname  "*libblas*"
-
           sudo ln -s ${OMPI_LIB}/mpi.mod ${OMPI_INC}
 
       # Compilation flags for nvhpc from
