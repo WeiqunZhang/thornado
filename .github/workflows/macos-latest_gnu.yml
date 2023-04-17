@@ -37,6 +37,21 @@ jobs:
           brew install hdf5
           brew install lapack
           echo ""
+          echo "which gcc"
+                which gcc
+          echo ""
+          echo "gcc --version"
+                gcc --version
+          echo ""
+          echo "which gfortran"
+                which gfortran
+          echo ""
+          echo "which mpicxx"
+                which mpicxx
+          echo ""
+          echo "which mpif90"
+                which mpif90
+          echo ""
           echo "find /usr/local/Cellar -iname \"*hdf5.mod\""
                 find /usr/local/Cellar -iname  "*hdf5.mod"
           echo ""
