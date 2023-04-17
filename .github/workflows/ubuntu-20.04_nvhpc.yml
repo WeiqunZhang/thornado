@@ -89,6 +89,8 @@ jobs:
         run: |
           source /etc/profile.d/modules.sh
           module load ${NVHPC_MOD}
+          which nvc
+          which mpicc
           mkdir ${HDF5_DIR}
           cd ${HDF5_DIR}
           wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
