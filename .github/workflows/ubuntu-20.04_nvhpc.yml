@@ -69,14 +69,14 @@ jobs:
           echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3"
                 ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*"
-                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*"
-                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/include"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/include
           echo ""
-          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*/*"
-                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*/*
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64
 
                 #      # Compilation flags for nvhpc from
                 #      # https://forums.developer.nvidia.com/t/
