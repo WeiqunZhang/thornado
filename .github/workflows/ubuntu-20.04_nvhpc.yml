@@ -38,7 +38,7 @@ jobs:
           echo "NVHPC_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
           echo "NVHPC_MOD=/opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> {GITHUB_ENV}
           echo "CUDA_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi/openmpi-${OMPI_VERSION}" >> ${GITHUB_ENV}
+          echo "OMPI_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}" >> ${GITHUB_ENV}
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
