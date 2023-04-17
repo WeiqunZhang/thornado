@@ -53,11 +53,11 @@ jobs:
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cat /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           echo ""
-          echo "echo ${NVHPC_ROOT}"
-                echo ${NVHPC_ROOT}
+          echo "ls ${NVHPC_ROOT}"
+                ls ${NVHPC_ROOT}
           echo ""
-          echo "echo ${NVHPC_ROOT}/comm_libs"
-                echo ${NVHPC_ROOT}/comm_libs
+          echo "ls ${NVHPC_ROOT}/comm_libs"
+                ls ${NVHPC_ROOT}/comm_libs
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
 #          echo "OMPI_ROOT=${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5" >> ${GITHUB_ENV}
