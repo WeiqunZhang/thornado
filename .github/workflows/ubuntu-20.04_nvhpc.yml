@@ -12,7 +12,7 @@ jobs:
       NVHPC_MINOR: 3
       CUDA_MAJOR: 12
       CUDA_MINOR: 0
-      OMPI_VERSION: 4.0.5
+      OMPI_VERSION: 3.1.5
     steps:
       - name: Checkout thornado
         uses: actions/checkout@v3
@@ -40,8 +40,8 @@ jobs:
           echo "CUDA_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda/include" >> ${GITHUB_ENV}
           echo "CUDA_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/math_libs/lib64" >> ${GITHUB_ENV}
           echo "CUDART_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda/${CUDA_MAJOR}.${CUDA_MINOR}/targets/x86_64-linux/lib" >> ${GITHUB_ENV}
-          echo "OMPI_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}/include" >> ${GITHUB_ENV}
-          echo "OMPI_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}/lib" >> ${GITHUB_ENV}
+          echo "OMPI_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi/openmpi-${OMPI_VERSION}/include" >> ${GITHUB_ENV}
+          echo "OMPI_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi/openmpi-${OMPI_VERSION}/lib" >> ${GITHUB_ENV}
           echo "LAPACK_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/compilers/lib" >> ${GITHUB_ENV}
           echo "BLAS_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/compilers/lib" >> ${GITHUB_ENV}
 
