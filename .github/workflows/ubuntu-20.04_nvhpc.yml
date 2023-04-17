@@ -66,17 +66,17 @@ jobs:
           echo "find /opt/nvidia -iname \"*cudart*\""
                 find /opt/nvidia -iname  "*cudart"
           echo ""
-          echo "find /usr -iname \"*cublas*\""
-                find /usr -iname  "*cublas"
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3
           echo ""
-          echo "find /usr -iname \"*cusparse*\""
-                find /usr -iname  "*cusparse"
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*
           echo ""
-          echo "find /usr -iname \"*cusolver*\""
-                find /usr -iname  "*cusolver"
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*
           echo ""
-          echo "find /usr -iname \"*cudart*\""
-                find /usr -iname  "*cudart"
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*/*"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/*/*/*
 
                 #      # Compilation flags for nvhpc from
                 #      # https://forums.developer.nvidia.com/t/
