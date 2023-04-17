@@ -62,11 +62,14 @@ jobs:
       - name: check stuff
         run: |
           echo ""
+          echo "echo ${PATH}"
+                echo ${PATH}
+          echo ""
           echo "which mpicxx"
                 which mpicxx
           echo ""
-          echo "mpicxx --version"
-                mpicxx --version
+          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version"
+                /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version
           echo ""
           echo "which mpif90"
                 which mpif90
