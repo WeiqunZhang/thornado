@@ -90,10 +90,9 @@ jobs:
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-          mkdir include
           sudo ln -s \
           ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
-          ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables/include
+          /include
           make OPT_LEVEL=DEBUG \
                HYDRO=RELATIVISTIC \
                USE_GPU=TRUE \
