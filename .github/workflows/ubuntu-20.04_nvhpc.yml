@@ -35,10 +35,11 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                     >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"              >> ${GITHUB_ENV}
+          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"                    >> ${GITHUB_ENV}
+          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"                   >> ${GITHUB_ENV}
+          echo "CUDA_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda" >> ${GITHUB_ENV}
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
@@ -89,54 +90,63 @@ jobs:
           echo ""
           echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64"
                 ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64
+          sudo ln -s \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/lib64/libcublas* \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64
+          sudo ln -s \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/lib64/libcusparse* \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64
+          sudo ln -s \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/lib64/libcusolver* \
+            /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda/lib64
 
-                #      # Compilation flags for nvhpc from
-                #      # https://forums.developer.nvidia.com/t/
-                #      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
-                #      - name: Download, Compile, and Install hdf5 with nvhpc
-                #        run: |
-                #          source /etc/profile.d/modules.sh
-                #          module load \
-                #            /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-                #          mkdir ${HDF5_DIR}
-                #          cd ${HDF5_DIR}
-                #          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
-                #          tar zxf hdf5-1.14.0.tar.gz
-                #          mkdir built_fortran
-                #          cd built_fortran
-                #          ../hdf5-1.14.0/configure \
-                #          --prefix=${HDF5_DIR} \
-                #          --enable-shared \
-                #          --enable-static \
-                #          --enable-fortran \
-                #          --enable-hl \
-                #          --enable-parallel \
-                #           CC=`which mpicc` \
-                #           FC=`which mpifort` \
-                #          F77=`which mpifort` \
-                #          CPP=cpp \
-                #           CFLAGS="-fPIC -O1 -tp px -nomp" \
-                #          FCFLAGS="-fPIC -O1 -tp px -nomp" \
-                #           FFLAGS="-fPIC -O1 -tp px -nomp"
-                #          make -j -l6
-                #          make install
-                #          sudo ln -s \
-                #          ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
-                #          ${HDF5_DIR}/include/mpi.mod
-                #
-                #      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-                #        run: |
-                #          source /etc/profile.d/modules.sh
-                #          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
-                #          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-                #          make OPT_LEVEL=DEBUG \
-                #               HYDRO=RELATIVISTIC \
-                #               USE_GPU=TRUE \
-                #               USE_OACC=TRUE \
-                #               USE_CUBLAS=TRUE \
-                #               ApplicationDriver
-                #          make clobber
-                #
+      # Compilation flags for nvhpc from
+      # https://forums.developer.nvidia.com/t/
+      # help-configuring-hdf5-with-nvhpc-no-version-information-available/183413
+      - name: Download, Compile, and Install hdf5 with nvhpc
+        run: |
+          source /etc/profile.d/modules.sh
+          module load \
+            /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+          mkdir ${HDF5_DIR}
+          cd ${HDF5_DIR}
+          wget https://support.hdfgroup.org/ftp/HDF5/releases/hdf5-1.14/hdf5-1.14.0/src/hdf5-1.14.0.tar.gz
+          tar zxf hdf5-1.14.0.tar.gz
+          mkdir built_fortran
+          cd built_fortran
+          ../hdf5-1.14.0/configure \
+          --prefix=${HDF5_DIR} \
+          --enable-shared \
+          --enable-static \
+          --enable-fortran \
+          --enable-hl \
+          --enable-parallel \
+           CC=`which mpicc` \
+           FC=`which mpifort` \
+          F77=`which mpifort` \
+          CPP=cpp \
+           CFLAGS="-fPIC -O1 -tp px -nomp" \
+          FCFLAGS="-fPIC -O1 -tp px -nomp" \
+           FFLAGS="-fPIC -O1 -tp px -nomp"
+          make -j -l6
+          make install
+          sudo ln -s \
+          ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
+          ${HDF5_DIR}/include/mpi.mod
+
+      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+        run: |
+          source /etc/profile.d/modules.sh
+          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
+          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+          make OPT_LEVEL=DEBUG \
+               HYDRO=RELATIVISTIC \
+               USE_GPU=TRUE \
+               USE_OACC=TRUE \
+               USE_CUBLAS=TRUE \
+               ApplicationDriver
+          make clobber
+
                 ##      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
                 ##        run: |
                 ##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
