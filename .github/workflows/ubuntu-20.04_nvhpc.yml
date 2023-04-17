@@ -53,6 +53,7 @@ jobs:
           echo ""
           echo "find /opt/nvidia -iname \"*mpi.mod\""
                 find /opt/nvidia -iname "*mpi.mod"
+          cat /etc/profile.d/modules.sh
 
       # Compilation flags for nvhpc from
       # https://forums.developer.nvidia.com/t/
