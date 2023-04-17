@@ -33,16 +33,16 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                       >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                >> ${GITHUB_ENV}
-          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                    >> ${GITHUB_ENV}
-          echo "HDF5_INC=/usr/lib/x86_64-linux-gnu/hdf5/serial/include" >> ${GITHUB_ENV}
-          echo "HDF5_LIB=/usr/lib/x86_64-linux-gnu/hdf5/serial/lib"     >> ${GITHUB_ENV}
-          echo "LAPACK_LIB=/usr/lib/x86_64-linux-gnu"                   >> ${GITHUB_ENV}
-          echo "BLAS_LIB=/usr/lib/x86_64-linux-gnu"                     >> ${GITHUB_ENV}
+          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"               >> ${GITHUB_ENV}
+          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"        >> ${GITHUB_ENV}
+          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"            >> ${GITHUB_ENV}
+          echo "HDF5_INC=/usr/include/hdf5/serial"              >> ${GITHUB_ENV}
+          echo "HDF5_LIB=/usr/lib/x86_64-linux-gnu/hdf5/serial" >> ${GITHUB_ENV}
+          echo "LAPACK_LIB=/usr/lib/x86_64-linux-gnu"           >> ${GITHUB_ENV}
+          echo "BLAS_LIB=/usr/lib/x86_64-linux-gnu"             >> ${GITHUB_ENV}
           echo ""
-          echo "find /usr -iname \"*hdf5.mod*\""
-                find /usr -iname  "*hdf5.mod*"
+          echo "find /usr -iname \"*hdf5.mod\""
+                find /usr -iname  "*hdf5.mod"
           echo ""
           echo "find /usr -iname \"*libhdf5*\""
                 find /usr -iname  "*libhdf5*"
