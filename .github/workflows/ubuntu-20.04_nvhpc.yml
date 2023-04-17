@@ -37,8 +37,10 @@ jobs:
           echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5" >> ${GITHUB_ENV}
           echo "NVHPC_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
           echo "NVHPC_MOD=/opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}" >> ${GITHUB_ENV}
-          echo "CUDA_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}" >> ${GITHUB_ENV}
+          echo "CUDA_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/cuda/include" >> ${GITHUB_ENV}
+          echo "CUDA_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/math_libs/lib64" >> ${GITHUB_ENV}
+          echo "OMPI_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}/lib" >> ${GITHUB_ENV}
+          echo "OMPI_LIB=/opt/nvidia/hpc_sdk/Linux_x86_64/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-${OMPI_VERSION}/lib" >> ${GITHUB_ENV}
 
       # https://developer.nvidia.com/hpc-sdk-downloads
       - name: Download and install nvhpc
@@ -73,14 +75,6 @@ jobs:
           echo ""
           echo "find ${NVHPC_ROOT} -iname \"*cudart*\""
                 find ${NVHPC_ROOT} -iname  "*cudart*"
-          sudo ln -s \
-            ${NVHPC_ROOT}/math_libs/lib64/libcublas* ${NVHPC_ROOT}/cuda/lib64
-          sudo ln -s \
-            ${NVHPC_ROOT}/math_libs/lib64/libcusparse* ${NVHPC_ROOT}/cuda/lib64
-          sudo ln -s \
-            ${NVHPC_ROOT}/math_libs/lib64/libcusolver* ${NVHPC_ROOT}/cuda/lib64
-          sudo ln -s \
-            ${OMPI_ROOT}/lib/mpi.mod ${OMPI_ROOT}/include/mpi.mod
 
       # Compilation flags for nvhpc from
       # https://forums.developer.nvidia.com/t/

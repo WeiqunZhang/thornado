@@ -25,8 +25,8 @@ endif
 #HDF5_ROOT=/home/runner/work/thornado/thornado/hdf5
 
 # Hacked to include Open MPI
-INCLUDE_CUDA     = -I$(CUDA_ROOT)/include \
-		   -I$(OMPI_ROOT)/include
+INCLUDE_CUDA     = -I$(CUDA_INC) \
+		   -I$(OMPI_INC)
 INCLUDE_HDF5     = -I$(HDF5_ROOT)/include
 INCLUDE_LAPACK   =
 INCLUDE_MAGMA    =
@@ -34,9 +34,9 @@ INCLUDE_PETSC    =
 INCLUDE_POSEIDON =
 INCLUDE_ROCM     =
 
-# Hacked to include mpi
-LIBRARIES_CUDA     = -L$(CUDA_ROOT)/lib64 -lcublas -lcusparse -lcusolver -lcudart \
-		     -L$(OMPI_ROOT)/lib -lmpi -lmpi_mpifh
+# Hacked to include Open MPI
+LIBRARIES_CUDA     = -L$(CUDA_LIB) -lcublas -lcusparse -lcusolver -lcudart \
+		     -L$(OMPI_LIB) -lmpi -lmpi_mpifh
 LIBRARIES_HDF5     = -L$(HDF5_ROOT)/lib -lhdf5_fortran -lhdf5
 LIBRARIES_LAPACK   = -L$(LAPACK_ROOT)/lib -llapack -L$(BLAS_ROOT)/lib -lblas
 LIBRARIES_MAGMA    =
