@@ -40,10 +40,10 @@ jobs:
           echo "HDF5_LIB=/usr/lib/x86_64-linux-gnu/hdf5/serial/lib"     >> ${GITHUB_ENV}
           echo "LAPACK_LIB=/usr/lib/x86_64-linux-gnu/lapack"            >> ${GITHUB_ENV}
           echo "BLAS_LIB=/usr/lib/x86_64-linux-gnu/lapack"              >> ${GITHUB_ENV}
-          echo "find \/usr -iname \"liblapack\""
-          find /usr -iname "liblapack"
-          echo "find \/usr -iname \"libblas\""
-          find /usr -iname "blas"
+          echo "find /usr -iname \"liblapack\""
+                find /usr -iname  "*liblapack*"
+          echo "find /usr -iname \"*libblas*\""
+                find /usr -iname  "*libblas*"
 
       - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
         run: |
