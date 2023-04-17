@@ -43,9 +43,6 @@ jobs:
                 brew install hdf5
           echo "brew install lapack"
                 brew install lapack
-          echo ""
-          echo "echo ${PATH} (before)"
-                echo ${PATH}
           echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"       >> ${GITHUB_PATH}
           echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
 
@@ -73,6 +70,9 @@ jobs:
           echo ""
           echo "which mpif90"
                 which mpif90
+          echo ""
+          echo "mpif90 --version"
+                mpif90 --version
           echo ""
           echo "ls /usr/local/Cellar/open-mpi"
                 ls /usr/local/Cellar/open-mpi
