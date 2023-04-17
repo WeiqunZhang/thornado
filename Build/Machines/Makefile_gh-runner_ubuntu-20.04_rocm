@@ -22,23 +22,24 @@ ifeq ($(USE_OACC),TRUE)
   OPENACC = -hacc
 endif
 
-#HDF5_ROOT=/home/runner/work/thornado/thornado/hdf5
-
-INCLUDE_CUDA     = -I$(CUDA_ROOT)/include
-INCLUDE_HDF5     = -I$(HDF5_ROOT)/include
+INCLUDE_CUDA     = -I$(CUDA_INC)
+INCLUDE_HDF5     = -I$(HDF5_INC)
 INCLUDE_LAPACK   =
 INCLUDE_MAGMA    =
 INCLUDE_PETSC    =
 INCLUDE_POSEIDON =
-INCLUDE_ROCM     = -I$(ROCM_ROOT)/include \
-		   -I$(HIPFORT_ROOT)/include/hipfort/amdgcn
+INCLUDE_ROCM     = -I$(ROCM_INC) \
+		   -I$(HIPFORT_INC)/hipfort/amdgcn
 
 # Hacked to include mpi
-LIBRARIES_CUDA     = -L$(CUDA_ROOT)/lib64 -lcublas -lcusparse -lcusolver \
-		     -L$(CUDART_ROOT)/lib64 -lcudart
-LIBRARIES_HDF5     = -L$(HDF5_ROOT)/lib -lhdf5_fortran -lhdf5
-LIBRARIES_LAPACK   = -L$(LAPACK_ROOT)/lib -llapack -L$(BLAS_ROOT)/lib -lblas
+LIBRARIES_CUDA     = -L$(CUDA_LIB) -lcublas -lcusparse -lcusolver \
+                     -L$(CUDART_LIB) -lcudart
+LIBRARIES_HDF5     = -L$(HDF5_LIB) -lhdf5_fortran -lhdf5
+LIBRARIES_LAPACK   = -L$(LAPACK_LIB) -llapack \
+                     -L$(BLAS_LIB) -lblas
 LIBRARIES_MAGMA    =
 LIBRARIES_PETSC    =
 LIBRARIES_POSEIDON =
-LIBRARIES_ROCM     = -L$(HIPFORT_ROOT)/lib -lhipfort-amdgcn -L$(ROCM_ROOT)/lib -lrocsparse -lrocsolver -lrocblas -lhipblas -lhipsparse -lamdhip64
+LIBRARIES_ROCM     = -L$(HIPFORT_LIB) -lhipfort-amdgcn \
+                     -L$(ROCM_LIB) -lrocsparse -lrocsolver -lrocblas \
+                                   -lhipblas -lhipsparse -lamdhip64

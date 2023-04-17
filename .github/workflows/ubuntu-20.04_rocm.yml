@@ -75,38 +75,48 @@ jobs:
           echo "which flang"
                 which flang
           echo ""
-          echo "ls /opt/rocm"
-                ls /opt/rocm
+          echo "find /opt/rocm -iname \"*liblapack*\""
+                find /opt/rocm -iname  "*liblapack*"
           echo ""
-          echo "ls /opt/rocm/bin"
-                ls /opt/rocm/bin
+          echo "find /opt/rocm -iname \"*blas*\""
+                find /opt/rocm -iname  "*blas*"
           echo ""
-          echo "ls /opt/rocm/include"
-                ls /opt/rocm/include
+          echo "find /opt/rocm -iname \"*cublas*\""
+                find /opt/rocm -iname  "*cublas*"
           echo ""
-          echo "ls /opt/rocm/lib"
-                ls /opt/rocm/lib
+          echo "find /opt/rocm -iname \"*cusparse*\""
+                find /opt/rocm -iname  "*cusparse*"
           echo ""
-          echo "ls /opt/rocm/llvm"
-                ls /opt/rocm/llvm
+          echo "find /opt/rocm -iname \"*cusolver*\""
+                find /opt/rocm -iname  "*cusolver*"
           echo ""
-          echo "ls /opt/rocm/llvm/bin"
-                ls /opt/rocm/llvm/bin
+          echo "find /opt/rocm -iname \"*cudart*\""
+                find /opt/rocm -iname  "*cudart*"
           echo ""
-          echo "ls /opt/rocm/llvm/include"
-                ls /opt/rocm/llvm/include
+          echo "find /opt/rocm -iname \"*hipfort*\""
+                find /opt/rocm -iname  "*hipfort*"
           echo ""
-          echo "ls /opt/rocm/llvm/lib"
-                ls /opt/rocm/llvm/lib
+          echo "find /opt/rocm -iname \"*rocsparse*\""
+                find /opt/rocm -iname  "*rocsparse*"
           echo ""
-          echo "find /opt/rocm -iname *hipfort*"
-                find /opt/rocm -iname "*hipfort*"
+          echo "find /opt/rocm -iname \"*rocsolver*\""
+                find /opt/rocm -iname  "*rocsolver*"
+          echo ""
+          echo "find /opt/rocm -iname \"*rocblas*\""
+                find /opt/rocm -iname  "*rocblas*"
+          echo ""
+          echo "find /opt/rocm -iname \"*hipblas*\""
+                find /opt/rocm -iname  "*hipblas*"
+          echo ""
+          echo "find /opt/rocm -iname \"*hipsparse*\""
+                find /opt/rocm -iname  "*hipsparse*"
+          echo ""
+          echo "find /opt/rocm -iname \"*amdhip64*\""
+                find /opt/rocm -iname  "*amdhip64*"
 
       - name: Set Environment Variables
         run: |
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
-          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
-          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
           echo "ROCM_ROOT=/opt/root" >> ${GITHUB_ENV}
 
