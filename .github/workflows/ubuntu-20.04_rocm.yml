@@ -60,6 +60,57 @@ jobs:
                   rocrand-dev     \
                   rocprim-dev
           echo ""
+          echo "sudo apt search rocblas"
+                sudo apt search rocblas
+          echo ""
+          echo "sudo apt search hipblas"
+                sudo apt search hipblas
+          echo ""
+          echo "sudo apt search cublas"
+                sudo apt search cublas
+          echo ""
+          echo "sudo apt search liblapack"
+                sudo apt search liblapack"
+          echo ""
+          echo "sudo apt search libblas"
+                sudo apt search libblas
+          echo ""
+          echo "sudo apt search cublas*\""
+                sudo apt search cublas*"
+          echo ""
+          echo "sudo apt search cusparse"
+                sudo apt search cusparse
+          echo ""
+          echo "sudo apt search cusolver"
+                sudo apt search cusolver
+          echo ""
+          echo "sudo apt search cudart"
+                sudo apt search cudart
+          echo ""
+          echo "sudo apt search hipfort"
+                sudo apt search hipfort
+          echo ""
+          echo "sudo apt search rocsparse"
+                sudo apt search rocsparse
+          echo ""
+          echo "sudo apt search rocsolver"
+                sudo apt search rocsolver
+          echo ""
+          echo "sudo apt search rocblas"
+                sudo apt search rocblas
+          echo ""
+          echo "sudo apt search hipblas"
+                sudo apt search hipblas
+          echo ""
+          echo "sudo apt search hipsparse"
+                sudo apt search hipsparse
+          echo ""
+          echo "sudo apt search amdhip64"
+                sudo apt search amdhip64
+
+      - name: Find stuff
+        run: |
+          echo ""
           echo "source /etc/profile.d/rocm.sh"
                 source /etc/profile.d/rocm.sh
           echo ""
