@@ -44,18 +44,6 @@ jobs:
           echo "brew install lapack"
                 brew install lapack
           echo ""
-          echo "which gcc"
-                which gcc
-          echo ""
-          echo "gcc --version"
-                gcc --version
-          echo ""
-          echo "ls /usr/local/Cellar/gcc/${GCC_VERSION}/bin"
-                ls /usr/local/Cellar/gcc/${GCC_VERSION}/bin
-          echo ""
-          echo "which gfortran"
-                which gfortran
-          echo ""
           echo "which mpicxx"
                 which mpicxx
           echo ""
