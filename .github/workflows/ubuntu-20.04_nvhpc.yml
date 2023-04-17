@@ -65,6 +65,18 @@ jobs:
           echo ""
           echo "find /opt/nvidia -iname \"*cudart*\""
                 find /opt/nvidia -iname  "*cudart"
+          echo ""
+          echo "find /usr -iname \"*cublas*\""
+                find /usr -iname  "*cublas"
+          echo ""
+          echo "find /usr -iname \"*cusparse*\""
+                find /usr -iname  "*cusparse"
+          echo ""
+          echo "find /usr -iname \"*cusolver*\""
+                find /usr -iname  "*cusolver"
+          echo ""
+          echo "find /usr -iname \"*cudart*\""
+                find /usr -iname  "*cudart"
 
                 #      # Compilation flags for nvhpc from
                 #      # https://forums.developer.nvidia.com/t/
