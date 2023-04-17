@@ -29,8 +29,6 @@ jobs:
 
       - name: Update Ubuntu
         run: |
-          echo "sudo ls /"
-                sudo ls /
           sudo apt-get -qqq update
           sudo apt-get install -y \
             environment-modules
@@ -92,9 +90,10 @@ jobs:
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+          sudo mkdir /include
           sudo ln -s \
           ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
-          /include
+          /include/mpi.mod
           sudo ls /include
           make OPT_LEVEL=DEBUG \
                HYDRO=RELATIVISTIC \
