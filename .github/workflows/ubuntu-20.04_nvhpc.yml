@@ -72,6 +72,15 @@ jobs:
           echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs"
                 ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs
           echo ""
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/*"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/*
+          echo ""
+          echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/*/*"
+                ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/math_libs/*/*
+          echo ""
           echo "ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda"
                 ls /opt/nvidia/hpc_sdk/Linux_x86_64/23.3/cuda
           echo ""
