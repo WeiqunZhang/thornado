@@ -138,7 +138,7 @@ jobs:
                 find /opt/nvidia -iname "*mpi.mod"
           echo ""
           echo $PATH
-          ln -s ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod /usr/lib
+          sudo ln -s ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod /usr/lib
           echo ${GITHUB_ENV}
 
       - name: Set Environment Variables
