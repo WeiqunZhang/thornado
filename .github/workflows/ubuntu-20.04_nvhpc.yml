@@ -115,7 +115,7 @@ jobs:
            CFLAGS="-fPIC -O1 -tp px -nomp" \
           FCFLAGS="-fPIC -O1 -tp px -nomp" \
            FFLAGS="-fPIC -O1 -tp px -nomp"
-          make -j8
+          make -j -l6
           make install
 
       - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
