@@ -58,12 +58,9 @@ jobs:
           echo ""
           echo "echo ${NVHPC_ROOT}/comm_libs"
                 echo ${NVHPC_ROOT}/comm_libs
-          echo ""
-          echo "sudo ln -s ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod ${NVHPC_ROOT}/comm_libs/mpi/include"
-                sudo ln -s ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod ${NVHPC_ROOT}/comm_libs/mpi/include
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"        >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib" >> ${GITHUB_ENV}
-          echo "OMPI_ROOT=${nvcommdir}/openmpi4/openmpi-4.0.5" >> ${GITHUB_ENV}
+#          echo "OMPI_ROOT=${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5" >> ${GITHUB_ENV}
 #          echo "HDF5_DIR=${GITHUB_WORKSPACE}/hdf5"       >> ${GITHUB_ENV}
 #          echo "HDF5_ROOT=${GITHUB_WORKSPACE}/hdf5"      >> ${GITHUB_ENV}
 
@@ -93,6 +90,10 @@ jobs:
           source /etc/profile.d/modules.sh
           module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+          mkdir include
+          sudo ln -s \
+          ${NVHPC_ROOT}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod \
+          ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables/include
           make OPT_LEVEL=DEBUG \
                HYDRO=RELATIVISTIC \
                USE_GPU=TRUE \
