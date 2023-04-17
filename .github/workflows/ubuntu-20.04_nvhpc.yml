@@ -131,14 +131,13 @@ jobs:
           echo "find /opt/nvidia -iname \"*cuda.h\""
                 find /opt/nvidia -iname "*cuda.h"
           echo ""
-          echo "find /opt/nvidia -iname \"*cuda.h\""
-                find /opt/nvidia -iname "*cuda.h"
-          echo ""
           echo "find /opt/nvidia -iname \"*mpi.mod\""
                 find /opt/nvidia -iname "*mpi.mod"
           echo ""
           sudo ln -s ${NVCOMPILERS}/${NVARCH}/${NVHPC_MAJOR}.${NVHPC_MINOR}/comm_libs/openmpi4/openmpi-4.0.5/lib/mpi.mod /usr/lib
           echo "/usr/lib" >> ${GITHUB_ENV}
+          source /etc/profile.d/modules.sh
+          module load /opt/nvidia/hpc_sdk/modulefiles/nvhpc/${NVHPC_MAJOR}.${NVHPC_MINOR}
           echo ${GITHUB_ENV}
 
       - name: Set Environment Variables
