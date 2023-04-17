@@ -29,6 +29,8 @@ jobs:
 
       - name: Update Ubuntu
         run: |
+          echo "sudo ls /"
+                sudo ls /
           sudo apt-get -qqq update
           sudo apt-get install -y \
             environment-modules
