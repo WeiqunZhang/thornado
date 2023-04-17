@@ -35,7 +35,8 @@ INCLUDE_POSEIDON =
 INCLUDE_ROCM     =
 
 # Hacked to include Open MPI
-LIBRARIES_CUDA     = -L$(CUDA_LIB) -lcublas -lcusparse -lcusolver -lcudart \
+LIBRARIES_CUDA     = -L$(CUDA_LIB) -lcublas -lcusparse -lcusolver \
+		     -L$(CUDART_LIB) -lcudart \
 		     -L$(OMPI_LIB) -lmpi -lmpi_mpifh
 LIBRARIES_HDF5     = -L$(HDF5_ROOT)/lib -lhdf5_fortran -lhdf5
 LIBRARIES_LAPACK   = -L$(LAPACK_ROOT)/lib -llapack -L$(BLAS_ROOT)/lib -lblas
