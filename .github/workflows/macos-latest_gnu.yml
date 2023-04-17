@@ -54,21 +54,21 @@ jobs:
 
       - name: Set Environment Variables
         run: |
-          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin" >> ${GITHUB_PATH}
-          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
+          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"                  >> ${GITHUB_PATH}
+          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin"            >> ${GITHUB_PATH}
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
           echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
-          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"          >> ${GITHUB_ENV}
-          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"          >> ${GITHUB_ENV}
+          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"   >> ${GITHUB_ENV}
+          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"       >> ${GITHUB_ENV}
           echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
-          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
+          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
 
-      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-        run: |
-          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-          make
-          make clobber
+#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+#        run: |
+#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+#          make
+#          make clobber
 
 #      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
 #        run: |
