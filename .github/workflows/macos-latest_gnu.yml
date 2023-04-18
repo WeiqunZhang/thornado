@@ -37,9 +37,9 @@ jobs:
       - name: faafo
         run: |
           echo "Hello, World!" > hw.txt
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
+          git config user.name 'Sam Dunham'
+          git config user.email 9784969+dunhamsj@users.noreply.github.com
+          git add hw.txt
           git commit -m "add text file"
           git push
 
