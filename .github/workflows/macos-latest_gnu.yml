@@ -141,6 +141,8 @@ jobs:
           git commit -m "add make output"
           git push
           make realclean
+          make
+          make realclean
 #
 ##      - name: Compile SandBox/AMReX/TwoMoment_Test
 ##        run: |
