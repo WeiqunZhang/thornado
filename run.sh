@@ -1,7 +1,7 @@
 #!/bin/bash
 
 make clean
-make -j2 > make.ou
+make > make.ou
 cat make.ou
 cat tmp_build_dir/d/1d.gnu.DEBUG.MPI.exe/f90.depends
 make help
