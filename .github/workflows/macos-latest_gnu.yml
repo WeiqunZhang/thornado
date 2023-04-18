@@ -21,126 +21,135 @@ jobs:
       - name: Checkout thornado
         uses: actions/checkout@v3
 
-      - name: Checkout weaklib
-        uses: actions/checkout@v3
-        with:
-          repository: starkiller-astro/weaklib
-          path: weaklib
+#      - name: Checkout weaklib
+#        uses: actions/checkout@v3
+#        with:
+#          repository: starkiller-astro/weaklib
+#          path: weaklib
+#
+#      - name: Checkout amrex
+#        uses: actions/checkout@v3
+#        with:
+#          repository: dunhamsj/amrex
+#          path: amrex
+#          ref: MeshRefinement_DG
 
-      - name: Checkout amrex
-        uses: actions/checkout@v3
-        with:
-          repository: dunhamsj/amrex
-          path: amrex
-          ref: MeshRefinement_DG
-
-      - name: Download and install homebrew and dependencies
+      - name: faafo
         run: |
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo ""
-          echo "brew install gcc"
-                brew install gcc
-          echo "brew install gfortran"
-                brew install gfortran
-          echo "brew install open-mpi --cc=gcc-${GCC_MAJOR}"
-                brew install open-mpi --cc=gcc-${GCC_MAJOR}
-          echo "brew install hdf5"
-                brew install hdf5
-          echo "brew install lapack"
-                brew install lapack
-          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"       >> ${GITHUB_PATH}
-          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
+          echo "Hello, World!" > hw.txt
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "add text file"
+          git push
 
-      - name: Set Environment Variables
-        run: |
-          echo ""
-          echo "echo ${PATH} (after)"
-                echo ${PATH}
-          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
-          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
-          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
-          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"   >> ${GITHUB_ENV}
-          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"       >> ${GITHUB_ENV}
-          echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
-          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
-
-      - name: check stuff
-        run: |
-          echo ""
-          echo "echo ${PATH}"
-                echo ${PATH}
-          echo ""
-          echo "which mpicxx"
-                which mpicxx
-          echo ""
-          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version"
-                /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version
-          echo ""
-          echo "which mpif90"
-                which mpif90
-          echo ""
-          echo "mpif90 --version"
-                mpif90 --version
-          echo ""
-          echo "ls /usr/local/Cellar/open-mpi"
-                ls /usr/local/Cellar/open-mpi
-          echo ""
-          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}"
-                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}
-          echo ""
-          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin"
-                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin
-          echo ""
-          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/*"
-                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/*
-          echo ""
-          echo "find /usr/local/Cellar -iname \"*hdf5.mod\""
-                find /usr/local/Cellar -iname  "*hdf5.mod"
-          echo ""
-          echo "find /usr/local/Cellar -iname \"*libhdf5_fortran*\""
-                find /usr/local/Cellar -iname  "*libhdf5_fortran*"
-          echo ""
-          echo "find /usr/local/Cellar -iname \"*lapack*\""
-                find /usr/local/Cellar -iname  "*lapack*"
-          echo ""
-          echo "find /usr/local/Cellar -iname \"*blas*\""
-                find /usr/local/Cellar -iname  "*blas*"
-          echo ""
-          echo "find /usr/local/Cellar -iname \"*mpi.mod\""
-                find /usr/local/Cellar -iname  "*mpi.mod"
-
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+#      - name: Download and install homebrew and dependencies
 #        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+#          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#          echo ""
+#          echo "brew install gcc"
+#                brew install gcc
+#          echo "brew install gfortran"
+#                brew install gfortran
+#          echo "brew install open-mpi --cc=gcc-${GCC_MAJOR}"
+#                brew install open-mpi --cc=gcc-${GCC_MAJOR}
+#          echo "brew install hdf5"
+#                brew install hdf5
+#          echo "brew install lapack"
+#                brew install lapack
+#          echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"       >> ${GITHUB_PATH}
+#          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
+#
+#      - name: Set Environment Variables
 #        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+#          echo ""
+#          echo "echo ${PATH} (after)"
+#                echo ${PATH}
+#          echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
+#          echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
+#          echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
+#          echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include"   >> ${GITHUB_ENV}
+#          echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"       >> ${GITHUB_ENV}
+#          echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
+#          echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
+#
+#      - name: check stuff
 #        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
+#          echo ""
+#          echo "echo ${PATH}"
+#                echo ${PATH}
+#          echo ""
+#          echo "which mpicxx"
+#                which mpicxx
+#          echo ""
+#          echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version"
+#                /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin/mpicxx --version
+#          echo ""
+#          echo "which mpif90"
+#                which mpif90
+#          echo ""
+#          echo "mpif90 --version"
+#                mpif90 --version
+#          echo ""
+#          echo "ls /usr/local/Cellar/open-mpi"
+#                ls /usr/local/Cellar/open-mpi
+#          echo ""
+#          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}"
+#                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}
+#          echo ""
+#          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin"
+#                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin
+#          echo ""
+#          echo "ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/*"
+#                ls /usr/local/Cellar/open-mpi/${OMPI_VERSION}/*
+#          echo ""
+#          echo "find /usr/local/Cellar -iname \"*hdf5.mod\""
+#                find /usr/local/Cellar -iname  "*hdf5.mod"
+#          echo ""
+#          echo "find /usr/local/Cellar -iname \"*libhdf5_fortran*\""
+#                find /usr/local/Cellar -iname  "*libhdf5_fortran*"
+#          echo ""
+#          echo "find /usr/local/Cellar -iname \"*lapack*\""
+#                find /usr/local/Cellar -iname  "*lapack*"
+#          echo ""
+#          echo "find /usr/local/Cellar -iname \"*blas*\""
+#                find /usr/local/Cellar -iname  "*blas*"
+#          echo ""
+#          echo "find /usr/local/Cellar -iname \"*mpi.mod\""
+#                find /usr/local/Cellar -iname  "*mpi.mod"
+#
+##      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+##        run: |
+##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+##          make
+##          make clobber
+#
+##      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+##        run: |
+##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
+##          make
+##          make clobber
+#
+##      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+##        run: |
+##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
+##          make
+##          make clobber
+#
+##      - name: Compile SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
+##        run: |
+##          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
+##          make
+##          make clobber
+#
+#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
 #        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
-#          make
-#          make clobber
-
-      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-        run: |
-          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-          sh ${THORNADO_DIR}/run.sh > make.out
-          make realclean
-
-#      - name: Compile SandBox/AMReX/TwoMoment_Test
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/TwoMoment_Test
-#          make
+#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+#          sh ${THORNADO_DIR}/run.sh > make.out
 #          make realclean
+#
+##      - name: Compile SandBox/AMReX/TwoMoment_Test
+##        run: |
+##          cd ${THORNADO_DIR}/SandBox/AMReX/TwoMoment_Test
+##          make
+##          make realclean
