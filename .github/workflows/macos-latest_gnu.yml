@@ -36,17 +36,11 @@ jobs:
 
       - name: faafo
         run: |
-          echo "echo \"Hello, World!\" > hw.txt"
-                echo  "Hello, World!"  > hw.txt
+          echo "echo \"Hello, World!\" > hww.txt"
+                echo  "Hello, World!"  > hww.txt
           echo ""
-          echo "git config --global user.name \'Sam Dunham\'"
-                git config --global user.name 'Sam Dunham'
-          echo ""
-          echo "git config --global user.email \'9784969+dunhamsj@users.noreply.github.com\'"
-                git config --global user.email '9784969+dunhamsj@users.noreply.github.com'
-          echo ""
-          echo "git add hw.txt"
-                git add hw.txt
+          echo "git add hww.txt"
+                git add hww.txt
           echo ""
           echo "git commit -m \"add text file\""
                 git commit -m "add text file"
