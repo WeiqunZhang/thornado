@@ -1,0 +1,2453 @@
+/Users/runner/work/thornado/thornado/amrex/Tools/GNUMake/Make.rules:503: tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends: No such file or directory
+warning: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
+tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:4: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp: In function 'void amrex_fi_createfinemask_thornado(amrex::iMultiFab*&, const amrex::BoxArray&, const amrex::DistributionMapping&, const amrex::BoxArray&, int, int, int, const amrex::Geometry*)':
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:18:21: warning: the compiler can assume that the address of 'CrseBA' will never be NULL [-Waddress]
+   18 |         if( &CrseBA == NULL )
+      |                     ^
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:10:25: note: 'CrseBA' declared here
+   10 |         const BoxArray& CrseBA,
+      |         ~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:23:21: warning: the compiler can assume that the address of 'FineBA' will never be NULL [-Waddress]
+   23 |         if( &FineBA == NULL )
+      |                     ^
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:12:25: note: 'FineBA' declared here
+   12 |         const BoxArray& FineBA,
+      |         ~~~~~~~~~~~~~~~~^~~~~~
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:18:9: warning: 'nonnull' argument 'CrseBA' compared to NULL [-Wnonnull-compare]
+   18 |         if( &CrseBA == NULL )
+      |         ^~
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:23:9: warning: 'nonnull' argument 'FineBA' compared to NULL [-Wnonnull-compare]
+   23 |         if( &FineBA == NULL )
+      |         ^~
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+cc1plus: warning: /include: No such file or directory [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:274:19:
+
+  274 |     INTEGER :: ierr
+      |                   1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:19:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                   1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:27:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                           1
+Warning: Unused variable 'myrank' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:35:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                                   1
+Warning: Unused variable 'nranks' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:66:7:
+
+   66 |     D_T, T_T, Y_T
+      |       1
+Warning: Unused PRIVATE module variable 'd_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:53:8:
+
+   53 |     iD_T, iT_T, iY_T, &
+      |        1
+Warning: Unused PRIVATE module variable 'id_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:20:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |                    1
+Warning: Unused PRIVATE module variable 'ie_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:55:37:
+
+   55 |     iXp_T, iXn_T, iXa_T, iXh_T, iGm_T
+      |                                     1
+Warning: Unused PRIVATE module variable 'igm_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:27:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |                           1
+Warning: Unused PRIVATE module variable 'ime_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:41:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |                                         1
+Warning: Unused PRIVATE module variable 'imn_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:34:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |                                  1
+Warning: Unused PRIVATE module variable 'imp_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:8:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |        1
+Warning: Unused PRIVATE module variable 'ip_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:54:14:
+
+   54 |     iP_T, iS_T, iE_T, iMe_T, iMp_T, iMn_T, &
+      |              1
+Warning: Unused PRIVATE module variable 'is_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:53:14:
+
+   53 |     iD_T, iT_T, iY_T, &
+      |              1
+Warning: Unused PRIVATE module variable 'it_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:55:23:
+
+   55 |     iXp_T, iXn_T, iXa_T, iXh_T, iGm_T
+      |                       1
+Warning: Unused PRIVATE module variable 'ixa_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:55:30:
+
+   55 |     iXp_T, iXn_T, iXa_T, iXh_T, iGm_T
+      |                              1
+Warning: Unused PRIVATE module variable 'ixh_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:55:16:
+
+   55 |     iXp_T, iXn_T, iXa_T, iXh_T, iGm_T
+      |                1
+Warning: Unused PRIVATE module variable 'ixn_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:55:9:
+
+   55 |     iXp_T, iXn_T, iXa_T, iXh_T, iGm_T
+      |         1
+Warning: Unused PRIVATE module variable 'ixp_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:53:20:
+
+   53 |     iD_T, iT_T, iY_T, &
+      |                    1
+Warning: Unused PRIVATE module variable 'iy_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:66:12:
+
+   66 |     D_T, T_T, Y_T
+      |            1
+Warning: Unused PRIVATE module variable 't_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:57:9:
+
+   57 |     UnitD, UnitT, UnitY, &
+      |         1
+Warning: Unused PRIVATE module variable 'unitd' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:57:16:
+
+   57 |     UnitD, UnitT, UnitY, &
+      |                1
+Warning: Unused PRIVATE module variable 'unitt' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:57:23:
+
+   57 |     UnitD, UnitT, UnitY, &
+      |                       1
+Warning: Unused PRIVATE module variable 'unity' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:66:17:
+
+   66 |     D_T, T_T, Y_T
+      |                 1
+Warning: Unused PRIVATE module variable 'y_t' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2215:19:
+
+ 2215 |     REAL(DP) :: D_P, T_P, Y_P, V_P, dV_P(3)
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2215:43:
+
+ 2215 |     REAL(DP) :: D_P, T_P, Y_P, V_P, dV_P(3)
+      |                                           1
+Warning: Unused variable 'dv_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2215:24:
+
+ 2215 |     REAL(DP) :: D_P, T_P, Y_P, V_P, dV_P(3)
+      |                        1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2215:34:
+
+ 2215 |     REAL(DP) :: D_P, T_P, Y_P, V_P, dV_P(3)
+      |                                  1
+Warning: Unused variable 'v_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2215:29:
+
+ 2215 |     REAL(DP) :: D_P, T_P, Y_P, V_P, dV_P(3)
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2148:19:
+
+ 2148 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2148:24:
+
+ 2148 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                        1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2148:34:
+
+ 2148 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                                  1
+Warning: Unused variable 'v_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2148:29:
+
+ 2148 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2117:19:
+
+ 2117 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2117:24:
+
+ 2117 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                        1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2117:34:
+
+ 2117 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                                  1
+Warning: Unused variable 'v_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2117:29:
+
+ 2117 |     REAL(DP) :: D_P, T_P, Y_P, V_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2035:19:
+
+ 2035 |     REAL(DP) :: D_P, T_P, Y_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2037:18:
+
+ 2037 |     REAL(DP) :: dD, dT, dY
+      |                  1
+Warning: Unused variable 'dd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2037:22:
+
+ 2037 |     REAL(DP) :: dD, dT, dY
+      |                      1
+Warning: Unused variable 'dt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2037:26:
+
+ 2037 |     REAL(DP) :: dD, dT, dY
+      |                          1
+Warning: Unused variable 'dy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2036:18:
+
+ 2036 |     INTEGER  :: iD, iT, iY
+      |                  1
+Warning: Unused variable 'id' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2036:22:
+
+ 2036 |     INTEGER  :: iD, iT, iY
+      |                      1
+Warning: Unused variable 'it' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2036:26:
+
+ 2036 |     INTEGER  :: iD, iT, iY
+      |                          1
+Warning: Unused variable 'iy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2038:18:
+
+ 2038 |     REAL(DP) :: Me, Mp, Mn
+      |                  1
+Warning: Unused variable 'me' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2038:26:
+
+ 2038 |     REAL(DP) :: Me, Mp, Mn
+      |                          1
+Warning: Unused variable 'mn' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2038:22:
+
+ 2038 |     REAL(DP) :: Me, Mp, Mn
+      |                      1
+Warning: Unused variable 'mp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2035:24:
+
+ 2035 |     REAL(DP) :: D_P, T_P, Y_P
+      |                        1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:2035:29:
+
+ 2035 |     REAL(DP) :: D_P, T_P, Y_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1994:19:
+
+ 1994 |     REAL(DP) :: D_P, T_P, Y_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1996:18:
+
+ 1996 |     REAL(DP) :: dD, dT, dY
+      |                  1
+Warning: Unused variable 'dd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1996:22:
+
+ 1996 |     REAL(DP) :: dD, dT, dY
+      |                      1
+Warning: Unused variable 'dt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1996:26:
+
+ 1996 |     REAL(DP) :: dD, dT, dY
+      |                          1
+Warning: Unused variable 'dy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1995:18:
+
+ 1995 |     INTEGER  :: iD, iT, iY
+      |                  1
+Warning: Unused variable 'id' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1995:22:
+
+ 1995 |     INTEGER  :: iD, iT, iY
+      |                      1
+Warning: Unused variable 'it' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1995:26:
+
+ 1995 |     INTEGER  :: iD, iT, iY
+      |                          1
+Warning: Unused variable 'iy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1997:18:
+
+ 1997 |     REAL(DP) :: Me, Mp, Mn
+      |                  1
+Warning: Unused variable 'me' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1997:26:
+
+ 1997 |     REAL(DP) :: Me, Mp, Mn
+      |                          1
+Warning: Unused variable 'mn' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1997:22:
+
+ 1997 |     REAL(DP) :: Me, Mp, Mn
+      |                      1
+Warning: Unused variable 'mp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1994:24:
+
+ 1994 |     REAL(DP) :: D_P, T_P, Y_P
+      |                        1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1994:29:
+
+ 1994 |     REAL(DP) :: D_P, T_P, Y_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1085:19:
+
+ 1085 |     REAL(DP) :: D_P, E_P, Y_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1085:24:
+
+ 1085 |     REAL(DP) :: D_P, E_P, Y_P
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1084:37:
+
+ 1084 |     INTEGER :: iP, nP, Error(SIZE(D))
+      |                                     1
+Warning: Unused variable 'error' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1084:17:
+
+ 1084 |     INTEGER :: iP, nP, Error(SIZE(D))
+      |                 1
+Warning: Unused variable 'ip' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1084:21:
+
+ 1084 |     INTEGER :: iP, nP, Error(SIZE(D))
+      |                     1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1085:29:
+
+ 1085 |     REAL(DP) :: D_P, E_P, Y_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:985:17:
+
+  985 |     INTEGER :: iP, nP
+      |                 1
+Warning: Unused variable 'ip' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:985:21:
+
+  985 |     INTEGER :: iP, nP
+      |                     1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:961:19:
+
+  961 |     REAL(DP) :: D_P, P_P, Y_P, T_P
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:960:21:
+
+  960 |     INTEGER  :: Error
+      |                     1
+Warning: Unused variable 'error' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:961:24:
+
+  961 |     REAL(DP) :: D_P, P_P, Y_P, T_P
+      |                        1
+Warning: Unused variable 'p_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:961:34:
+
+  961 |     REAL(DP) :: D_P, P_P, Y_P, T_P
+      |                                  1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:961:29:
+
+  961 |     REAL(DP) :: D_P, P_P, Y_P, T_P
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:855:19:
+
+  855 |     REAL(DP) :: D_P, E_P, Y_P, T_P, T
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:855:24:
+
+  855 |     REAL(DP) :: D_P, E_P, Y_P, T_P, T
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:855:37:
+
+  855 |     REAL(DP) :: D_P, E_P, Y_P, T_P, T
+      |                                     1
+Warning: Unused variable 't' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:855:34:
+
+  855 |     REAL(DP) :: D_P, E_P, Y_P, T_P, T
+      |                                  1
+Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:855:29:
+
+  855 |     REAL(DP) :: D_P, E_P, Y_P, T_P, T
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:699:19:
+
+  699 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:699:24:
+
+  699 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:697:18:
+
+  697 |     INTEGER  :: iP, nP
+      |                  1
+Warning: Unused variable 'ip' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:697:22:
+
+  697 |     INTEGER  :: iP, nP
+      |                      1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:699:48:
+
+  699 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                                1
+Warning: Unused variable 't_guess' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:699:39:
+
+  699 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                       1
+Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:699:29:
+
+  699 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:671:19:
+
+  671 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:671:24:
+
+  671 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:671:39:
+
+  671 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                                       1
+Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:671:29:
+
+  671 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:640:19:
+
+  640 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:640:24:
+
+  640 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:640:39:
+
+  640 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                                       1
+Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:640:29:
+
+  640 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:607:19:
+
+  607 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:607:24:
+
+  607 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:607:48:
+
+  607 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                                1
+Warning: Unused variable 't_guess' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:607:39:
+
+  607 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                       1
+Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:607:29:
+
+  607 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:573:19:
+
+  573 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                   1
+Warning: Unused variable 'd_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:573:24:
+
+  573 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                        1
+Warning: Unused variable 'e_p' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:573:48:
+
+  573 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                                1
+Warning: Unused variable 't_guess' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:573:39:
+
+  573 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                                       1
+Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:573:29:
+
+  573 |     REAL(DP) :: D_P, E_P, Y_P, T_Lookup, T_Guess
+      |                             1
+Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1338:43:
+
+ 1338 |     INTEGER                         :: ierr
+      |                                           1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1235:43:
+
+ 1235 |     INTEGER                         :: ierr
+      |                                           1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1153:43:
+
+ 1153 |     INTEGER                         :: ierr, i
+      |                                           1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1154:49:
+
+ 1154 |     INTEGER(C_INT64_T)              :: stridex_64, stridey_64
+      |                                                 1
+Warning: Unused variable 'stridex_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1154:61:
+
+ 1154 |     INTEGER(C_INT64_T)              :: stridex_64, stridey_64
+      |                                                             1
+Warning: Unused variable 'stridey_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1006:46:
+
+ 1006 |     INTEGER                            :: ierr, max_mn, min_mn
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:943:46:
+
+  943 |     INTEGER                            :: ierr, info, max_mn
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:844:46:
+
+  844 |     INTEGER                            :: ierr, info, i, j, ix
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:844:52:
+
+  844 |     INTEGER                            :: ierr, info, i, j, ix
+      |                                                    1
+Warning: Unused variable 'info' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:838:47:
+
+  838 |     CHARACTER                          :: trans
+      |                                               1
+Warning: Unused variable 'trans' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:750:46:
+
+  750 |     INTEGER                            :: ierr, lenx, leny
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:599:54:
+
+  599 |     INTEGER                                    :: ierr, i, stridea, strideb, strideipiv
+      |                                                      1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:601:60:
+
+  601 |     INTEGER(C_INT64_T)                         :: strideP_64
+      |                                                            1
+Warning: Unused variable 'stridep_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:471:46:
+
+  471 |     INTEGER                            :: ierr, i
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:473:52:
+
+  473 |     INTEGER(C_INT64_T)                 :: stridea_64, strideb_64, stridec_64
+      |                                                    1
+Warning: Unused variable 'stridea_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:474:51:
+
+  474 |     INTEGER(C_LONG_LONG)               :: stridea_l, strideb_l, stridec_l
+      |                                                   1
+Warning: Unused variable 'stridea_l' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:473:64:
+
+  473 |     INTEGER(C_INT64_T)                 :: stridea_64, strideb_64, stridec_64
+      |                                                                1
+Warning: Unused variable 'strideb_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:474:62:
+
+  474 |     INTEGER(C_LONG_LONG)               :: stridea_l, strideb_l, stridec_l
+      |                                                              1
+Warning: Unused variable 'strideb_l' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:473:76:
+
+  473 |     INTEGER(C_INT64_T)                 :: stridea_64, strideb_64, stridec_64
+      |                                                                            1
+Warning: Unused variable 'stridec_64' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:474:73:
+
+  474 |     INTEGER(C_LONG_LONG)               :: stridea_l, strideb_l, stridec_l
+      |                                                                         1
+Warning: Unused variable 'stridec_l' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:371:46:
+
+  371 |     INTEGER                            :: ierr
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:190:45:
+
+  190 |     TYPE(C_PTR)                        :: dat, dbt
+      |                                             1
+Warning: Unused variable 'dat' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:190:50:
+
+  190 |     TYPE(C_PTR)                        :: dat, dbt
+      |                                                  1
+Warning: Unused variable 'dbt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:184:52:
+
+  184 |     INTEGER                            :: i, j, ierr, info
+      |                                                    1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:184:58:
+
+  184 |     INTEGER                            :: i, j, ierr, info
+      |                                                          1
+Warning: Unused variable 'info' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1222:33:
+
+ 1222 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1227:10:
+
+ 1227 |       dMdD      , dMdT      , dMdY
+      |          1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1225:16:
+
+ 1225 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1227:22:
+
+ 1227 |       dMdD      , dMdT      , dMdY
+      |                      1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1225:28:
+
+ 1225 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                            1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1227:34:
+
+ 1227 |       dMdD      , dMdT      , dMdY
+      |                                  1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1225:40:
+
+ 1225 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                                        1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1223:17:
+
+ 1223 |     INTEGER :: nP
+      |                 1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1165:33:
+
+ 1165 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1167:29:
+
+ 1167 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                             1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1166:35:
+
+ 1166 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                   1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1167:41:
+
+ 1167 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                         1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1166:47:
+
+ 1166 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                               1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1167:53:
+
+ 1167 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                                     1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1166:59:
+
+ 1166 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                                           1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1100:33:
+
+ 1100 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1105:10:
+
+ 1105 |       dMdD      , dMdT      , dMdY
+      |          1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1103:16:
+
+ 1103 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1105:22:
+
+ 1105 |       dMdD      , dMdT      , dMdY
+      |                      1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1103:28:
+
+ 1103 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                            1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1105:34:
+
+ 1105 |       dMdD      , dMdT      , dMdY
+      |                                  1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1103:40:
+
+ 1103 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                                        1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1101:17:
+
+ 1101 |     INTEGER :: nP
+      |                 1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1043:33:
+
+ 1043 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1045:29:
+
+ 1045 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                             1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1044:35:
+
+ 1044 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                   1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1045:41:
+
+ 1045 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                         1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1044:47:
+
+ 1044 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                               1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1045:53:
+
+ 1045 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                                     1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:1044:59:
+
+ 1044 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                                           1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:978:33:
+
+  978 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:983:10:
+
+  983 |       dMdD      , dMdT      , dMdY
+      |          1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:981:16:
+
+  981 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:983:22:
+
+  983 |       dMdD      , dMdT      , dMdY
+      |                      1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:981:28:
+
+  981 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                            1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:983:34:
+
+  983 |       dMdD      , dMdT      , dMdY
+      |                                  1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:981:40:
+
+  981 |       dMdD_Local, dMdT_Local, dMdY_Local
+      |                                        1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:979:17:
+
+  979 |     INTEGER :: nP
+      |                 1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:921:33:
+
+  921 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:923:29:
+
+  923 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                             1
+Warning: Unused variable 'dmdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:922:35:
+
+  922 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                   1
+Warning: Unused variable 'dmdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:923:41:
+
+  923 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                         1
+Warning: Unused variable 'dmdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:922:47:
+
+  922 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                               1
+Warning: Unused variable 'dmdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:923:53:
+
+  923 |     REAL(DP), POINTER :: dMdD      , dMdT      , dMdY
+      |                                                     1
+Warning: Unused variable 'dmdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:922:59:
+
+  922 |     REAL(DP), TARGET  :: dMdD_Local, dMdT_Local, dMdY_Local
+      |                                                           1
+Warning: Unused variable 'dmdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:843:29:
+
+  843 |     INTEGER :: Error(SIZE(D))
+      |                             1
+Warning: Unused variable 'error' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:808:21:
+
+  808 |     INTEGER  :: Error
+      |                     1
+Warning: Unused variable 'error' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:445:33:
+
+  445 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:450:10:
+
+  450 |       dEdD      , dEdT      , dEdY
+      |          1
+Warning: Unused variable 'dedd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:448:16:
+
+  448 |       dEdD_Local, dEdT_Local, dEdY_Local
+      |                1
+Warning: Unused variable 'dedd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:450:22:
+
+  450 |       dEdD      , dEdT      , dEdY
+      |                      1
+Warning: Unused variable 'dedt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:448:28:
+
+  448 |       dEdD_Local, dEdT_Local, dEdY_Local
+      |                            1
+Warning: Unused variable 'dedt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:450:34:
+
+  450 |       dEdD      , dEdT      , dEdY
+      |                                  1
+Warning: Unused variable 'dedy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:448:40:
+
+  448 |       dEdD_Local, dEdT_Local, dEdY_Local
+      |                                        1
+Warning: Unused variable 'dedy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:446:17:
+
+  446 |     INTEGER :: nP
+      |                 1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:388:33:
+
+  388 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:390:29:
+
+  390 |     REAL(DP), POINTER :: dEdD      , dEdT      , dEdY
+      |                             1
+Warning: Unused variable 'dedd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:389:35:
+
+  389 |     REAL(DP), TARGET  :: dEdD_Local, dEdT_Local, dEdY_Local
+      |                                   1
+Warning: Unused variable 'dedd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:390:41:
+
+  390 |     REAL(DP), POINTER :: dEdD      , dEdT      , dEdY
+      |                                         1
+Warning: Unused variable 'dedt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:389:47:
+
+  389 |     REAL(DP), TARGET  :: dEdD_Local, dEdT_Local, dEdY_Local
+      |                                               1
+Warning: Unused variable 'dedt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:390:53:
+
+  390 |     REAL(DP), POINTER :: dEdD      , dEdT      , dEdY
+      |                                                     1
+Warning: Unused variable 'dedy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:389:59:
+
+  389 |     REAL(DP), TARGET  :: dEdD_Local, dEdT_Local, dEdY_Local
+      |                                                           1
+Warning: Unused variable 'dedy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:323:33:
+
+  323 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:328:10:
+
+  328 |       dPdD      , dPdT      , dPdY
+      |          1
+Warning: Unused variable 'dpdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:326:16:
+
+  326 |       dPdD_Local, dPdT_Local, dPdY_Local
+      |                1
+Warning: Unused variable 'dpdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:328:22:
+
+  328 |       dPdD      , dPdT      , dPdY
+      |                      1
+Warning: Unused variable 'dpdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:326:28:
+
+  326 |       dPdD_Local, dPdT_Local, dPdY_Local
+      |                            1
+Warning: Unused variable 'dpdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:328:34:
+
+  328 |       dPdD      , dPdT      , dPdY
+      |                                  1
+Warning: Unused variable 'dpdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:326:40:
+
+  326 |       dPdD_Local, dPdT_Local, dPdY_Local
+      |                                        1
+Warning: Unused variable 'dpdy_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:324:17:
+
+  324 |     INTEGER :: nP
+      |                 1
+Warning: Unused variable 'np' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:266:33:
+
+  266 |     LOGICAL :: ComputeDerivatives
+      |                                 1
+Warning: Unused variable 'computederivatives' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:268:29:
+
+  268 |     REAL(DP), POINTER :: dPdD      , dPdT      , dPdY
+      |                             1
+Warning: Unused variable 'dpdd' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:267:35:
+
+  267 |     REAL(DP), TARGET  :: dPdD_Local, dPdT_Local, dPdY_Local
+      |                                   1
+Warning: Unused variable 'dpdd_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:268:41:
+
+  268 |     REAL(DP), POINTER :: dPdD      , dPdT      , dPdY
+      |                                         1
+Warning: Unused variable 'dpdt' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:267:47:
+
+  267 |     REAL(DP), TARGET  :: dPdD_Local, dPdT_Local, dPdY_Local
+      |                                               1
+Warning: Unused variable 'dpdt_local' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:268:53:
+
+  268 |     REAL(DP), POINTER :: dPdD      , dPdT      , dPdY
+      |                                                     1
+Warning: Unused variable 'dpdy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule.F90:267:59:
+
+  267 |     REAL(DP), TARGET  :: dPdD_Local, dPdT_Local, dPdY_Local
+      |                                                           1
+Warning: Unused variable 'dpdy_local' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+TaggingModule.f90:312:22:
+
+  312 |     REAL(DP) :: Radius
+      |                      1
+Warning: Unused variable 'radius' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:92:25:
+
+   92 |                iNX_X_Crse, iNX_X1_Crse, iNX_X2_Crse, iNX_X3_Crse, &
+      |                         1
+Warning: Unused variable 'inx_x_crse' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:93:25:
+
+   93 |                iNX_X_Fine, iNX_X1_Fine, iNX_X2_Fine, iNX_X3_Fine
+      |                         1
+Warning: Unused variable 'inx_x_fine' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:46:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                              1
+Warning: Unused variable 'e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:36:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                    1
+Warning: Unused variable 'e_pp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:303:30:
+
+  303 |     REAL(DP) :: G_q(nDOFX,nGF)
+      |                              1
+Warning: Unused variable 'g_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:296:34:
+
+  296 |     INTEGER  :: iX1, iX2, iX3, iCF, iP, iNodeX
+      |                                  1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:38:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                                      1
+Warning: Unused variable 'max_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:26:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                          1
+Warning: Unused variable 'min_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:299:41:
+
+  299 |     REAL(DP) :: Min_Y_K, Max_Y_K, Min_E_K
+      |                                         1
+Warning: Unused variable 'min_e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:294:30:
+
+  294 |     LOGICAL  :: NegativeStates
+      |                              1
+Warning: Unused variable 'negativestates' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:40:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                                        1
+Warning: Unused variable 'u_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:30:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                              1
+Warning: Unused variable 'u_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:25:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                         1
+Warning: Unused variable 'y_pp' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:344:2:
+
+  344 |   FUNCTION MinMod2_Vector( a, b ) &
+      |  ^
+Warning: 'minmod2_vector' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:392:2:
+
+  392 |   FUNCTION MinMod_Vector( a, b, c ) &
+      |  ^
+Warning: 'minmod_vector' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:1150:61:
+
+ 1150 |   SUBROUTINE ComputeSpecificInternalEnergyAndElectronFraction( U, E, Y )
+      |                                                             ^
+Warning: 'computespecificinternalenergyandelectronfraction' defined but not used [-Wunused-function]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:209:57:
+
+  209 |     REAL(DP), DIMENSION(1:nNodesE,   1:nNodesE)    :: M_E
+      |                                                         1
+Warning: Unused variable 'm_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:210:58:
+
+  210 |     REAL(DP), DIMENSION(1:nNodesX(1),1:nNodesX(1)) :: M_X1
+      |                                                          1
+Warning: Unused variable 'm_x1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:211:58:
+
+  211 |     REAL(DP), DIMENSION(1:nNodesX(2),1:nNodesX(2)) :: M_X2
+      |                                                          1
+Warning: Unused variable 'm_x2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:212:58:
+
+  212 |     REAL(DP), DIMENSION(1:nNodesX(3),1:nNodesX(3)) :: M_X3
+      |                                                          1
+Warning: Unused variable 'm_x3' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_CharacteristicDecompositionModule_NonRelativistic_TABLE.f90:221:41:
+
+  221 |     REAL(DP) :: X, Alpha, B, Delta, Zero2, invCsSq
+      |                                         1
+Warning: Unused variable 'zero2' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:57:30:
+
+   57 |     REAL(DP) :: D_Min_Euler_PL
+      |                              1
+Warning: Unused variable 'd_min_euler_pl' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:58:33:
+
+   58 |     REAL(DP) :: IntE_Min_Euler_PL
+      |                                 1
+Warning: Unused variable 'inte_min_euler_pl' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:54:28:
+
+   54 |     REAL(DP) :: Min_1, Max_1
+      |                            1
+Warning: Unused variable 'max_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:55:28:
+
+   55 |     REAL(DP) :: Min_2, Max_2
+      |                            1
+Warning: Unused variable 'max_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:28:
+
+   56 |     REAL(DP) :: Min_3, Max_3
+      |                            1
+Warning: Unused variable 'max_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:21:
+
+   56 |     REAL(DP) :: Min_3, Max_3
+      |                     1
+Warning: Unused variable 'min_3' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:277:28:
+
+  277 |   SUBROUTINE CreatePointMask( iLevel, iMF_PointMask, BA, DM )
+      |                            ^
+Warning: 'createpointmask' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:297:29:
+
+  297 |   SUBROUTINE DestroyPointMask( iMF_PointMask )
+      |                             ^
+Warning: 'destroypointmask' defined but not used [-Wunused-function]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:44:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                            1
+Warning: Unused variable 'jnx2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:50:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                                  1
+Warning: Unused variable 'jnx3' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:4209:38:
+
+ 4209 |     INTEGER :: iNX, iX1, iX2, iX3, iCF
+      |                                      1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3385:61:
+
+ 3385 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3388:61:
+
+ 3388 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3391:61:
+
+ 3391 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3366:29:
+
+ 3366 |     REAL(DP) :: DivGridVolume
+      |                             1
+Warning: Unused variable 'divgridvolume' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3401:31:
+
+ 3401 |     REAL(DP) :: GradPsiF(nDOFX)
+      |                               1
+Warning: Unused variable 'gradpsif' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3364:38:
+
+ 3364 |     INTEGER :: iNX, iX1, iX2, iX3, iCF, ErrorExists
+      |                                      1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:2763:54:
+
+ 2763 |   SUBROUTINE ComputeIncrement_Geometry_NonRelativistic &
+      |                                                      ^
+Warning: 'computeincrement_geometry_nonrelativistic' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3806:53:
+
+ 3806 |   SUBROUTINE ComputeIncrement_Gravity_NonRelativistic &
+      |                                                     ^
+Warning: 'computeincrement_gravity_nonrelativistic' defined but not used [-Wunused-function]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:170:27:
+
+  170 |   LOGICAL :: FillGhostCells
+      |                           1
+Warning: Unused PRIVATE module variable 'fillghostcells' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2306:31:
+
+ 2306 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2311:54:
+
+ 2311 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:22:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2305:41:
+
+ 2305 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:27:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:32:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:37:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:42:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2314:24:
+
+ 2314 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2314:34:
+
+ 2314 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2307:32:
+
+ 2307 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2309:54:
+
+ 2309 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2310:54:
+
+ 2310 |     REAL(DP), CONTIGUOUS, POINTER :: uMF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1727:47:
+
+ 1727 |     TYPE(amrex_multifab) :: CF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1728:47:
+
+ 1728 |     TYPE(amrex_multifab) :: CF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1731:25:
+
+ 1731 |     LOGICAL  :: CONVERGED
+      |                         1
+Warning: Unused variable 'converged' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1729:47:
+
+ 1729 |     TYPE(amrex_multifab) :: dCF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dcf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1726:47:
+
+ 1726 |     TYPE(amrex_multifab) :: dLF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:22:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:33:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                                 1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:28:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                            1
+Warning: Unused variable 'iter' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1724:47:
+
+ 1724 |     TYPE(amrex_multifab) :: LF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1725:47:
+
+ 1725 |     TYPE(amrex_multifab) :: LF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1723:47:
+
+ 1723 |     TYPE(amrex_multifab) :: MF_uGS(0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'mf_ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1733:28:
+
+ 1733 |     REAL(DP) :: MinLF, MinCF
+      |                            1
+Warning: Unused variable 'mincf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1733:21:
+
+ 1733 |     REAL(DP) :: MinLF, MinCF
+      |                     1
+Warning: Unused variable 'minlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1573:47:
+
+ 1573 |     TYPE(amrex_multifab) :: CF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1574:47:
+
+ 1574 |     TYPE(amrex_multifab) :: CF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1577:25:
+
+ 1577 |     LOGICAL  :: CONVERGED
+      |                         1
+Warning: Unused variable 'converged' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1575:47:
+
+ 1575 |     TYPE(amrex_multifab) :: dCF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dcf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1572:47:
+
+ 1572 |     TYPE(amrex_multifab) :: dLF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:22:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:33:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                                 1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:28:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                            1
+Warning: Unused variable 'iter' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1570:47:
+
+ 1570 |     TYPE(amrex_multifab) :: LF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1571:47:
+
+ 1571 |     TYPE(amrex_multifab) :: LF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1569:47:
+
+ 1569 |     TYPE(amrex_multifab) :: MF_uGS(0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'mf_ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1579:28:
+
+ 1579 |     REAL(DP) :: MinLF, MinCF
+      |                            1
+Warning: Unused variable 'mincf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1579:21:
+
+ 1579 |     REAL(DP) :: MinLF, MinCF
+      |                     1
+Warning: Unused variable 'minlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1217:28:
+
+ 1217 |     TYPE(amrex_box)    :: BX
+      |                            1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1227:26:
+
+ 1227 |     INTEGER :: ErrorExists
+      |                          1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:34:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                  1
+Warning: Unused variable 'g_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:41:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                         1
+Warning: Unused variable 'g_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:48:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                                1
+Warning: Unused variable 'g_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:27:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                           1
+Warning: Unused variable 'id_g1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:34:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                  1
+Warning: Unused variable 'id_g2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:41:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                         1
+Warning: Unused variable 'id_g3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:20:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                    1
+Warning: Unused variable 'id_n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:45:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                             1
+Warning: Unused variable 'ie' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1229:46:
+
+ 1229 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:21:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:51:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                   1
+Warning: Unused variable 'in_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:57:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                         1
+Warning: Unused variable 'in_x' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:67:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                                   1
+Warning: Unused variable 'in_z' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:26:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                          1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:61:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                             1
+Warning: Unused variable 'is' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1228:46:
+
+ 1228 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:31:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                               1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:36:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                    1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:41:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                         1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1226:23:
+
+ 1226 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                       1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1226:33:
+
+ 1226 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                                 1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:29:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                             1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1218:29:
+
+ 1218 |     TYPE(amrex_mfiter) :: MFI
+      |                             1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:27:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                           1
+Warning: Unused variable 'n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:34:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                  1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:40:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                        1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:17:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                 1
+Warning: Unused variable 's' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:24:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                        1
+Warning: Unused variable 's_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1221:49:
+
+ 1221 |     REAL(DP), CONTIGUOUS, POINTER :: uCF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1222:49:
+
+ 1222 |     REAL(DP), CONTIGUOUS, POINTER :: uCR(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1220:49:
+
+ 1220 |     REAL(DP), CONTIGUOUS, POINTER :: uGF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1223:49:
+
+ 1223 |     REAL(DP), CONTIGUOUS, POINTER :: uGS(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:24:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:36:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                    1
+Warning: Unused variable 'v_u_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:43:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                           1
+Warning: Unused variable 'v_u_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:50:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                                  1
+Warning: Unused variable 'v_u_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:52:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                                    1
+Warning: Unused variable 'vg' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:49:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                 1
+Warning: Unused variable 'betadotv' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:895:28:
+
+  895 |     TYPE(amrex_box)    :: BX
+      |                            1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:17:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                 1
+Warning: Unused variable 'e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:32:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                                1
+Warning: Unused variable 'e_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:59:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                           1
+Warning: Unused variable 'enthalpy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:55:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                                       1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:24:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                        1
+Warning: Unused variable 'g_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:31:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                               1
+Warning: Unused variable 'g_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:38:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                                      1
+Warning: Unused variable 'g_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:24:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                        1
+Warning: Unused variable 'gm_dd_11' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:34:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                                  1
+Warning: Unused variable 'gm_dd_22' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:44:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                                            1
+Warning: Unused variable 'gm_dd_33' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:27:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                           1
+Warning: Unused variable 'id_g1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:34:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                  1
+Warning: Unused variable 'id_g2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:41:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                         1
+Warning: Unused variable 'id_g3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:20:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                    1
+Warning: Unused variable 'id_n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:45:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                             1
+Warning: Unused variable 'ie' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:909:46:
+
+  909 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:22:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:51:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                   1
+Warning: Unused variable 'in_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:57:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                         1
+Warning: Unused variable 'in_x' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:67:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                                   1
+Warning: Unused variable 'in_z' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:27:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:61:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                             1
+Warning: Unused variable 'is' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:908:46:
+
+  908 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:32:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:37:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:42:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:904:24:
+
+  904 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:904:34:
+
+  904 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:39:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                       1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:896:29:
+
+  896 |     TYPE(amrex_mfiter) :: MFI
+      |                             1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:17:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                 1
+Warning: Unused variable 'n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:69:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                                     1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:905:20:
+
+  905 |     REAL(DP) :: Psi6
+      |                    1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:25:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                         1
+Warning: Unused variable 's_i' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:44:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                                            1
+Warning: Unused variable 's_i_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:899:49:
+
+  899 |     REAL(DP), CONTIGUOUS, POINTER :: uCF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:900:49:
+
+  900 |     REAL(DP), CONTIGUOUS, POINTER :: uCR(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:898:49:
+
+  898 |     REAL(DP), CONTIGUOUS, POINTER :: uGF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:901:49:
+
+  901 |     REAL(DP), CONTIGUOUS, POINTER :: uGS(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:24:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:21:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                     1
+Warning: Unused variable 'v_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:28:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                            1
+Warning: Unused variable 'v_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:35:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                                   1
+Warning: Unused variable 'v_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:21:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                     1
+Warning: Unused variable 'v_u_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:28:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                            1
+Warning: Unused variable 'v_u_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:35:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                                   1
+Warning: Unused variable 'v_u_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:42:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                                          1
+Warning: Unused variable 'vg' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:694:31:
+
+  694 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:704:26:
+
+  704 |     INTEGER :: ErrorExists
+      |                          1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:700:54:
+
+  700 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:707:46:
+
+  707 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:21:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:693:41:
+
+  693 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:26:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                          1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:706:46:
+
+  706 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:31:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                               1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:36:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                    1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:41:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                         1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:703:23:
+
+  703 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                       1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:703:33:
+
+  703 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                                 1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:695:32:
+
+  695 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:34:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                  1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:40:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                        1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:698:54:
+
+  698 |     REAL(DP), CONTIGUOUS, POINTER :: uCF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:697:54:
+
+  697 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:699:54:
+
+  699 |     REAL(DP), CONTIGUOUS, POINTER :: uGS     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:24:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:39:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                       1
+Warning: Unused variable 'betadotv' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:480:31:
+
+  480 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:49:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                 1
+Warning: Unused variable 'enthalpy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:55:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                                       1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:486:54:
+
+  486 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:495:46:
+
+  495 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:22:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:479:41:
+
+  479 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:27:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:494:46:
+
+  494 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:32:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:37:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:42:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:489:24:
+
+  489 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:489:34:
+
+  489 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:29:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                             1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:481:32:
+
+  481 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:59:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                           1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:490:20:
+
+  490 |     REAL(DP) :: Psi6
+      |                    1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:484:54:
+
+  484 |     REAL(DP), CONTIGUOUS, POINTER :: uCF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:491:26:
+
+  491 |     REAL(DP) :: uCF_K(nCF), uPF_K(nPF), &
+      |                          1
+Warning: Unused variable 'ucf_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:483:54:
+
+  483 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:485:54:
+
+  485 |     REAL(DP), CONTIGUOUS, POINTER :: uGS     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:491:38:
+
+  491 |     REAL(DP) :: uCF_K(nCF), uPF_K(nPF), &
+      |                                      1
+Warning: Unused variable 'upf_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:425:21:
+
+  425 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:423:47:
+
+  423 |     TYPE(amrex_multifab) :: MF_uMF(0:nLevels-1) ! Metric Fields
+      |                                               1
+Warning: Unused variable 'mf_umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:43:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                                           1
+Warning: Unused variable 'alphapsi_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:57:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                                                         1
+Warning: Unused variable 'beta_u_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:359:21:
+
+  359 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:354:42:
+
+  354 |     CHARACTER(LEN=1) :: INNER_BC_TYPES (5), OUTER_BC_TYPES (5)
+      |                                          1
+Warning: Unused variable 'inner_bc_types' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:355:42:
+
+  355 |     REAL(DP)         :: INNER_BC_VALUES(5), OUTER_BC_VALUES(5)
+      |                                          1
+Warning: Unused variable 'inner_bc_values' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:357:47:
+
+  357 |     TYPE(amrex_multifab) :: MF_uMF(0:nLevels-1) ! Metric Fields
+      |                                               1
+Warning: Unused variable 'mf_umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:354:62:
+
+  354 |     CHARACTER(LEN=1) :: INNER_BC_TYPES (5), OUTER_BC_TYPES (5)
+      |                                                              1
+Warning: Unused variable 'outer_bc_types' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:355:62:
+
+  355 |     REAL(DP)         :: INNER_BC_VALUES(5), OUTER_BC_VALUES(5)
+      |                                                              1
+Warning: Unused variable 'outer_bc_values' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:30:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                              1
+Warning: Unused variable 'psi_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1869:46:
+
+ 1869 |   SUBROUTINE UpdateConformalFactorAndMetric_MF( MF_uMF, MF_uGF )
+      |                                              ^
+Warning: 'updateconformalfactorandmetric_mf' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1945:43:
+
+ 1945 |   SUBROUTINE ComputeGeometryFromPoseidon_MF( MF_uMF, MF_uGF )
+      |                                           ^
+Warning: 'computegeometryfromposeidon_mf' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2017:48:
+
+ 2017 |   SUBROUTINE SetPoseidonBoundaryConditions_Outer &
+      |                                                ^
+Warning: 'setposeidonboundaryconditions_outer' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2300:27:
+
+ 2300 |   SUBROUTINE PopulateMF_uMF( MF_uGF, MF_uMF )
+      |                           ^
+Warning: 'populatemf_umf' defined but not used [-Wunused-function]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:95:37:
+
+   95 |     SlopeLimiterMethod        = 'TVD'
+      |                                     ^
+Warning: '.slopelimitermethod' may be used uninitialized [-Wmaybe-uninitialized]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:153:46:
+
+  153 |   END SUBROUTINE FinalizeSlopeLimiter_Euler_MF
+      |                                              ^
+note: '.slopelimitermethod' declared here
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+InitializationModule.f90:172:21:
+
+  172 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:4: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
