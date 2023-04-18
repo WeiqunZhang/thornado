@@ -138,11 +138,11 @@ jobs:
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
           make
           make realclean
-          #sh ${THORNADO_DIR}/run.sh > make.out 2> make.err
-          #git add -f make.out make.err
-          #git commit -m "add make output"
-          #git push
-          #make realclean
+          sh ${THORNADO_DIR}/run.sh > make.out 2> make.err
+          git add -f make.out make.err
+          git commit -m "add make output"
+          git push
+          make realclean
 #
 ##      - name: Compile SandBox/AMReX/TwoMoment_Test
 ##        run: |
