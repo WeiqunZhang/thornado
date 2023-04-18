@@ -36,7 +36,6 @@ jobs:
 
       - name: faafo
         run: |
-          echo ""
           echo "echo \"Hello, World!\" > hw.txt"
                 echo  "Hello, World!"  > hw.txt
           echo ""
