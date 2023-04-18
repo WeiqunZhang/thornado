@@ -141,34 +141,56 @@ f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:274:19:
+/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:344:2:
 
-  274 |     INTEGER :: ierr
-      |                   1
-Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:19:
+  344 |   FUNCTION MinMod2_Vector( a, b ) &
+      |  ^
+Warning: 'minmod2_vector' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:392:2:
 
-  146 |     INTEGER :: ierr, myrank, nranks
-      |                   1
-Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:27:
+  392 |   FUNCTION MinMod_Vector( a, b, c ) &
+      |  ^
+Warning: 'minmod_vector' defined but not used [-Wunused-function]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:277:28:
 
-  146 |     INTEGER :: ierr, myrank, nranks
-      |                           1
-Warning: Unused variable 'myrank' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:35:
+  277 |   SUBROUTINE CreatePointMask( iLevel, iMF_PointMask, BA, DM )
+      |                            ^
+Warning: 'createpointmask' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:297:29:
 
-  146 |     INTEGER :: ierr, myrank, nranks
-      |                                   1
-Warning: Unused variable 'nranks' declared at (1) [-Wunused-variable]
+  297 |   SUBROUTINE DestroyPointMask( iMF_PointMask )
+      |                             ^
+Warning: 'destroypointmask' defined but not used [-Wunused-function]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
@@ -184,7 +206,26 @@ f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:209:57:
+
+  209 |     REAL(DP), DIMENSION(1:nNodesE,   1:nNodesE)    :: M_E
+      |                                                         1
+Warning: Unused variable 'm_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:210:58:
+
+  210 |     REAL(DP), DIMENSION(1:nNodesX(1),1:nNodesX(1)) :: M_X1
+      |                                                          1
+Warning: Unused variable 'm_x1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:211:58:
+
+  211 |     REAL(DP), DIMENSION(1:nNodesX(2),1:nNodesX(2)) :: M_X2
+      |                                                          1
+Warning: Unused variable 'm_x2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:212:58:
+
+  212 |     REAL(DP), DIMENSION(1:nNodesX(3),1:nNodesX(3)) :: M_X3
+      |                                                          1
+Warning: Unused variable 'm_x3' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
@@ -486,7 +527,6 @@ Warning: Unused variable 't_p' declared at (1) [-Wunused-variable]
  1994 |     REAL(DP) :: D_P, T_P, Y_P
       |                             1
 Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 /Users/runner/work/thornado/thornado/Modules/EquationOfState/EquationOfStateModule_TABLE.F90:1085:19:
 
  1085 |     REAL(DP) :: D_P, E_P, Y_P
@@ -703,6 +743,30 @@ Warning: Unused variable 't_lookup' declared at (1) [-Wunused-variable]
       |                             1
 Warning: Unused variable 'y_p' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:274:19:
+
+  274 |     INTEGER :: ierr
+      |                   1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:19:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                   1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:27:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                           1
+Warning: Unused variable 'myrank' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Library/DeviceModule.F90:146:35:
+
+  146 |     INTEGER :: ierr, myrank, nranks
+      |                                   1
+Warning: Unused variable 'nranks' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 /Users/runner/work/thornado/thornado/Modules/Library/LinearAlgebraModule.F90:1338:43:
 
  1338 |     INTEGER                         :: ierr
@@ -828,6 +892,42 @@ Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
   184 |     INTEGER                            :: i, j, ierr, info
       |                                                          1
 Warning: Unused variable 'info' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:57:30:
+
+   57 |     REAL(DP) :: D_Min_Euler_PL
+      |                              1
+Warning: Unused variable 'd_min_euler_pl' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:58:33:
+
+   58 |     REAL(DP) :: IntE_Min_Euler_PL
+      |                                 1
+Warning: Unused variable 'inte_min_euler_pl' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:54:28:
+
+   54 |     REAL(DP) :: Min_1, Max_1
+      |                            1
+Warning: Unused variable 'max_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:55:28:
+
+   55 |     REAL(DP) :: Min_2, Max_2
+      |                            1
+Warning: Unused variable 'max_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:28:
+
+   56 |     REAL(DP) :: Min_3, Max_3
+      |                            1
+Warning: Unused variable 'max_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:21:
+
+   56 |     REAL(DP) :: Min_3, Max_3
+      |                     1
+Warning: Unused variable 'min_3' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
@@ -1218,136 +1318,21 @@ Warning: Unused variable 'dpdy' declared at (1) [-Wunused-variable]
 Warning: Unused variable 'dpdy_local' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-TaggingModule.f90:312:22:
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:95:37:
 
-  312 |     REAL(DP) :: Radius
-      |                      1
-Warning: Unused variable 'radius' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:92:25:
+   95 |     SlopeLimiterMethod        = 'TVD'
+      |                                     ^
+Warning: '.slopelimitermethod' may be used uninitialized [-Wmaybe-uninitialized]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:153:46:
 
-   92 |                iNX_X_Crse, iNX_X1_Crse, iNX_X2_Crse, iNX_X3_Crse, &
-      |                         1
-Warning: Unused variable 'inx_x_crse' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:93:25:
-
-   93 |                iNX_X_Fine, iNX_X1_Fine, iNX_X2_Fine, iNX_X3_Fine
-      |                         1
-Warning: Unused variable 'inx_x_fine' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:46:
-
-  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
-      |                                              1
-Warning: Unused variable 'e_k' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:36:
-
-  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
-      |                                    1
-Warning: Unused variable 'e_pp' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:303:30:
-
-  303 |     REAL(DP) :: G_q(nDOFX,nGF)
-      |                              1
-Warning: Unused variable 'g_q' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:296:34:
-
-  296 |     INTEGER  :: iX1, iX2, iX3, iCF, iP, iNodeX
-      |                                  1
-Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:38:
-
-  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
-      |                                      1
-Warning: Unused variable 'max_e' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:26:
-
-  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
-      |                          1
-Warning: Unused variable 'min_e' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:299:41:
-
-  299 |     REAL(DP) :: Min_Y_K, Max_Y_K, Min_E_K
-      |                                         1
-Warning: Unused variable 'min_e_k' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:294:30:
-
-  294 |     LOGICAL  :: NegativeStates
-      |                              1
-Warning: Unused variable 'negativestates' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:40:
-
-  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
-      |                                        1
-Warning: Unused variable 'u_k' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:30:
-
-  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
-      |                              1
-Warning: Unused variable 'u_q' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:25:
-
-  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
-      |                         1
-Warning: Unused variable 'y_pp' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:344:2:
-
-  344 |   FUNCTION MinMod2_Vector( a, b ) &
-      |  ^
-Warning: 'minmod2_vector' defined but not used [-Wunused-function]
-/Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:392:2:
-
-  392 |   FUNCTION MinMod_Vector( a, b, c ) &
-      |  ^
-Warning: 'minmod_vector' defined but not used [-Wunused-function]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:1150:61:
-
- 1150 |   SUBROUTINE ComputeSpecificInternalEnergyAndElectronFraction( U, E, Y )
-      |                                                             ^
-Warning: 'computespecificinternalenergyandelectronfraction' defined but not used [-Wunused-function]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:209:57:
-
-  209 |     REAL(DP), DIMENSION(1:nNodesE,   1:nNodesE)    :: M_E
-      |                                                         1
-Warning: Unused variable 'm_e' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:210:58:
-
-  210 |     REAL(DP), DIMENSION(1:nNodesX(1),1:nNodesX(1)) :: M_X1
-      |                                                          1
-Warning: Unused variable 'm_x1' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:211:58:
-
-  211 |     REAL(DP), DIMENSION(1:nNodesX(2),1:nNodesX(2)) :: M_X2
-      |                                                          1
-Warning: Unused variable 'm_x2' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Library/PolynomialBasisModule_Lagrange.f90:212:58:
-
-  212 |     REAL(DP), DIMENSION(1:nNodesX(3),1:nNodesX(3)) :: M_X3
-      |                                                          1
-Warning: Unused variable 'm_x3' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+  153 |   END SUBROUTINE FinalizeSlopeLimiter_Euler_MF
+      |                                              ^
+note: '.slopelimitermethod' declared here
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
@@ -1362,135 +1347,27 @@ f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:57:30:
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:92:25:
 
-   57 |     REAL(DP) :: D_Min_Euler_PL
-      |                              1
-Warning: Unused variable 'd_min_euler_pl' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:58:33:
+   92 |                iNX_X_Crse, iNX_X1_Crse, iNX_X2_Crse, iNX_X3_Crse, &
+      |                         1
+Warning: Unused variable 'inx_x_crse' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:93:25:
 
-   58 |     REAL(DP) :: IntE_Min_Euler_PL
-      |                                 1
-Warning: Unused variable 'inte_min_euler_pl' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:54:28:
+   93 |                iNX_X_Fine, iNX_X1_Fine, iNX_X2_Fine, iNX_X3_Fine
+      |                         1
+Warning: Unused variable 'inx_x_fine' declared at (1) [-Wunused-variable]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+TaggingModule.f90:312:22:
 
-   54 |     REAL(DP) :: Min_1, Max_1
-      |                            1
-Warning: Unused variable 'max_1' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:55:28:
-
-   55 |     REAL(DP) :: Min_2, Max_2
-      |                            1
-Warning: Unused variable 'max_2' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:28:
-
-   56 |     REAL(DP) :: Min_3, Max_3
-      |                            1
-Warning: Unused variable 'max_3' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule.F90:56:21:
-
-   56 |     REAL(DP) :: Min_3, Max_3
-      |                     1
-Warning: Unused variable 'min_3' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:277:28:
-
-  277 |   SUBROUTINE CreatePointMask( iLevel, iMF_PointMask, BA, DM )
-      |                            ^
-Warning: 'createpointmask' defined but not used [-Wunused-function]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule.f90:297:29:
-
-  297 |   SUBROUTINE DestroyPointMask( iMF_PointMask )
-      |                             ^
-Warning: 'destroypointmask' defined but not used [-Wunused-function]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:44:
-
-  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
-      |                                            1
-Warning: Unused variable 'jnx2' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:50:
-
-  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
-      |                                                  1
-Warning: Unused variable 'jnx3' declared at (1) [-Wunused-variable]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:4209:38:
-
- 4209 |     INTEGER :: iNX, iX1, iX2, iX3, iCF
-      |                                      1
-Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3385:61:
-
- 3385 |                                            iX_B0(3):iX_E0(3))
-      |                                                             1
-Warning: Unused variable 'christoffel3d_x1' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3388:61:
-
- 3388 |                                            iX_B0(3):iX_E0(3))
-      |                                                             1
-Warning: Unused variable 'christoffel3d_x2' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3391:61:
-
- 3391 |                                            iX_B0(3):iX_E0(3))
-      |                                                             1
-Warning: Unused variable 'christoffel3d_x3' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3366:29:
-
- 3366 |     REAL(DP) :: DivGridVolume
-      |                             1
-Warning: Unused variable 'divgridvolume' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3401:31:
-
- 3401 |     REAL(DP) :: GradPsiF(nDOFX)
-      |                               1
-Warning: Unused variable 'gradpsif' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3364:38:
-
- 3364 |     INTEGER :: iNX, iX1, iX2, iX3, iCF, ErrorExists
-      |                                      1
-Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:2763:54:
-
- 2763 |   SUBROUTINE ComputeIncrement_Geometry_NonRelativistic &
-      |                                                      ^
-Warning: 'computeincrement_geometry_nonrelativistic' defined but not used [-Wunused-function]
-/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3806:53:
-
- 3806 |   SUBROUTINE ComputeIncrement_Gravity_NonRelativistic &
-      |                                                     ^
-Warning: 'computeincrement_gravity_nonrelativistic' defined but not used [-Wunused-function]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+  312 |     REAL(DP) :: Radius
+      |                      1
+Warning: Unused variable 'radius' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:170:27:
@@ -2430,19 +2307,64 @@ Warning: 'setposeidonboundaryconditions_outer' defined but not used [-Wunused-fu
 Warning: 'populatemf_umf' defined but not used [-Wunused-function]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:95:37:
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:4209:38:
 
-   95 |     SlopeLimiterMethod        = 'TVD'
-      |                                     ^
-Warning: '.slopelimitermethod' may be used uninitialized [-Wmaybe-uninitialized]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Euler_MR/MF_Euler_SlopeLimiterModule.f90:153:46:
+ 4209 |     INTEGER :: iNX, iX1, iX2, iX3, iCF
+      |                                      1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3385:61:
 
-  153 |   END SUBROUTINE FinalizeSlopeLimiter_Euler_MF
-      |                                              ^
-note: '.slopelimitermethod' declared here
+ 3385 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3388:61:
+
+ 3388 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3391:61:
+
+ 3391 |                                            iX_B0(3):iX_E0(3))
+      |                                                             1
+Warning: Unused variable 'christoffel3d_x3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3366:29:
+
+ 3366 |     REAL(DP) :: DivGridVolume
+      |                             1
+Warning: Unused variable 'divgridvolume' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3401:31:
+
+ 3401 |     REAL(DP) :: GradPsiF(nDOFX)
+      |                               1
+Warning: Unused variable 'gradpsif' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3364:38:
+
+ 3364 |     INTEGER :: iNX, iX1, iX2, iX3, iCF, ErrorExists
+      |                                      1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:2763:54:
+
+ 2763 |   SUBROUTINE ComputeIncrement_Geometry_NonRelativistic &
+      |                                                      ^
+Warning: 'computeincrement_geometry_nonrelativistic' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:3806:53:
+
+ 3806 |   SUBROUTINE ComputeIncrement_Gravity_NonRelativistic &
+      |                                                     ^
+Warning: 'computeincrement_gravity_nonrelativistic' defined but not used [-Wunused-function]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:44:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                            1
+Warning: Unused variable 'jnx2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:50:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                                  1
+Warning: Unused variable 'jnx3' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
 InitializationModule.f90:172:21:
 
@@ -2450,4 +2372,82 @@ InitializationModule.f90:172:21:
       |                     1
 Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
 f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory '/include' [-Wmissing-include-dirs]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:46:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                              1
+Warning: Unused variable 'e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:36:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                    1
+Warning: Unused variable 'e_pp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:303:30:
+
+  303 |     REAL(DP) :: G_q(nDOFX,nGF)
+      |                              1
+Warning: Unused variable 'g_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:296:34:
+
+  296 |     INTEGER  :: iX1, iX2, iX3, iCF, iP, iNodeX
+      |                                  1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:38:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                                      1
+Warning: Unused variable 'max_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:26:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                          1
+Warning: Unused variable 'min_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:299:41:
+
+  299 |     REAL(DP) :: Min_Y_K, Max_Y_K, Min_E_K
+      |                                         1
+Warning: Unused variable 'min_e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:294:30:
+
+  294 |     LOGICAL  :: NegativeStates
+      |                              1
+Warning: Unused variable 'negativestates' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:40:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                                        1
+Warning: Unused variable 'u_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:30:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                              1
+Warning: Unused variable 'u_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:25:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                         1
+Warning: Unused variable 'y_pp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:1150:61:
+
+ 1150 |   SUBROUTINE ComputeSpecificInternalEnergyAndElectronFraction( U, E, Y )
+      |                                                             ^
+Warning: 'computespecificinternalenergyandelectronfraction' defined but not used [-Wunused-function]
 tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:4: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
