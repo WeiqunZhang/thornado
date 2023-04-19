@@ -1,6 +1,7 @@
 # THORNADO_DIR/SandBox/AMReX/Modules/TwoMoment
 
 VPATH_LOCATIONS += $(THORNADO_DIR)/SandBox/AMReX/Modules/TwoMoment
+INCLUDE_LOCATIONS += $(THORNADO_DIR)/SandBox/AMReX/Modules/TwoMoment
 f90EXE_sources  += MF_TwoMoment_UtilitiesModule.f90
 f90EXE_sources  += MF_TwoMoment_DiscretizationModule_Streaming_Relativistic.f90
 f90EXE_sources  += MF_TwoMoment_DiscretizationModule_Collisions_Relativistic.f90
@@ -13,16 +14,18 @@ f90EXE_sources  += MF_TwoMoment_TallyModule.f90
 # THORNADO_DIR/Modules/TwoMoment
 
 VPATH_LOCATIONS += $(THORNADO_DIR)/Modules/TwoMoment
+INCLUDE_LOCATIONS += $(THORNADO_DIR)/Modules/TwoMoment
 F90EXE_sources  += TwoMoment_ClosureModule.F90
 F90EXE_sources  += TwoMoment_UtilitiesModule.F90
 F90EXE_sources  += TwoMoment_BoundaryConditionsModule.F90
 F90EXE_sources  += TwoMoment_DiscretizationModule_Collisions_Neutrinos.F90
 F90EXE_sources  += TwoMoment_NeutrinoMatterSolverModule.F90
- 
+
 
 # THORNADO_DIR/Modules/TwoMoment/Relativistic
 
 VPATH_LOCATIONS += $(THORNADO_DIR)/Modules/TwoMoment/Relativistic
+INCLUDE_LOCATIONS += $(THORNADO_DIR)/Modules/TwoMoment/Relativistic
 F90EXE_sources  += TwoMoment_UtilitiesModule.F90
 F90EXE_sources  += TwoMoment_DiscretizationModule_Streaming.F90
 F90EXE_sources  += TwoMoment_DiscretizationModule_Collisions.F90

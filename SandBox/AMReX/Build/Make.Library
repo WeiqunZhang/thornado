@@ -1,6 +1,7 @@
 # $(THORNADO_DIR)/SandBox/AMReX/Modules/Library
 
 VPATH_LOCATIONS += $(THORNADO_DIR)/SandBox/AMReX/Modules/Library
+INCLUDE_LOCATIONS += $(THORNADO_DIR)/SandBox/AMReX/Modules/Library
 f90EXE_sources  += ProgenitorModule.f90
 f90EXE_sources  += MF_ErrorModule.f90
 f90EXE_sources  += MaskModule.f90
@@ -13,6 +14,7 @@ f90EXE_sources  += MF_EdgeMapModule.f90
 # THORNADO_DIR/Modules/Library
 
 VPATH_LOCATIONS += $(THORNADO_DIR)/Modules/Library
+INCLUDE_LOCATIONS += $(THORNADO_DIR)/Modules/Library
 f90EXE_sources  += QuadratureModule.f90
 F90EXE_sources  += ReferenceElementModule.F90
 F90EXE_sources  += ReferenceElementModuleX.F90
