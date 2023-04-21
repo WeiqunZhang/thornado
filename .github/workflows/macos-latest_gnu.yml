@@ -36,22 +36,26 @@ jobs:
           GCC_VERSION=`ls /usr/local/Cellar/gcc`
           echo ""
           echo "GCC_VERSION: ${GCC_VERSION}"
+          echo ""
           echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin" >> ${GITHUB_PATH}
           brew install gfortran
-          brew install open-mpi
+          brew install open-mpi --cc=gcc-12
           OMPI_VERSION=`ls /usr/local/Cellar/open-mpi`
           echo ""
           echo "OMPI_VERSION: ${OMPI_VERSION}"
+          echo ""
           echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
           brew install hdf5
           HDF5_VERSION=`ls /usr/local/Cellar/hdf5`
           echo ""
           echo "HDF5_VERSION: ${HDF5_VERSION}"
+          echo ""
           echo "HDF5_INC=/usr/local/Cellar/hdf5/${HDF5_VERSION}/include" >> ${GITHUB_ENV}
           echo "HDF5_LIB=/usr/local/Cellar/hdf5/${HDF5_VERSION}/lib"     >> ${GITHUB_ENV}
           brew install lapack
           LAPACK_VERSION=`ls /usr/local/Cellar/lapack`
           echo "LAPACK_VERSION: ${LAPACK_VERSION}"
+          echo ""
           echo "LAPACK_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib" >> ${GITHUB_ENV}
           echo "BLAS_LIB=/usr/local/Cellar/lapack/${LAPACK_VERSION}/lib"   >> ${GITHUB_ENV}
 
@@ -126,40 +130,52 @@ jobs:
           make print-VPATH_LOCATIONS   >> make.out
           make print-LIBRARIES         >> make.out
           sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
+          make realclean
           make
           make realclean
 
-#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#          make print-INCLUDE_LOCATIONS >  make.out
-#          make print-LIBRARY_LOCATIONS >> make.out
-#          make print-VPATH_LOCATIONS   >> make.out
-#          make print-LIBRARIES         >> make.out
-#          make
-#          make realclean
-#
-#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#          sh ${THORNADO_DIR}/run.sh > make.out 2> make.err
-#          make realclean
-#          make
-#          make realclean
-#
-#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#          make > make.out 2> make.err
-#          make realclean
-#          make
-#          make realclean
-#
-#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#          make
-#          make realclean
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make print-INCLUDE_LOCATIONS >  make.out
+          make print-LIBRARY_LOCATIONS >> make.out
+          make print-VPATH_LOCATIONS   >> make.out
+          make print-LIBRARIES         >> make.out
+          sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
+          make
+          make realclean
+
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          sh ${THORNADO_DIR}/run.sh > make.out 2> make.err
+          make realclean
+          make
+          make realclean
+
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make > make.out 2> make.err
+          make realclean
+          make
+          make realclean
+
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make print-INCLUDE_LOCATIONS >  make.out
+          make print-LIBRARY_LOCATIONS >> make.out
+          make print-VPATH_LOCATIONS   >> make.out
+          make print-LIBRARIES         >> make.out
+          make
+          make realclean
+
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make
+          make realclean
 
 #      - name: Generate make.out and make.err
 #        run: |
