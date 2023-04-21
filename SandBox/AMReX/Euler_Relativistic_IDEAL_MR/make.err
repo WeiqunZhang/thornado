@@ -1,29 +1,582 @@
 /Users/runner/work/thornado/thornado/amrex/Tools/GNUMake/Make.rules:503: tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends: No such file or directory
 warning: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
-warning: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90 not found
-warning: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/Modules/Geometry/GeometryComputationModuleE.F90 not found
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:4: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:633: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90 not found
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:663: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/Modules/Geometry/GeometryComputationModuleE.F90 not found
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp: In function 'void amrex_fi_createfinemask_thornado(amrex::iMultiFab*&, const amrex::BoxArray&, const amrex::DistributionMapping&, const amrex::BoxArray&, int, int, int, const amrex::Geometry*)':
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:18:21: warning: the compiler can assume that the address of 'CrseBA' will never be NULL [-Waddress]
-   18 |         if( &CrseBA == NULL )
-      |                     ^
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:10:25: note: 'CrseBA' declared here
-   10 |         const BoxArray& CrseBA,
-      |         ~~~~~~~~~~~~~~~~^~~~~~
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:23:21: warning: the compiler can assume that the address of 'FineBA' will never be NULL [-Waddress]
-   23 |         if( &FineBA == NULL )
-      |                     ^
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:12:25: note: 'FineBA' declared here
-   12 |         const BoxArray& FineBA,
-      |         ~~~~~~~~~~~~~~~~^~~~~~
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:18:9: warning: 'nonnull' argument 'CrseBA' compared to NULL [-Wnonnull-compare]
-   18 |         if( &CrseBA == NULL )
-      |         ^~
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:23:9: warning: 'nonnull' argument 'FineBA' compared to NULL [-Wnonnull-compare]
-   23 |         if( &FineBA == NULL )
-      |         ^~
+tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:6: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:18:14: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+        if( &CrseBA == NULL )
+             ^~~~~~    ~~~~
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/MaskModule_fi.cpp:23:14: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+        if( &FineBA == NULL )
+             ^~~~~~    ~~~~
+5 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
+clang: warning: argument unused during compilation: '-rdynamic' [-Wunused-command-line-argument]
+warning: unknown warning option '-Wlogical-op'; did you mean '-Wlong-long'? [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-cond' [-Wunknown-warning-option]
+warning: unknown warning option '-Wduplicated-branches' [-Wunknown-warning-option]
+3 warnings generated.
 /Users/runner/work/thornado/thornado/Modules/Library/UtilitiesModule.F90:344:2:
 
   344 |   FUNCTION MinMod2_Vector( a, b ) &
@@ -1139,6 +1692,31 @@ note: '.slopelimitermethod' declared here
   221 |     REAL(DP) :: X, Alpha, B, Delta, Zero2, invCsSq
       |                                         1
 Warning: Unused variable 'zero2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:44:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                            1
+Warning: Unused variable 'jnx2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GeometryModule.F90:188:50:
+
+  188 |     INTEGER  :: iNX1, iNX2, iNX3, jNX1, jNX2, jNX3
+      |                                                  1
+Warning: Unused variable 'jnx3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:92:25:
+
+   92 |                iNX_X_Crse, iNX_X1_Crse, iNX_X2_Crse, iNX_X3_Crse, &
+      |                         1
+Warning: Unused variable 'inx_x_crse' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_MeshRefinementModule.F90:93:25:
+
+   93 |                iNX_X_Fine, iNX_X1_Fine, iNX_X2_Fine, iNX_X3_Fine
+      |                         1
+Warning: Unused variable 'inx_x_fine' declared at (1) [-Wunused-variable]
+TaggingModule.f90:312:22:
+
+  312 |     REAL(DP) :: Radius
+      |                      1
+Warning: Unused variable 'radius' declared at (1) [-Wunused-variable]
 /Users/runner/work/thornado/thornado/Modules/Euler/Euler_dgDiscretizationModule.F90:4209:38:
 
  4209 |     INTEGER :: iNX, iX1, iX2, iX3, iCF
@@ -1184,13 +1762,1004 @@ Warning: 'computeincrement_geometry_nonrelativistic' defined but not used [-Wunu
  3806 |   SUBROUTINE ComputeIncrement_Gravity_NonRelativistic &
       |                                                     ^
 Warning: 'computeincrement_gravity_nonrelativistic' defined but not used [-Wunused-function]
-/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:70:7:
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:170:27:
 
-   70 |   USE GeometryFieldsModuleE, ONLY: &
-      |       1
-Fatal Error: Cannot open module file 'geometryfieldsmodulee.mod' for reading at (1): No such file or directory
-compilation terminated.
-make: *** [tmp_build_dir/o/1d.gnu.DEBUG.MPI.EXE/MF_GravitySolutionModule_XCFC_Poseidon.o] Error 1
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:4: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:633: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90 not found
-tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:663: module geometryfieldsmodulee required by /Users/runner/work/thornado/thornado/Modules/Geometry/GeometryComputationModuleE.F90 not found
+  170 |   LOGICAL :: FillGhostCells
+      |                           1
+Warning: Unused PRIVATE module variable 'fillghostcells' declared at (1) [-Wunused-value]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2306:31:
+
+ 2306 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2311:54:
+
+ 2311 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:22:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2305:41:
+
+ 2305 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:27:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:32:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:37:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2313:42:
+
+ 2313 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2314:24:
+
+ 2314 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2314:34:
+
+ 2314 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2307:32:
+
+ 2307 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2309:54:
+
+ 2309 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2310:54:
+
+ 2310 |     REAL(DP), CONTIGUOUS, POINTER :: uMF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1727:47:
+
+ 1727 |     TYPE(amrex_multifab) :: CF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1728:47:
+
+ 1728 |     TYPE(amrex_multifab) :: CF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1731:25:
+
+ 1731 |     LOGICAL  :: CONVERGED
+      |                         1
+Warning: Unused variable 'converged' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1729:47:
+
+ 1729 |     TYPE(amrex_multifab) :: dCF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dcf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1726:47:
+
+ 1726 |     TYPE(amrex_multifab) :: dLF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:22:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:33:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                                 1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1732:28:
+
+ 1732 |     INTEGER  :: iLevel, ITER, iNX
+      |                            1
+Warning: Unused variable 'iter' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1724:47:
+
+ 1724 |     TYPE(amrex_multifab) :: LF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1725:47:
+
+ 1725 |     TYPE(amrex_multifab) :: LF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1723:47:
+
+ 1723 |     TYPE(amrex_multifab) :: MF_uGS(0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'mf_ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1733:28:
+
+ 1733 |     REAL(DP) :: MinLF, MinCF
+      |                            1
+Warning: Unused variable 'mincf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1733:21:
+
+ 1733 |     REAL(DP) :: MinLF, MinCF
+      |                     1
+Warning: Unused variable 'minlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1573:47:
+
+ 1573 |     TYPE(amrex_multifab) :: CF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1574:47:
+
+ 1574 |     TYPE(amrex_multifab) :: CF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'cf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1577:25:
+
+ 1577 |     LOGICAL  :: CONVERGED
+      |                         1
+Warning: Unused variable 'converged' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1575:47:
+
+ 1575 |     TYPE(amrex_multifab) :: dCF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dcf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1572:47:
+
+ 1572 |     TYPE(amrex_multifab) :: dLF   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'dlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:22:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:33:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                                 1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1578:28:
+
+ 1578 |     INTEGER  :: iLevel, ITER, iNX
+      |                            1
+Warning: Unused variable 'iter' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1570:47:
+
+ 1570 |     TYPE(amrex_multifab) :: LF1   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1571:47:
+
+ 1571 |     TYPE(amrex_multifab) :: LF2   (0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'lf2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1569:47:
+
+ 1569 |     TYPE(amrex_multifab) :: MF_uGS(0:nLevels-1)
+      |                                               1
+Warning: Unused variable 'mf_ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1579:28:
+
+ 1579 |     REAL(DP) :: MinLF, MinCF
+      |                            1
+Warning: Unused variable 'mincf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1579:21:
+
+ 1579 |     REAL(DP) :: MinLF, MinCF
+      |                     1
+Warning: Unused variable 'minlf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1217:28:
+
+ 1217 |     TYPE(amrex_box)    :: BX
+      |                            1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1227:26:
+
+ 1227 |     INTEGER :: ErrorExists
+      |                          1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:34:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                  1
+Warning: Unused variable 'g_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:41:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                         1
+Warning: Unused variable 'g_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:48:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                                1
+Warning: Unused variable 'g_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:27:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                           1
+Warning: Unused variable 'id_g1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:34:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                  1
+Warning: Unused variable 'id_g2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:41:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                         1
+Warning: Unused variable 'id_g3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:20:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                    1
+Warning: Unused variable 'id_n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:45:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                             1
+Warning: Unused variable 'ie' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1229:46:
+
+ 1229 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:21:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:51:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                   1
+Warning: Unused variable 'in_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:57:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                         1
+Warning: Unused variable 'in_x' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:67:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                                   1
+Warning: Unused variable 'in_z' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:26:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                          1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1235:61:
+
+ 1235 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                             1
+Warning: Unused variable 'is' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1228:46:
+
+ 1228 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:31:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                               1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:36:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                    1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1225:41:
+
+ 1225 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                         1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1226:23:
+
+ 1226 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                       1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1226:33:
+
+ 1226 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                                 1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:29:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                             1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1218:29:
+
+ 1218 |     TYPE(amrex_mfiter) :: MFI
+      |                             1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:27:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                           1
+Warning: Unused variable 'n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:34:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                  1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:40:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                        1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:17:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                 1
+Warning: Unused variable 's' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:24:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                        1
+Warning: Unused variable 's_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1221:49:
+
+ 1221 |     REAL(DP), CONTIGUOUS, POINTER :: uCF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1222:49:
+
+ 1222 |     REAL(DP), CONTIGUOUS, POINTER :: uCR(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1220:49:
+
+ 1220 |     REAL(DP), CONTIGUOUS, POINTER :: uGF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1223:49:
+
+ 1223 |     REAL(DP), CONTIGUOUS, POINTER :: uGS(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1231:24:
+
+ 1231 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:36:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                    1
+Warning: Unused variable 'v_u_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:43:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                           1
+Warning: Unused variable 'v_u_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1234:50:
+
+ 1234 |     REAL(DP) :: LorentzFactor, V_u_1, V_u_2, V_u_3
+      |                                                  1
+Warning: Unused variable 'v_u_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1233:52:
+
+ 1233 |     REAL(DP) :: S, S_int, N, G_d_1, G_d_2, G_d_3, vG
+      |                                                    1
+Warning: Unused variable 'vg' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:49:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                 1
+Warning: Unused variable 'betadotv' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:895:28:
+
+  895 |     TYPE(amrex_box)    :: BX
+      |                            1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:17:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                 1
+Warning: Unused variable 'e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:32:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                                1
+Warning: Unused variable 'e_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:59:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                           1
+Warning: Unused variable 'enthalpy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:55:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                                       1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:24:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                        1
+Warning: Unused variable 'g_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:31:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                               1
+Warning: Unused variable 'g_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:38:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                                      1
+Warning: Unused variable 'g_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:24:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                        1
+Warning: Unused variable 'gm_dd_11' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:34:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                                  1
+Warning: Unused variable 'gm_dd_22' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:915:44:
+
+  915 |     REAL(DP) :: Gm_dd_11, Gm_dd_22, Gm_dd_33
+      |                                            1
+Warning: Unused variable 'gm_dd_33' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:27:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                           1
+Warning: Unused variable 'id_g1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:34:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                  1
+Warning: Unused variable 'id_g2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:41:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                         1
+Warning: Unused variable 'id_g3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:20:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                    1
+Warning: Unused variable 'id_n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:45:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                             1
+Warning: Unused variable 'ie' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:909:46:
+
+  909 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:22:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:51:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                   1
+Warning: Unused variable 'in_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:57:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                         1
+Warning: Unused variable 'in_x' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:67:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                                   1
+Warning: Unused variable 'in_z' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:27:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:916:61:
+
+  916 |     INTEGER  :: iD_N, iD_G1, iD_G2, iD_G3, iE, iN_E, iN_X, iS, iN_Z
+      |                                                             1
+Warning: Unused variable 'is' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:908:46:
+
+  908 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:32:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:37:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:903:42:
+
+  903 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:904:24:
+
+  904 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:904:34:
+
+  904 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:39:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                       1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:896:29:
+
+  896 |     TYPE(amrex_mfiter) :: MFI
+      |                             1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:17:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                 1
+Warning: Unused variable 'n' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:69:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                                     1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:905:20:
+
+  905 |     REAL(DP) :: Psi6
+      |                    1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:25:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                         1
+Warning: Unused variable 's_i' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:911:44:
+
+  911 |     REAL(DP) :: E, S_i(3), E_int, S_i_int(3)
+      |                                            1
+Warning: Unused variable 's_i_int' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:899:49:
+
+  899 |     REAL(DP), CONTIGUOUS, POINTER :: uCF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:900:49:
+
+  900 |     REAL(DP), CONTIGUOUS, POINTER :: uCR(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ucr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:898:49:
+
+  898 |     REAL(DP), CONTIGUOUS, POINTER :: uGF(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:901:49:
+
+  901 |     REAL(DP), CONTIGUOUS, POINTER :: uGS(:,:,:,:)
+      |                                                 1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:906:24:
+
+  906 |     REAL(DP) :: uPF(nPF), LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:21:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                     1
+Warning: Unused variable 'v_d_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:28:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                            1
+Warning: Unused variable 'v_d_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:914:35:
+
+  914 |     REAL(DP) :: V_d_1, V_d_2, V_d_3
+      |                                   1
+Warning: Unused variable 'v_d_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:21:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                     1
+Warning: Unused variable 'v_u_1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:28:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                            1
+Warning: Unused variable 'v_u_2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:913:35:
+
+  913 |     REAL(DP) :: V_u_1, V_u_2, V_u_3
+      |                                   1
+Warning: Unused variable 'v_u_3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:912:42:
+
+  912 |     REAL(DP) :: N, G_d_1, G_d_2, G_d_3, vG
+      |                                          1
+Warning: Unused variable 'vg' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:694:31:
+
+  694 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:704:26:
+
+  704 |     INTEGER :: ErrorExists
+      |                          1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:700:54:
+
+  700 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:707:46:
+
+  707 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:21:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:693:41:
+
+  693 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:26:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                          1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:706:46:
+
+  706 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:31:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                               1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:36:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                    1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:702:41:
+
+  702 |     INTEGER :: iLevel, iNX, iX1, iX2, iX3
+      |                                         1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:703:23:
+
+  703 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                       1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:703:33:
+
+  703 |     INTEGER :: iX_B0(3), iX_E0(3)
+      |                                 1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:695:32:
+
+  695 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:34:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                  1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:40:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                                        1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:698:54:
+
+  698 |     REAL(DP), CONTIGUOUS, POINTER :: uCF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:697:54:
+
+  697 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:699:54:
+
+  699 |     REAL(DP), CONTIGUOUS, POINTER :: uGS     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:709:24:
+
+  709 |     REAL(DP) :: uPF(nPF), Pressure, Psi6
+      |                        1
+Warning: Unused variable 'upf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:39:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                       1
+Warning: Unused variable 'betadotv' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:480:31:
+
+  480 |     TYPE(amrex_box)       :: BX
+      |                               1
+Warning: Unused variable 'bx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:49:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                 1
+Warning: Unused variable 'enthalpy' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:55:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                                       1
+Warning: Unused variable 'errorexists' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:486:54:
+
+  486 |     INTEGER , CONTIGUOUS, POINTER :: FineMask(:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:495:46:
+
+  495 |     INTEGER, ALLOCATABLE :: iErr     (:,:,:,:)
+      |                                              1
+Warning: Unused variable 'ierr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:22:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                      1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:479:41:
+
+  479 |     TYPE(amrex_imultifab) :: iMF_FineMask
+      |                                         1
+Warning: Unused variable 'imf_finemask' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:27:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                           1
+Warning: Unused variable 'inx' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:494:46:
+
+  494 |     INTEGER, ALLOCATABLE :: ITERATION(:,:,:,:)
+      |                                              1
+Warning: Unused variable 'iteration' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:32:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                1
+Warning: Unused variable 'ix1' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:37:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                     1
+Warning: Unused variable 'ix2' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:488:42:
+
+  488 |     INTEGER  :: iLevel, iNX, iX1, iX2, iX3, ErrorExists
+      |                                          1
+Warning: Unused variable 'ix3' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:489:24:
+
+  489 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                        1
+Warning: Unused variable 'ix_b0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:489:34:
+
+  489 |     INTEGER  :: iX_B0(3), iX_E0(3)
+      |                                  1
+Warning: Unused variable 'ix_e0' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:29:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                             1
+Warning: Unused variable 'lorentzfactor' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:481:32:
+
+  481 |     TYPE(amrex_mfiter)    :: MFI
+      |                                1
+Warning: Unused variable 'mfi' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:492:59:
+
+  492 |                 LorentzFactor, BetaDotV, Enthalpy, Pressure
+      |                                                           1
+Warning: Unused variable 'pressure' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:490:20:
+
+  490 |     REAL(DP) :: Psi6
+      |                    1
+Warning: Unused variable 'psi6' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:484:54:
+
+  484 |     REAL(DP), CONTIGUOUS, POINTER :: uCF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ucf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:491:26:
+
+  491 |     REAL(DP) :: uCF_K(nCF), uPF_K(nPF), &
+      |                          1
+Warning: Unused variable 'ucf_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:483:54:
+
+  483 |     REAL(DP), CONTIGUOUS, POINTER :: uGF     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:485:54:
+
+  485 |     REAL(DP), CONTIGUOUS, POINTER :: uGS     (:,:,:,:)
+      |                                                      1
+Warning: Unused variable 'ugs' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:491:38:
+
+  491 |     REAL(DP) :: uCF_K(nCF), uPF_K(nPF), &
+      |                                      1
+Warning: Unused variable 'upf_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:425:21:
+
+  425 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:423:47:
+
+  423 |     TYPE(amrex_multifab) :: MF_uMF(0:nLevels-1) ! Metric Fields
+      |                                               1
+Warning: Unused variable 'mf_umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:43:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                                           1
+Warning: Unused variable 'alphapsi_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:57:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                                                         1
+Warning: Unused variable 'beta_u_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:359:21:
+
+  359 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:354:42:
+
+  354 |     CHARACTER(LEN=1) :: INNER_BC_TYPES (5), OUTER_BC_TYPES (5)
+      |                                          1
+Warning: Unused variable 'inner_bc_types' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:355:42:
+
+  355 |     REAL(DP)         :: INNER_BC_VALUES(5), OUTER_BC_VALUES(5)
+      |                                          1
+Warning: Unused variable 'inner_bc_values' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:357:47:
+
+  357 |     TYPE(amrex_multifab) :: MF_uMF(0:nLevels-1) ! Metric Fields
+      |                                               1
+Warning: Unused variable 'mf_umf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:354:62:
+
+  354 |     CHARACTER(LEN=1) :: INNER_BC_TYPES (5), OUTER_BC_TYPES (5)
+      |                                                              1
+Warning: Unused variable 'outer_bc_types' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:355:62:
+
+  355 |     REAL(DP)         :: INNER_BC_VALUES(5), OUTER_BC_VALUES(5)
+      |                                                              1
+Warning: Unused variable 'outer_bc_values' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:353:30:
+
+  353 |     REAL(DP)         :: Psi_xR, AlphaPsi_xR, Beta_u_xR(3)
+      |                              1
+Warning: Unused variable 'psi_xr' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1869:46:
+
+ 1869 |   SUBROUTINE UpdateConformalFactorAndMetric_MF( MF_uMF, MF_uGF )
+      |                                              ^
+Warning: 'updateconformalfactorandmetric_mf' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:1945:43:
+
+ 1945 |   SUBROUTINE ComputeGeometryFromPoseidon_MF( MF_uMF, MF_uGF )
+      |                                           ^
+Warning: 'computegeometryfromposeidon_mf' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2017:48:
+
+ 2017 |   SUBROUTINE SetPoseidonBoundaryConditions_Outer &
+      |                                                ^
+Warning: 'setposeidonboundaryconditions_outer' defined but not used [-Wunused-function]
+/Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Geometry/MF_GravitySolutionModule_XCFC_Poseidon.F90:2300:27:
+
+ 2300 |   SUBROUTINE PopulateMF_uMF( MF_uGF, MF_uMF )
+      |                           ^
+Warning: 'populatemf_umf' defined but not used [-Wunused-function]
+InitializationModule.f90:172:21:
+
+  172 |     INTEGER :: iLevel
+      |                     1
+Warning: Unused variable 'ilevel' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:46:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                              1
+Warning: Unused variable 'e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:36:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                                    1
+Warning: Unused variable 'e_pp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:303:30:
+
+  303 |     REAL(DP) :: G_q(nDOFX,nGF)
+      |                              1
+Warning: Unused variable 'g_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:296:34:
+
+  296 |     INTEGER  :: iX1, iX2, iX3, iCF, iP, iNodeX
+      |                                  1
+Warning: Unused variable 'icf' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:38:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                                      1
+Warning: Unused variable 'max_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:300:26:
+
+  300 |     REAL(DP) :: Min_E(nPT), Max_E(nPT)
+      |                          1
+Warning: Unused variable 'min_e' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:299:41:
+
+  299 |     REAL(DP) :: Min_Y_K, Max_Y_K, Min_E_K
+      |                                         1
+Warning: Unused variable 'min_e_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:294:30:
+
+  294 |     LOGICAL  :: NegativeStates
+      |                              1
+Warning: Unused variable 'negativestates' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:40:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                                        1
+Warning: Unused variable 'u_k' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:304:30:
+
+  304 |     REAL(DP) :: U_q(nDOFX,nCF), U_K(nCF)
+      |                              1
+Warning: Unused variable 'u_q' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:305:25:
+
+  305 |     REAL(DP) :: Y_PP(nPT), E_PP(nPT), Y_K, E_K
+      |                         1
+Warning: Unused variable 'y_pp' declared at (1) [-Wunused-variable]
+/Users/runner/work/thornado/thornado/Modules/Euler/Euler_PositivityLimiterModule_NonRelativistic_TABLE.F90:1150:61:
+
+ 1150 |   SUBROUTINE ComputeSpecificInternalEnergyAndElectronFraction( U, E, Y )
+      |                                                             ^
+Warning: 'computespecificinternalenergyandelectronfraction' defined but not used [-Wunused-function]
+tmp_build_dir/d/1d.gnu.DEBUG.MPI.EXE/f90.depends:6: module hdf5 required by /Users/runner/work/thornado/thornado/SandBox/AMReX/Modules/Library/ProgenitorModule.f90 not found
