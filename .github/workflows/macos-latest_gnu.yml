@@ -8,11 +8,6 @@ jobs:
     runs-on: macos-latest
     env:
       THORNADO_MACHINE: gh-runner_macos-latest_gnu
-      GCC_MAJOR: 12
-      GCC_VERSION: 12.2.0
-      OMPI_VERSION: 4.1.5
-      HDF5_VERSION: 1.12.2_2
-      LAPACK_VERSION: 3.11
       CXX: mpicxx
       CC: mpicc
       FC: mpif90
@@ -36,26 +31,24 @@ jobs:
 
       - name: Download and install homebrew and dependencies
         run: |
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-          echo ""
-          echo "brew install gcc"
-                brew install gcc
-          echo "brew install gfortran"
-                brew install gfortran
-          echo "brew install open-mpi --cc=gcc-${GCC_MAJOR}"
-                brew install open-mpi --cc=gcc-${GCC_MAJOR}
-          echo "brew install hdf5"
-                brew install hdf5
-          echo "brew install lapack"
-                brew install lapack
+          /bin/bash -c  "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install gcc
+          ls /usr/local/Cellar/gcc > GCC_VERSION
+          brew install gfortran
+          brew install open-mpi
+          ls /usr/local/Cellar/open-mpi > OMPI_VERSION
+          echo "OMPI_VERSION=${OMPI_VERSION}" >> ${GITHUB_ENV}
+          brew install hdf5
+          ls /usr/local/Cellar/hdf5 > HDF5_VERSION
+          echo "HDF5_VERSION=${HDF5_VERSION}" >> ${GITHUB_ENV}
+          brew install lapack
+          ls /usr/local/Cellar/lapack > LAPACK_VERSION
+          echo "LAPACK_VERSION=${LAPACK_VERSION}" >> ${GITHUB_ENV}
           echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"       >> ${GITHUB_PATH}
           echo "/usr/local/Cellar/open-mpi/${OMPI_VERSION}/bin" >> ${GITHUB_PATH}
 
       - name: Set Environment Variables
         run: |
-          echo ""
-          echo "echo ${PATH} (after)"
-                echo ${PATH}
           echo "THORNADO_DIR=${GITHUB_WORKSPACE}"                          >> ${GITHUB_ENV}
           echo "WEAKLIB_DIR=${GITHUB_WORKSPACE}/weaklib"                   >> ${GITHUB_ENV}
           echo "AMREX_DIR=${GITHUB_WORKSPACE}/amrex"                       >> ${GITHUB_ENV}
@@ -157,27 +150,6 @@ jobs:
 #          make realclean
 #          make
 #          make realclean
-
-      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-        run: |
-          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-          sh ${THORNADO_DIR}/run.sh > make.out 2> make.err
-          make realclean
-          make
-          make realclean
-
-      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-        run: |
-          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-          make realclean
-          make
-          make realclean
-
-      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-        run: |
-          make realclean
-          make
-          make realclean
 
 #      - name: Compile SandBox/AMReX/TwoMoment_Test
 #        run: |
