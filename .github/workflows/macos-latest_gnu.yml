@@ -73,15 +73,6 @@ jobs:
           echo "mpicxx --version"
                 mpicxx --version
           echo ""
-          echo "ls /usr/local/Cellar/open-mpi/4.1.5"
-                ls /usr/local/Cellar/open-mpi/4.1.5
-          echo ""
-          echo "ls /usr/local/Cellar/open-mpi/4.1.5/*"
-                ls /usr/local/Cellar/open-mpi/4.1.5/*
-          echo ""
-          echo "/usr/local/Cellar/open-mpi/4.1.5/bin/mpicxx --version"
-                /usr/local/Cellar/open-mpi/4.1.5/bin/mpicxx --version
-          echo ""
           echo "which mpif90"
                 which mpif90
           echo ""
@@ -127,18 +118,17 @@ jobs:
 #          make
 #          make clobber
 
-#      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-#          make print-INCLUDE_LOCATIONS >  make.out
-#          make print-LIBRARY_LOCATIONS >> make.out
-#          make print-VPATH_LOCATIONS   >> make.out
-#          make print-LIBRARIES         >> make.out
-#          sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
-#          make realclean
-#          make
-#          make realclean
-#
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make print-INCLUDE_LOCATIONS >  make.out
+          make print-LIBRARY_LOCATIONS >> make.out
+          make print-VPATH_LOCATIONS   >> make.out
+          make print-LIBRARIES         >> make.out
+          sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
+          make
+          make realclean
+
 #      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
 #        run: |
 #          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
