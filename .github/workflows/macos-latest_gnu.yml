@@ -34,6 +34,8 @@ jobs:
           /bin/bash -c  "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install gcc
           GCC_VERSION=`ls /usr/local/Cellar/gcc`
+          echo ""
+          echo ${GCC_VERSION}
           echo "/usr/local/Cellar/gcc/${GCC_VERSION}/bin" >> ${GITHUB_PATH}
           brew install gfortran
           brew install open-mpi
