@@ -92,11 +92,11 @@ jobs:
           echo "find /usr/local/Cellar -iname \"*mpi.mod\""
                 find /usr/local/Cellar -iname  "*mpi.mod"
 
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-#          make
-#          make clobber
+      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+        run: |
+          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
+          make
+          make clobber
 
 #      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
 #        run: |
@@ -115,6 +115,12 @@ jobs:
 #          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
 #          make
 #          make clobber
+
+      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+        run: |
+          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
+          make
+          make realclean
 
 #      - name: Generate make.out and make.err
 #        run: |
