@@ -90,11 +90,4 @@ jobs:
       - name: Generate make.out and make.err
         run: |
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-          make print-INCLUDE_LOCATIONS >  make.out
-          make print-LIBRARY_LOCATIONS >> make.out
-          make print-VPATH_LOCATIONS   >> make.out
-          make print-LIBRARIES         >> make.out
-          sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
-          cat make.out
-          cat make.err
-          make realclean
+          make FORT_CPP="cpp-12 -E -traditional-cpp -P"
