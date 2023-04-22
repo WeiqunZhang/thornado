@@ -90,8 +90,11 @@ jobs:
       - name: Generate make.out and make.err
         run: |
           which cpp
+          cpp --version
           GCC_VERSION=`ls /usr/local/Cellar/gcc`
           ls "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"
+          alias cpp="/usr/local/Cellar/gcc/${GCC_VERSION}/bin/cpp-12"
+          cpp --version
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
           make print-INCLUDE_LOCATIONS >  make.out
           make print-LIBRARY_LOCATIONS >> make.out
