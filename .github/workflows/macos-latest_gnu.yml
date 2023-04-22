@@ -89,6 +89,9 @@ jobs:
 
       - name: Generate make.out and make.err
         run: |
+          which cpp
+          GCC_VERSION=`ls /usr/local/Cellar/gcc`
+          ls "/usr/local/Cellar/gcc/${GCC_VERSION}/bin"
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
           make print-INCLUDE_LOCATIONS >  make.out
           make print-LIBRARY_LOCATIONS >> make.out
@@ -97,10 +100,4 @@ jobs:
           sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
           cat make.out
           cat make.err
-          make realclean
-
-      - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-        run: |
-          cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
-          make
           make realclean
