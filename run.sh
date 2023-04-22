@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 make clean
-make DEP_CHECK_OPTS=--debug > make.ou
+make FORT_CPP="cpp-12 -E -traditional-cpp -P" DEP_CHECK_OPTS=--debug > make.ou
 ls .
 cat make.ou
 cat dependencies.out
