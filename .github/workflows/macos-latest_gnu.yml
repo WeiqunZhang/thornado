@@ -87,30 +87,6 @@ jobs:
           echo "find /usr/local/Cellar -iname \"*mpi.mod\""
                 find /usr/local/Cellar -iname  "*mpi.mod"
 
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_IDEAL/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_NonRelativistic_TABLE/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_IDEAL/Executables
-#          make
-#          make clobber
-
-#      - name: Compile SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/dgExperiments_Euler_Relativistic_TABLE/Executables
-#          make
-#          make clobber
-
       - name: Generate make.out and make.err
         run: |
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
@@ -119,9 +95,8 @@ jobs:
           make print-VPATH_LOCATIONS   >> make.out
           make print-LIBRARIES         >> make.out
           sh ${THORNADO_DIR}/run.sh >> make.out 2> make.err
-          git add -f make.out make.err
-          git commit -m "add make output"
-          git push
+          cat make.out
+          cat make.err
           make realclean
 
       - name: Compile SandBox/AMReX/Euler_Relativistic_IDEAL_MR
@@ -129,9 +104,3 @@ jobs:
           cd ${THORNADO_DIR}/SandBox/AMReX/Euler_Relativistic_IDEAL_MR
           make
           make realclean
-
-#      - name: Compile SandBox/AMReX/TwoMoment_Test
-#        run: |
-#          cd ${THORNADO_DIR}/SandBox/AMReX/TwoMoment_Test
-#          make
-#          make realclean
